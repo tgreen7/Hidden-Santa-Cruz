@@ -1,0 +1,223 @@
+{{extend 'layout.html'}}
+
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+  <body background = "background.jpg">
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+
+          <ul class="nav nav-sidebar">
+
+
+
+
+            {{for board_id in board_list:}}
+            <li> {{=A(board_id['title'],_href=URL('default', 'show_posts', args=[board_id['id']])) }}</li>
+            {{pass}}
+          </ul>
+
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            {{for board_id in board_list:}}
+                    {{print "the boardid is"}}
+                    {{print board_id['id']}}
+                    {{print post_board_id}}
+            {{if board_id['id'] == post_board_id:}}
+                {{print "something worked"}}
+          <h1 class="page-header"> {{=board_id}}</h1>
+             {{pass}}
+             {{pass}}
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+              {{extend 'layout.html'}}
+
+<h1>
+{{if auth.user_id != None:}}
+
+<a class="btn btn-success"  href="/hw3/default/show_boards">Go Back</a>
+
+{{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_board_id]))}}
+
+{{else:}}
+
+    <a class="btn btn-success"  href="/hw3/default/show_boards">Go Back</a>
+
+{{pass}}
+</h1>
+
+
+{{for post_id in post_list:}}
+    <div class = "myboard">
+        <span class="boardtitle">
+        {{=post_id['title']}}
+        {{if post_id.user_id == auth.user_id:}}
+        <span class = "icons">
+        {{=A(icon_pencil, _href=URL('default', 'posts_edit', args=post_id['id']))}}
+        {{=A(icon_trash, _href=URL('default', 'delete_post', args=[post_id['id'], post_board_id]))}}
+        </span>
+        {{pass}}
+        </span>
+
+        <p>{{=(post_id['body'])}}</p>
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src = "{{=URL('download', args=post_id['image'])}}" >
+            </div>
+
+            {{if post_id['image1']!= None:}}
+            <div class="item">
+              <img src="{{=URL('download', args=post_id['image1'])}}" alt="Chania">
+            </div>
+            {{pass}}
+
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+{{pass}}
+
+        </div><!-- /.container -->
+
+
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="../../dist/js/bootstrap.min.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+
+
+
+
+
+
