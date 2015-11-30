@@ -123,13 +123,13 @@
 <h1>
 {{if auth.user_id != None:}}
 
-<a class="btn btn-success"  href="/hw3/default/show_boards">Go Back</a>
+    {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
 
 {{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_board_id]))}}
 
 {{else:}}
 
-    <a class="btn btn-success"  href="/hw3/default/show_boards">Go Back</a>
+    {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
 
 {{pass}}
 </h1>
