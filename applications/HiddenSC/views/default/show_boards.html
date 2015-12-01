@@ -102,6 +102,9 @@
         {{else:}}
            {{for board_id in board_list:}}
             <div class = "myboard" >
+                <span class = "boardpic" >
+                    <img alt="West Cliff Drive" awidth="160" style="height: 160px; width: 160px;"   class="photo_image" height="160" src="http://media-cdn.tripadvisor.com/media/photo-l/01/3e/f3/8d/west-cliff-backyard.jpg">
+                    </span>
               <span class="boardtitle" >
                 {{=A(board_id['title'],_href=URL('default', 'show_posts', args=board_id['id'])) }}
               </span>

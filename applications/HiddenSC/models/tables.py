@@ -49,13 +49,20 @@ db.define_table('posts',
                 Field('user_id', 'integer'),
                 Field('post_day', 'datetime'),
                 Field('user_id_2', db.auth_user, default = auth.user_id),
-                Field('image', 'upload'),
-                Field('image1', 'upload')
+                Field('image1', 'upload'),
+                Field('image2', 'upload'),
+                Field('image3', 'upload'),
+                Field('image4', 'upload'),
+                Field('image5', 'upload')
                 )
-db.define_table('uploads',
 
-    Field('up_file', 'upload', uploadseparate=True, requires=IS_NOT_EMPTY()),
+db.define_table('reviews',
+                Field('body','text'),
+                Field('user_id', 'integer'),
+                Field('user_id_2',db.auth_user,default=auth.user_id),
+                Field('post',db.posts)
                 )
+
 
 
 db.posts.board.readable = db.posts.board.writable = False

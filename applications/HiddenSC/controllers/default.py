@@ -35,7 +35,6 @@ def index():
 
 
 
-
 @auth.requires_login()
 def add_board():
     logger.info("My session is: %r" % session)
@@ -73,7 +72,10 @@ def post_page():
     post_id = request.args(0)
     # print post_id
     post = db.posts[post_id]
-    return dict(post = post)
+    reviews = db(db.reviews.post == post_id).select()
+    print "reviews"
+    print reviews
+    return dict(post = post,reviews=reviews)
 
 def show_posts():
     post_board_id = request.args(0)
@@ -86,30 +88,47 @@ def show_posts():
 
 
 
-def submit():
-    import datetime
-    form = FORM(LABEL("File(s):"), INPUT(_name='up_files', _type='file', _multiple='', requires=IS_NOT_EMPTY()),  BR(),INPUT(_type='submit'))
-    if form.accepts(request.vars, formname="form"):
-        files = request.vars['up_files']
-        if not isinstance(files, list):
-            files = [files]
-        for f in files:
-            print f.filename
-            up_file = db.uploads.up_file.store(f, f.filename)
-            i = db.uploads.insert(up_file=up_file)
-            db.commit()
-        return "form submitted" #redirect(URL('data', 'index'))
-    return dict(form=form)
+# def submit():
+#     import datetime
+#
+#     form = FORM(LABEL("File(s):"),
+#                 INPUT(_name='up_files', _type='file', _multiple='', requires=IS_NOT_EMPTY()),  BR(),INPUT(_type='submit'))
+#     if form.accepts(request.vars, formname="form"):
+#         files = request.vars['up_files']
+#         if not isinstance(files, list):
+#             files = [files]
+#         for f in files:
+#             print f.filename
+#             up_file = db.uploads.up_file.store(f, f.filename)
+#             i = db.uploads.insert(up_file=up_file)
+#             db.commit()
+#         return "form submitted" #redirect(URL('data', 'index')
+#         # )
+#     return dict(form=form)
 
 def add_posts():
     logger.info("My session is: %r" % session)
     form = SQLFORM(db.posts,  upload = URL('download'))
+
     form.vars.board = request.args(0)
     form.vars.user_id = auth.user_id
 
     if form.process().accepted:
         session.flash = T('the data was inserted')
         redirect(URL('default','show_posts', args=request.args(0))) #might change to index
+    return dict(form=form)
+
+
+@auth.requires_login()
+def add_review():
+    form = SQLFORM(db.reviews)
+    form.vars.post = request.args(0)
+    print "review_post id"
+    print form.vars.post
+    form.vars.user_id = auth.user_id
+    if form.process().accepted:
+        session.flash = T('the data was inserted')
+        redirect(URL('default','post_page', args=request.args(0)))
     return dict(form=form)
 
 def posts_details():

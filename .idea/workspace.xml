@@ -2,16 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98b0364e-11dd-47f0-b8d5-61ea6ff91760" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-03-52.5533ade0-a975-4eae-a9e7-5154c6829d8e" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-03-53.ea68292f-7af0-4854-ab0c-30958010330b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-06-40.01471680-e371-417e-bb47-a0634d4c630b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-06-40.2b56e951-d3ad-4709-8063-b0a3c68f09ad" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-23-32.c434aecc-69b4-489b-9f9e-329c372cf189" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-23-33.fa0f03df-d81e-493c-a09f-f760b6a21b7d" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-25-48.26e2be5b-06ed-4803-9cf8-fee8c58cb291" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-25-48.f250ffaa-aa6a-4dce-928f-ca7ae510556c" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-02-03.17b9593a-aba2-4f58-b0da-b2f2516fd7c0" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-02-03.7b70a956-14f2-4ad1-bd47-3c7adc8ca889" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-40.1195db6f-dd79-4718-ab3b-8372b36153a0" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-40.efce1f53-922c-4762-b54e-4dacae06884c" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-47.3085952b-a462-42e3-ac63-ca82006ac708" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-47.c0764ac0-308f-41f2-829b-b9e67ec68227" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-09-16.96e2c37d-87a9-4e77-8b27-7948935bc802" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-09-17.135ff739-04f7-4e1a-a437-2b5988de703b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-12-24.6e0e943f-fdba-492b-a89c-848d2ca3a06a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-12-25.5129f1a1-993f-419f-afab-374d4b85df69" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-15-06.28775b55-4ee9-424b-a60b-d00e221a87f1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-15-07.4a0e8043-19dd-49f4-9435-39e9f874301f" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-16-08.a935bcca-cc93-4859-8189-88965093a729" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-16-08.f108bba8-6949-4d50-a82d-22ce604414f1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-29-52.0b4c8c12-5c60-40e4-b720-f2cc874b3e98" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-29-52.b882a68e-d0b5-46ec-83b6-f6ea19569f12" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-31-30.d6a78047-f2a6-48b6-b4d8-34a0f85932e5" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-31-31.e976846c-2882-40e7-bc69-0376de128d6c" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-32-18.7d3c1c27-d195-4253-a64d-7b3dfdf072b4" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-32-19.3d5c8e6f-af94-44df-bc64-55f5275d6917" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-33-57.006a6708-427b-41df-a71f-c307ed416e2a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-33-57.1378a5cd-34a3-4f61-90a4-884bf91dee1d" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-33-59.c80280eb-4b89-4544-b5a8-f96e2734db12" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-34-04.9b2a1e89-8e8a-4452-af13-0492197dba0d" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-37-13.2707250c-70f8-411d-860e-0d38b04248f9" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-37-13.f4c6bb4c-b857-4923-bd21-2e09135576b7" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-37-14.64f484f6-8064-4794-a8e4-4bca33ba420b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-38-10.da71e511-0782-433b-be13-6005229e6ad2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-39-24.8f064261-8092-4ac4-b9d9-945158a62e39" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-40-25.ccd30a9e-6651-49c8-b6cb-e7d213b9d070" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-41-18.fbd9aceb-dc26-4d4b-aec4-eb19f65de8e1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-49-18.1caf6882-45f7-46d1-9f39-3b6f1f4d3c0a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-49-18.64bf6094-fdeb-4742-aa5e-c1aae2e4a3fd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-30.cfde425c-d2d4-455e-82e9-132594ba5983" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-30.d2369cdd-78f1-4c2c-b3c1-9ad471ebd12b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-38.08094300-6a8d-47de-8c69-086d82626666" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-38.76f08867-ba54-498e-9033-4c14fd65078a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-43.d35d93f3-2f90-4990-8b1c-cdf2d43c6b0b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-44.53c32dd8-7a3e-4285-be86-dbcabca671ef" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-54-17.4b3c1e14-9b19-41d9-ab39-45662f93e44b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-54-17.abe34e7a-9481-4516-8e4d-cce765bad44a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-55-47.1a8d8d47-8701-4fee-8e7d-a011358432a9" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-55-48.04ea7581-3794-497c-afae-ef167e15835f" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-45-52.51088f51-93c1-4446-810f-d5070be892d7" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-53-11.614313c3-6d08-4117-98d2-6825c30f3ef1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-57-47.965714c1-be5b-4e8a-a49c-475f73658111" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-59-02.c5b1b76f-5c77-41d5-923b-7e99d5a4d863" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-59-25.5173bf7b-85b4-44ee-95d8-9a6a171e9078" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\043\125\127.0.0.1-e1731e73-b226-4647-bcfd-5ff809d227d0" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\050\054\127.0.0.1-85f94dbd-ad6b-4580-81f8-45d7fff31539" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\0f1\0eb\127.0.0.1-812ac3b5-17de-4581-a1d0-abf15a148af1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\162\0b3\127.0.0.1-fe21cc1f-50c5-472a-8668-5ec2b2b9c104" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\17b\021\127.0.0.1-39dd0e38-dac5-46aa-a6ec-a687c3b61396" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\1b6\01e\127.0.0.1-27c889d9-1131-49e7-981e-cb6414c19d54" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/admin/sessions/113/1eb/127.0.0.1-c07dbf34-c6e3-4a6b-9870-49c999cdd1b7" afterPath="$PROJECT_DIR$/applications/admin/sessions/113/1eb/127.0.0.1-c07dbf34-c6e3-4a6b-9870-49c999cdd1b7" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/storage.sqlite" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/storage.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/c8b669d15150d7109e5f7ab36744a5b7_posts.table" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/c8b669d15150d7109e5f7ab36744a5b7_posts.table" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" afterPath="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/httpserver.log" afterPath="$PROJECT_DIR$/httpserver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/httpserver.pid" afterPath="$PROJECT_DIR$/httpserver.pid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters_8000.py" afterPath="$PROJECT_DIR$/parameters_8000.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters_8800.py" afterPath="$PROJECT_DIR$/parameters_8800.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" afterPath="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html" afterPath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html" afterPath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/sql.log" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/sql.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" afterPath="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="web2py.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +90,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/web2py$web2py.coverage" NAME="web2py Coverage Results" MODIFIED="1448934292748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/web2py$web2py.coverage" NAME="web2py Coverage Results" MODIFIED="1449001032819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -40,17 +105,65 @@
         <entry file="file://$PROJECT_DIR$/applications/HiddenSC/models/tables.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show_boards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6727273">
+              <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_posts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_page.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.17073171">
+              <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applications/HiddenSC/controllers/default.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39731285">
-              <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+            <state vertical-scroll-proportion="-7.034483">
+              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_posts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/add_posts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,8 +177,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html" />
+        <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html" />
         <option value="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" />
         <option value="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" />
+        <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" />
       </list>
     </option>
   </component>
@@ -154,6 +270,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HiddenSC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web2py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web2py" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="applications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HiddenSC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web2py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web2py" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="applications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HiddenSC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,7 +565,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -409,7 +573,7 @@
       <module name="web2py" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web2py.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-e --port=8800 --password=helloclass" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -431,14 +595,14 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10980967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06623586" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46849757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -460,19 +624,59 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/models/tables.py">
+    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6727273">
+          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/add_posts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/applications/HiddenSC/controllers/default.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39731285">
-          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+        <state vertical-scroll-proportion="-7.034483">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/models/tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17073171">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
