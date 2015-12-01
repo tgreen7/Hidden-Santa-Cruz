@@ -62,6 +62,11 @@ def deleteboards():
 def deleteposts():
     db(db.posts.id > 0).delete()
 
+def post_page():
+    post_id = request.args(0)
+    # print post_id
+    post = db.posts[post_id]
+    return dict(post = post)
 
 def show_posts():
     post_board_id = request.args(0)

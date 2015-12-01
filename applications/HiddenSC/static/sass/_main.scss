@@ -11,14 +11,15 @@ div.maincontent {
 
 }
 
-div.myboard{
-    width:80%;
-    padding: 20px;
+.myboard{
+    width:180px;
+    padding: 10px;
+
     /*@include background-image(linear-gradient(lighten($clrBg, 30%), $clrBg));*/
     margin: 10px;
     @include border-radius(10px); /*rounded border*/
     border: 1px solid $clrText;
-    @include box-shadow(rgva(#000,0.7) 0 4px 10px 2px);
+
     display: inline-block;
     .boardtitle {
         text-align: right;
@@ -27,6 +28,9 @@ div.myboard{
         font-size: 1.6em;
 
         color: $clrMain;
+    }
+    .boardpic{
+        float: left;
     }
     .icons {
         text-align: right;

@@ -53,31 +53,7 @@
   {{pass}}
 
 
-  <!--This is the top navbar, taken from bootstrap/docs/examples/dashboard-->
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
-      </div>
-    </nav>
+
 
   <!--Also from dashboard, this does the sidebar and the main page-->
     <div class="container-fluid">
@@ -103,42 +79,23 @@
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
 
 
 
 <!--if user is not logged in dont let them create a board, if they are then show button-->
         {{if auth.user_id is None:}}
              {{for board_id in board_list:}}
-                <div class = "myboard">
-                    <span class="boardtitle">
-                    {{=A(board_id['title'],_href=URL('default', 'show_posts', args=board_id['id'])) }}</span>
-                    {{today_posts = db((db.posts.post_day > yesterday) & (db.posts.board == board_id.id)).count()}}
 
-                    <p>New Posts Today: {{=today_posts}}</p>
+                <div class = "myboard">
+                    <span class = "boardpic" >
+                    <img alt="West Cliff Drive" awidth="160" style="height: 160px; width: 160px;"   class="photo_image" height="160" src="http://media-cdn.tripadvisor.com/media/photo-l/01/3e/f3/8d/west-cliff-backyard.jpg">
+                    </span>
+                    <span class="boardtitle" >
+                    {{=A(board_id['title'],_href=URL('default', 'show_posts', args=board_id['id'])) }}</span>
+
+
+
                 </div>
             {{pass}}
 

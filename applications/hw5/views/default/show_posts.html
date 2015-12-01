@@ -1,0 +1,347 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+
+
+
+
+<div id="target"></div>
+
+<script id="template" type="text/ractive">
+
+
+<span>
+
+
+{{if auth.user_id is None:}}
+    {{=A('Sign Up', _class='btn btn-warning', _href=URL('default', 'user', args=['register']))}}
+    {{=A('Sign In', _class='btn btn-success', _href=URL('default', 'user', args=['login']))}}
+    <span style="float: right; display: inline-block;">
+    {{=A('Back Home', _class='btn btn-warning', _href=URL('default', 'show_boards', args=[]))}}
+    </span>
+{{else:}}
+    <input class="btn btn-primary" type="submit" value="Create Post" on-click="newPost"/>
+    <span style="float: right; display: inline-block;">
+    {{=A('Logout', _class='btn btn-success', _href=URL('default', 'user', args=['logout']))}}
+    {{=A('Back Home', _class='btn btn-warning', _href=URL('default', 'show_boards', args=[]))}}
+    </span>
+{{pass}}
+</span>
+
+<h1 align="center" style="font-size:3em;font-weight:bold;color:black">POST PAGE</h1>
+
+
+
+{% #if delete_list.length > 0 %}
+<div align="right">
+    <a on-click="removePosts:{%delete_list%}" class = "hover_hand" style="font-size:3em;color: red"><i class = "fa fa-trash"></i> {% delete_list.length %}</a>
+</div>
+{% /if %}
+
+<div class="message_list">
+  {% #msg_dict:msg_id %}
+    {% #if is_draft === false %}
+               {% #if author == {{=auth.user_id}} %}
+
+                    <div class = "myPanelPost"  >
+                            <div class="headerControls">
+                                  <a on-click="markForDel:{%msg_id%}" class="hover_hand"><i class = "fa fa-times"></i> </a>
+                           </div>
+                          <div class="heading"  >
+                                <div>
+                                 {% #if editing %}
+                                      <textarea id="editarea" on-blur="editdone:{%msg_id%},{%title%},{%body%}" data-areaid="{%msg_id%}" value="{% title %}">
+                                      </textarea>
+                                  {% else %}
+                                      <div on-click="startEditTitle:{%msg_id%}">{% title %}</div>
+                                  {% /if %}
+                                 </div>
+                          </div>
+
+                          <div class="panelBody" >
+                            <div  >
+
+                                 {% #if editingBody %}
+                                      <textarea id="editareabody" on-blur="editdone1:{%msg_id%},{%title%},{%body%}" data-areaid="{%msg_id%}" value="{% body %}">
+                                      </textarea>
+                                  {% else %}
+                                      <div on-click="startEditBody:{%msg_id%}">{% body %}</div>
+                                  {% /if %}
+                                      <br>
+                             </div>
+                          </div>
+                    </div>
+
+                {% else %}
+                    <div class = "myPanelPost"  >
+                         <div class="heading" >
+                                  <div>{% title %}</div>
+
+                          </div>
+                          <div class="panelBody">
+                            <div> {% body %} </div>
+                          </div>
+                    </div>
+                {% /if %}
+
+
+
+
+
+
+    {% /if %}
+  {% /msg_dict %}
+
+
+</div>
+
+
+{% #if loading %}
+  <div id="load_spinner">
+    <i class="fa fa-spinner fa-pulse fa-4x"></i>
+  </div>
+{%/if%}
+
+
+
+
+</script>
+
+
+<script>
+$(function() {
+
+  // Ractive object
+  var MAIN = new Ractive({
+    el: '#target',
+    template: '#template',
+    delimiters: ['{%', '%}'],
+    tripleDelimiters: ['{%%', '%%}'],
+    data: {
+          msg_dict: {},
+          active_draft_body: "",
+          active_draft_title: "",
+          loading: false,
+          draft_id: "{{=draft_id}}",
+          delete_list: [],
+          is_editing: false
+    }
+  });
+
+  // Loads the initial list of messages.
+  $.ajax("{{=URL('default', 'load_posts', user_signature=True, args= post_board_id)}}",
+          {
+            method: 'POST',
+            success: function (data) {
+              MAIN.set('msg_dict', data['msg_dict']);
+              MAIN.set('loading', false);
+            }
+          }
+  );
+
+    function load_messages() {
+        if (MAIN.get('is_editing') == false) {
+            $.ajax("{{=URL('default', 'load_posts', user_signature=True, args= post_board_id)}}",
+                    {
+                        method: 'POST',
+                        success: function (data) {
+                            MAIN.set('msg_dict', data['msg_dict']);
+                            MAIN.set('loading', false);
+                        }
+                    }
+            );
+        }
+    }
+
+
+
+
+// Called every 10s, or upon switching drafts.
+function periodic_send() {
+    var new_msg_body = MAIN.get('active_draft_body');
+      var new_msg_title = MAIN.get('active_draft_title');
+    var msg_dict = MAIN.get('msg_dict');
+    var draft_id = MAIN.get('draft_id');
+    if (draft_id in msg_dict) {
+      // There is already a draft.  Check if it is modified.
+      var old_msg_body = msg_dict[draft_id]['body'];
+        var old_msg_title = msg_dict[draft_id]['title'];
+      if (new_msg_title !== old_msg_title || new_msg_body !== old_msg_body) {
+        // Yes, it is modified.  Send it to the server.
+        send_message(new_msg_title, new_msg_body, true); // true means: it's a draft
+      }
+    } else if ($.trim(new_msg_body).length > 0 || $.trim(new_msg_title).length > 0) {
+      // This is a brand new draft, send it to the server.
+      send_message(new_msg_title, new_msg_body, true);
+    }
+  }
+
+  function send_message(msg_title, msg_body, is_draft) {
+    var call_draft_id = MAIN.get('draft_id');
+    $.ajax("{{=URL('default', 'add_post', user_signature=True)}}",
+            {
+              data: {
+                msg_title: msg_title, // request.vars.msg
+                msg_body: msg_body,
+                is_draft: is_draft, // request.vars.is_draft
+                msg_id: call_draft_id, // request.vars.msg_id
+                post_id: "{{=post_board_id}}"
+              },
+              method: 'POST',
+              success: function() {
+                // Reflect in the list of drafts or messages the update sent to the server.
+                var msg_dict = MAIN.get('msg_dict');
+                if (call_draft_id in msg_dict) {
+                  // We have sent to the server a message/draft we have already in the dict.
+                  msg_dict[call_draft_id]['title'] = msg_title;
+                  msg_dict[call_draft_id]['body'] = msg_body;
+                  msg_dict[call_draft_id]['is_draft'] = is_draft;
+                } else {
+                    // This is a new message or draft.  We have to create a new entry in the dict.
+                    msg_dict[call_draft_id] = {
+                        title: msg_title,
+                        body: msg_body,
+                        is_draft: is_draft
+                    }
+                }
+                MAIN.set('msg_dict', msg_dict);
+              },
+              error: function() {}
+            }
+    );
+  }
+
+
+  function send_message_update(msg_id, msg_title, msg_body) {
+      $.ajax("{{=URL('default', 'add_post', user_signature=True)}}",
+              {
+                data: {
+                  msg_title: msg_title, // request.vars.msg
+                  msg_body: msg_body,
+                  is_draft: false,
+                  msg_id: msg_id, // request.vars.msg_id
+                  post_id: "{{=post_board_id}}"
+                },
+                method: 'POST',
+                success: function() {
+                    // Reflect in the list of drafts or messages the update sent to the server.
+                    var msg_dict = MAIN.get('msg_dict');
+                    // We have sent to the server a message/draft we have already in the dict.
+                    msg_dict[msg_id]['title'] = msg_title;
+                    msg_dict[msg_id]['body'] = msg_body;
+                    MAIN.set('msg_dict', msg_dict);
+                },
+                error: function() {}
+              }
+      );
+  }
+
+    MAIN.on("markForDel", function(e, msg_id){
+        var delete_list = MAIN.get('delete_list');
+        if(delete_list.indexOf(msg_id) == -1) {
+            delete_list.push(msg_id);
+        }
+        else {
+            delete_list.pop(msg_id);
+        }
+        MAIN.set('delete_list', delete_list);
+    });
+
+    MAIN.on("removePosts", function(e, delete_list) {
+        $.ajax("{{=URL('default', 'remove_posts', user_signature=True)}}",
+              {
+                data: {
+                  delete_list: delete_list // request.vars.delete_list
+                },
+                method: 'POST',
+                success: function() {
+//                    alert('deleted');
+                },
+                error: function() {
+                }
+              }
+        );
+        MAIN.set('delete_list', []);
+        load_messages();
+    });
+
+
+  // This code is called when the submit button is pressed.
+  MAIN.on("addpost", function(e) {
+      var msg_title = MAIN.get('active_draft_title');
+      var msg_body = MAIN.get('active_draft_body');
+      MAIN.set('draft_id', generateUUID());
+      // Send content back to server.  false = message is not a draft.
+      send_message(msg_title, msg_body, false);
+      MAIN.set('active_draft_body', '');
+      load_messages();
+  });
+
+  // http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
+  function generateUUID(){
+    var d = new Date().getTime();
+    if(window.performance && typeof window.performance.now === "function"){
+        d += performance.now();; //use high-precision timer if available
+    }
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+  }
+
+
+
+
+
+
+
+  MAIN.on("startEditTitle", function(event, msg_id) {
+      var msg_dict = MAIN.get('msg_dict');
+      msg_dict[msg_id]['editing'] = true;
+      MAIN.set('msg_dict' , msg_dict);
+      $("#editarea").focus();
+      MAIN.set('is_editing', true);
+  });
+
+
+  MAIN.on("editdone", function(e, msg_id, msg_title, msg_body) {
+      var msg_dict = MAIN.get('msg_dict');
+      msg_dict[msg_id]['editing'] = false;
+      send_message_update(msg_id, msg_title, msg_body);
+      load_messages();
+      MAIN.set('is_editing', false);
+
+  });
+
+  MAIN.on("startEditBody", function(event, msg_id) {
+      var msg_dict = MAIN.get('msg_dict');
+      msg_dict[msg_id]['editingBody'] = true;
+      MAIN.set('msg_dict' , msg_dict);
+      $("#editareabody").focus();
+      MAIN.set('is_editing', true);
+  });
+
+
+  MAIN.on("editdone1", function(e, msg_id, msg_title, msg_body) {
+      var msg_dict = MAIN.get('msg_dict');
+      msg_dict[msg_id]['editingBody'] = false;
+      send_message_update(msg_id, msg_title, msg_body);
+      load_messages();
+      MAIN.set('is_editing', false);
+  });
+
+  MAIN.on("newPost", function(e){
+      var msg_title = "post title"
+      var msg_body = "post body";
+      MAIN.set('draft_id', generateUUID());
+      // Send content back to server.  false = message is not a draft.
+      send_message(msg_title, msg_body, false);
+      MAIN.set('active_draft_body', '');
+      load_messages();
+  });
+
+    setInterval(load_messages, 10000);
+
+});
+</script>
