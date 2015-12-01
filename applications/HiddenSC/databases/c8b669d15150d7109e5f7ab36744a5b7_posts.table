@@ -96,26 +96,32 @@ I00
 sg10
 S'upload'
 p33
-ssS'id'
+ssS'which_board'
 p34
 (dp35
-g4
-I512
-sg5
-I00
-sg6
-I1
-sg7
-S'INTEGER PRIMARY KEY AUTOINCREMENT'
+S'sortable'
 p36
-sg9
-I00
-sg10
-S'id'
+I4
+sS'sql'
 p37
-ssS'post_day'
+S'INTEGER REFERENCES board (id) ON DELETE CASCADE  '
 p38
-(dp39
+sS'length'
+p39
+I512
+sS'notnull'
+p40
+I00
+sS'unique'
+p41
+I00
+sS'type'
+p42
+S'reference board'
+p43
+ssS'post_day'
+p44
+(dp45
 g4
 I512
 sg5
@@ -124,15 +130,15 @@ sg6
 I6
 sg7
 S'TIMESTAMP'
-p40
+p46
 sg9
 I00
 sg10
 S'datetime'
-p41
+p47
 ssS'board'
-p42
-(dp43
+p48
+(dp49
 g4
 I512
 sg5
@@ -141,15 +147,15 @@ sg6
 I4
 sg7
 S'INTEGER REFERENCES board (id) ON DELETE CASCADE  '
-p44
+p50
 sg9
 I00
 sg10
 S'reference board'
-p45
+p51
 ssS'user_id_2'
-p46
-(dp47
+p52
+(dp53
 g4
 I512
 sg5
@@ -158,15 +164,15 @@ sg6
 I7
 sg7
 S'INTEGER REFERENCES auth_user (id) ON DELETE CASCADE  '
-p48
+p54
 sg9
 I00
 sg10
 S'reference auth_user'
-p49
+p55
 ssS'image1'
-p50
-(dp51
+p56
+(dp57
 g4
 I512
 sg5
@@ -175,32 +181,26 @@ sg6
 I9
 sg7
 S'CHAR(512)'
-p52
+p58
 sg9
 I00
 sg10
 g33
-ssS'which_board'
-p53
-(dp54
-S'sortable'
-p55
-I4
-sS'sql'
-p56
-S'INTEGER REFERENCES board (id) ON DELETE CASCADE  '
-p57
-sS'length'
-p58
-I512
-sS'notnull'
+ssS'id'
 p59
+(dp60
+g4
+I512
+sg5
 I00
-sS'unique'
-p60
-I00
-sS'type'
+sg6
+I1
+sg7
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
 p61
-S'reference board'
+sg9
+I00
+sg10
+S'id'
 p62
 ss.

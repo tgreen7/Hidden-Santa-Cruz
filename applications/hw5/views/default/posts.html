@@ -1,0 +1,16 @@
+{{extend 'layout.html'}}
+
+<h1>Welcome to Posts</h1>
+
+
+{{for post_id in posts.values():}}
+    <div class = "myboard">
+        <span class="boardtitle">
+        {{=A(post_id['title']) }}
+        {{=icon_pencil}}</span>
+        <ul class="boardlist">
+            <li> Title</li>
+            <li> new posts</li>
+        </ul>
+    </div>
+{{pass}}

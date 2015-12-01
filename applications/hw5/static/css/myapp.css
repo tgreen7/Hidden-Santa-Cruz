@@ -1,0 +1,121 @@
+/* line 1, ../sass/_main.scss */
+body {
+  background-image: url("https://i.imgur.com/MbWVXTH.png");
+  background-size: 100%;
+}
+
+/* line 6, ../sass/_main.scss */
+h1 {
+  color: #48379D;
+}
+
+/* line 9, ../sass/_main.scss */
+div.maincontent {
+  color: #666;
+}
+
+/* line 14, ../sass/_main.scss */
+.top {
+  background-color: #0000C0;
+}
+
+/* line 18, ../sass/_main.scss */
+div.myboard {
+  width: 20%;
+  padding: 20px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZjRmMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY2ZDFjOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dcf4f3), color-stop(100%, #66d1c9));
+  background-image: -moz-linear-gradient(#dcf4f3, #66d1c9);
+  background-image: -webkit-linear-gradient(#dcf4f3, #66d1c9);
+  background-image: linear-gradient(#dcf4f3, #66d1c9);
+  margin: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /*rounded border*/
+  border: 1px solid #666;
+  -moz-box-shadow: rgva(#000, 0.7) 0 4px 10px 2px;
+  -webkit-box-shadow: rgva(#000, 0.7) 0 4px 10px 2px;
+  box-shadow: rgva(#000, 0.7) 0 4px 10px 2px;
+  display: inline-block;
+}
+/* line 27, ../sass/_main.scss */
+div.myboard .boardtitle {
+  text-align: right;
+  word-wrap: break-word;
+  font-size: 1.6em;
+  color: #48379D;
+}
+
+/* line 15, ../sass/myapp.scss */
+.myPanelPost {
+  width: 20%;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #696373;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -mos-border-radius: 5px 5px 5px 5px;
+}
+
+/* line 27, ../sass/myapp.scss */
+.myPanelPost .headerControls {
+  float: right;
+  font-size: 1.5em;
+  padding-right: 5px;
+  background-color: #1e9ccc;
+}
+
+/* line 34, ../sass/myapp.scss */
+.myPanelPost .heading {
+  text-align: center;
+  font-size: 1.9em;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  padding: 20px 40px;
+  background-color: rgba(201, 79, 59, 0.83);
+}
+
+/* line 43, ../sass/myapp.scss */
+.myPanelPost .panelBody {
+  font-size: 1.5em;
+  font-weight: 700;
+  background: rgba(123, 186, 201, 0.83);
+  padding: 20px 40px;
+}
+
+/* line 50, ../sass/myapp.scss */
+.myPanelPost .foot {
+  text-align: center;
+  background: rgba(17, 250, 207, 0.21);
+  /*padding: 10px 0px 10px 40px;*/
+  padding-bottom: 10px;
+  color: #889396;
+}
+
+/* line 58, ../sass/myapp.scss */
+.fa-trash {
+  color: rgba(201, 25, 9, 0.83);
+  font-size: 3em;
+  margin-left: 5px;
+}
+
+/* line 64, ../sass/myapp.scss */
+.fa-times {
+  color: #ffa200;
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+
+/* line 70, ../sass/myapp.scss */
+.set_red {
+  color: red;
+}
+
+/* line 74, ../sass/myapp.scss */
+.hover_hand:hover {
+  cursor: pointer;
+}
