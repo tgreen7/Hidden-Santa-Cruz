@@ -52,6 +52,10 @@ db.define_table('posts',
                 Field('image', 'upload'),
                 Field('image1', 'upload')
                 )
+db.define_table('uploads',
+
+    Field('up_file', 'upload', uploadseparate=True, requires=IS_NOT_EMPTY()),
+                )
 
 
 db.posts.board.readable = db.posts.board.writable = False

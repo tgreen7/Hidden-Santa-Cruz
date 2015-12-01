@@ -31,6 +31,11 @@ def index():
     return dict(board_list = [])
 
 
+
+
+
+
+
 @auth.requires_login()
 def add_board():
     logger.info("My session is: %r" % session)
@@ -59,6 +64,8 @@ def deleteboards():
 
 
 
+
+
 def deleteposts():
     db(db.posts.id > 0).delete()
 
@@ -79,10 +86,22 @@ def show_posts():
 
 
 
+def submit():
+    import datetime
+    form = FORM(LABEL("File(s):"), INPUT(_name='up_files', _type='file', _multiple='', requires=IS_NOT_EMPTY()),  BR(),INPUT(_type='submit'))
+    if form.accepts(request.vars, formname="form"):
+        files = request.vars['up_files']
+        if not isinstance(files, list):
+            files = [files]
+        for f in files:
+            print f.filename
+            up_file = db.uploads.up_file.store(f, f.filename)
+            i = db.uploads.insert(up_file=up_file)
+            db.commit()
+        return "form submitted" #redirect(URL('data', 'index'))
+    return dict(form=form)
 
 def add_posts():
-
-
     logger.info("My session is: %r" % session)
     form = SQLFORM(db.posts,  upload = URL('download'))
     form.vars.board = request.args(0)
