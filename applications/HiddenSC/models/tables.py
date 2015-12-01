@@ -58,8 +58,7 @@ db.define_table('posts',
 
 db.define_table('reviews',
                 Field('body','text'),
-                Field('user_id', 'integer'),
-                Field('user_id_2',db.auth_user,default=auth.user_id),
+                Field('user_id',db.auth_user,default=auth.user_id),
                 Field('post',db.posts)
                 )
 

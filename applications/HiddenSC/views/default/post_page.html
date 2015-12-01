@@ -57,22 +57,67 @@
 
               {{extend 'layout.html'}}
 
+<div id="target"></div>
+
+<script id="template" type="text/ractive">
+<span>
 <h1>
 {{if auth.user_id != None:}}
-    
 
-
-    {{=A('Review This Spot', _class='btn btn-success', _href=URL('default', 'add_review', args=[post.id]))}}
-
-
-{{else:}}
-
-
-{{pass}}
-{{for review in reviews:}}
-{{=review.body}}
 {{pass}}
 </h1>
+
+</span>
+{{if auth.user_id != None:}}
+{% #msg_dict:id%}
+    {%#if user_id == {{=auth.user_id}}%}
+    <p> {% setRev() %} </p>
+    {%/if%}
+{% /msg_dict %}
+{% #if reviewed === false %}
+   {{=A('Review This Spot', _class='btn btn-success', _href=URL('default', 'add_review', args=[post.id]))}}
+{%/if%}
+{{pass}}
+
+
+
+ {{if post['image1']:}}
+    <div class="item active">
+        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image1'])}}"  >
+    </div>
+ {{pass}}
+ {{if post['image2']:}}
+    <div class="item active">
+        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image2'])}}"  >
+    </div>
+ {{pass}}
+ {{if post['image3']:}}
+    <div class="item active">
+        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image3'])}}"  >
+    </div>
+ {{pass}}
+ {{if post['image4']:}}
+    <div class="item active">
+        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image4'])}}"  >
+    </div>
+ {{pass}}
+  {{if post['image5']:}}
+    <div class="item active">
+        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image5'])}}"  >
+    </div>
+ {{pass}}
+
+
+
+
+{%#msg_dict:id%}
+    <div class = "myboard">
+        <div class = "boardtitle">
+            {% body %}
+        </div>
+    </div>
+{%/msg_dict%}
+</script>
 
 
 
@@ -100,6 +145,49 @@
   </body>
 
 
+<script>
+$(function() {
+
+  // Ractive object
+  var MAIN = new Ractive({
+    el: '#target',
+    template: '#template',
+    delimiters: ['{%', '%}'],
+    tripleDelimiters: ['{%%', '%%}'],
+    data: {
+      msg_dict: {},
+      active_draft: "",
+      loading: false,
+      editing: true,
+      newboard: false,
+      message_content: "default",
+      reviewed : false,
+      setRev: function(){
+          MAIN.set('reviewed',true);
+      }
+
+    }
+  });
+
+   // Loads the initial list of messages.
+  // Loads the initial list of messages.
+  $.ajax("{{=URL('default', 'load_reviews', args= [post.id])}}",
+          {
+            method: 'POST',
+            success: function (data) {
+              MAIN.set('msg_dict', data['msg_dict']);
+              MAIN.set('loading', false);
+            }
+          }
+
+  );
+
+ function setreviewed()  {
+
+ }
+
+});
+</script>
 
 
 
@@ -118,31 +206,6 @@
 
 
 
-{{=post.title}}
- {{if post['image1']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image1'])}}"  >
-    </div>
- {{pass}}
- {{if post['image2']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image2'])}}"  >
-    </div>
- {{pass}}
- {{if post['image3']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image3'])}}"  >
-    </div>
- {{pass}}
- {{if post['image4']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image4'])}}"  >
-    </div>
- {{pass}}
-  {{if post['image5']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image5'])}}"  >
-    </div>
- {{pass}}
+
 
 

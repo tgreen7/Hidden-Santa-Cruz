@@ -68,6 +68,20 @@ def deleteboards():
 def deleteposts():
     db(db.posts.id > 0).delete()
 
+
+def load_reviews():
+    post_board_id = request.args(0)
+    rows = db(db.reviews.post == post_board_id).select()
+    d = {r.id: {'body': r.body,
+                'user_id': r.user_id,
+
+                }
+
+         for r in rows}
+    print "d"
+    print d
+    return response.json(dict(msg_dict=d))
+
 def post_page():
     post_id = request.args(0)
     # print post_id
