@@ -67,6 +67,8 @@ def deleteboards():
 
 def deleteposts():
     db(db.posts.id > 0).delete()
+def deletereviews():
+    db(db.reviews.id>0).delete()
 
 
 def load_reviews():
@@ -74,6 +76,7 @@ def load_reviews():
     rows = db(db.reviews.post == post_board_id).select()
     d = {r.id: {'body': r.body,
                 'user_id': r.user_id,
+                'num_stars':r.num_stars
 
                 }
 
@@ -144,6 +147,19 @@ def add_review():
         session.flash = T('the data was inserted')
         redirect(URL('default','post_page', args=request.args(0)))
     return dict(form=form)
+
+@auth.requires_signature()
+def vote():
+    picid = int(request.vars.picid)
+    num_stars = int(request.vars.rating)
+    db.rating.update_or_insert(
+        ((db.rating.image_id == picid) & (db.rating.user_id == auth.user_id)),
+        image_id = picid,
+        user_id = auth.user_id,
+        num_stars = num_stars
+    )
+    return "ok"
+
 
 def posts_details():
     posts = db.posts(request.args)

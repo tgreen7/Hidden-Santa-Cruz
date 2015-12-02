@@ -59,6 +59,7 @@ db.define_table('posts',
 db.define_table('reviews',
                 Field('body','text'),
                 Field('user_id',db.auth_user,default=auth.user_id),
+                Field('num_stars', 'integer'),
                 Field('post',db.posts)
                 )
 
