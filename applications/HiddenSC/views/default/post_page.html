@@ -69,7 +69,9 @@
 <p> {% setAvg(total, numRev) %}</p>
 
 {% average %}
-
+{% #range(1,average) %}
+    <p>{%average%}</p>
+  {% / %}
  {{if post['image1']:}}
     <div class="item active">
         <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image1'])}}"  >
@@ -208,7 +210,13 @@ $(function() {
       setAvg: function(total,num){
           MAIN.set('average', total/num);
       },
-
+      range: function ( low, high ) {
+          var range = [];
+          for ( i = low; i <= high; i += 1 ) {
+            range.push( i );
+          }
+          return range;
+        }
 
 
     }

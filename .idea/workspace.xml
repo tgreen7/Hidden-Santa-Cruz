@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98b0364e-11dd-47f0-b8d5-61ea6ff91760" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/storage.sqlite" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/storage.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" afterPath="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/sessions/190/0b9/127.0.0.1-00bd3ae1-00e0-4459-aad5-55185a7d1d29" afterPath="$PROJECT_DIR$/applications/HiddenSC/sessions/190/0b9/127.0.0.1-00bd3ae1-00e0-4459-aad5-55185a7d1d29" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/httpserver.log" afterPath="$PROJECT_DIR$/httpserver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/httpserver.pid" afterPath="$PROJECT_DIR$/httpserver.pid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters_8800.py" afterPath="$PROJECT_DIR$/parameters_8800.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" afterPath="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/sql.log" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/sql.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" afterPath="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="web2py.iws" />
@@ -58,8 +54,8 @@
       <file leaf-file-name="post_page.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51543945">
-              <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.040380046">
+              <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -977,8 +973,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51543945">
-          <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.040380046">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
           <folding />
         </state>
       </provider>
