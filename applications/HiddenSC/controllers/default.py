@@ -76,7 +76,8 @@ def load_reviews():
     rows = db(db.reviews.post == post_board_id).select()
     d = {r.id: {'body': r.body,
                 'user_id': r.user_id,
-                'num_stars':r.num_stars
+                'num_stars':r.num_stars,
+                'star_list': range(0,r.num_stars)
 
                 }
 

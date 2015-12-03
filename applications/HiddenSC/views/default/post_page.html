@@ -59,13 +59,16 @@
     {%#if user_id == {{=auth.user_id}}%}
     <p> {% setRev() %} </p>
     {%/if%}
+    <p> {% setTot(num_stars) %} </p>
 {% /msg_dict %}
 {% #if reviewed === false %}
    {{=A('Review This Spot', _class='btn btn-success', _href=URL('default', 'add_review', args=[post.id]))}}
 {%/if%}
 {{pass}}
 
+<p> {% setAvg(total, numRev) %}</p>
 
+{% average %}
 
  {{if post['image1']:}}
     <div class="item active">
@@ -101,8 +104,10 @@
         <div class = "boardtitle">
             {% body %}
             {% num_stars %}
-
-                 <input class="form-control rating" value="{% num_stars %}" data-picid="{%id%}"/>
+            <br>
+            {%#star_list%}
+                <i style = "color: #ffad33" class = "fa fa-star"></i>
+            {%/star_list%}
 
         </div>
     </div>
@@ -190,12 +195,26 @@ $(function() {
       newboard: false,
       message_content: "default",
       reviewed : false,
+      average : 0,
+      total: 0,
+      numRev: 0,
       setRev: function(){
           MAIN.set('reviewed',true);
-      }
+      },
+      setTot: function(num_stars)  {
+          MAIN.set('total', MAIN.get('total') + num_stars);
+          MAIN.set('numRev', MAIN.get('numRev') + 1);
+      },
+      setAvg: function(total,num){
+          MAIN.set('average', total/num);
+      },
+
+
 
     }
   });
+
+
 
    // Loads the initial list of messages.
   // Loads the initial list of messages.
