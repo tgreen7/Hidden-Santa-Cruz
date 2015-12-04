@@ -1,7 +1,7 @@
 {{extend 'layout.html'}}
 
 
-
+<body  class="cbp-spmenu-push">
 
  <div class="container-fluid">
 
@@ -155,7 +155,6 @@ $(function() {
       },
       setAvg: function(total,num){
           MAIN.set('average', total/num);
-          alert(MAIN.get('average'));
       },
       range: function ( low, high ) {
           var range = [];
