@@ -86,6 +86,12 @@ def load_reviews():
     print d
     return response.json(dict(msg_dict=d))
 
+def map():
+    return dict(postlist = [])
+
+def gallery():
+    return dict(postlist = [])
+
 def post_page():
     post_id = request.args(0)
     # print post_id
