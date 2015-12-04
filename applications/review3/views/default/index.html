@@ -1,0 +1,192 @@
+{{extend 'layout.html'}}
+<!-- Main page-->
+<h1>Bulletin Board</h1>
+
+<div id="loading_spinner" class="main_icon_section">
+     <i class="fa fa-spinner fa-pulse fa-5x"></i>
+</div>
+
+<div id="server_error" class="main_icon_section" style="display: none">
+    <div><i class="fa fa-warning fa-4x"></i></div>
+    <div class="error_msg">Error contacting server</div>
+</div>
+{{if auth.user_id is None:}}
+
+<div class="main_login">
+{{=A('Sign Up', _class='btn btn-warning', _href=URL('default', 'user', args=['register']))}}
+{{=A('Sign In', _class='btn btn-success', _href=URL('default', 'user', args=['login']))}}
+</div>
+
+<div id="target"></div>
+
+<script id="template" type="text/ractive">
+{{else:}}
+<div id="target"></div>
+<script id="template" type="text/ractive">
+<div id="main_login">
+    <input class="btn btn-primary" type="submit" value="Create Board" on-click="createboard"/>
+</div>
+{{pass}}
+<div id="edit_msg">
+{% #board_dict: i%}
+<div class="board_n">
+<i class="board_name">
+        {% #if editing%}
+            {% #if board_uid == NULL%}
+                    <textarea id="editarea" on-blur="editdone" data-areaid="{% board_id %}" value="{% active_draft %}">
+                    </textarea>
+            {% else %}
+                <a href="{% board_url + '/' + board_uid %}">{% board_name %}</a>
+            {% /if%}
+        {% else %}
+            {% #if board_name == NULL%}
+                <div on-click="startedit" value="{% active_draft %}" data-areaid="{% board_id %}" data-new="{% board_new %}"><p>{% active_draft %}</p></div>
+            {% else %}
+               <a href="{% board_url + '/' + board_uid %}">{% board_name %}</a>
+            {% /if %}
+        {% /if %}
+        </i>
+{% /board_dict %}</div></div>
+</script>
+
+<script>
+    $(function() {
+// Ractive object
+        var MAIN = new Ractive({
+            el: '#target',
+            template: '#template',
+            delimiters: ['{%', '%}'],
+            tripleDelimiters: ['{%%', '%%}'],
+            data: {
+                board_dict: {},
+                board_id:" ",
+                author:"{{user_id}}",
+                aid: " ",
+                board_url:"{{=URL('default','posts',user_signature=True)}}",
+                active_draft: "      ",
+                last_draft:"",
+                loading: true,
+                editing: false,
+                board_new: false,
+                name:" "
+            },
+        });
+
+        MAIN.on("startedit", function(e) {
+            //have to get id of the board you clicked on.
+            var board_dict= MAIN.get('board_dict');
+            var idd = MAIN.get('board_id');
+            var aid=$(e.node).data("areaid");
+            MAIN.set("active_draft", "");
+            MAIN.set("aid",aid);
+            MAIN.set("editing", true);
+            var ldraft = MAIN.get("active_draft");
+            MAIN.set("last_draft", ldraft);
+            $("#editarea").focus();
+
+        });
+
+        MAIN.on("editdone", function(e) {
+            MAIN.set("editing", false);
+            MAIN.set("board_new", false);
+            var myval = MAIN.get("active_draft");
+            var areaid = MAIN.get("board_id");
+            var aid=$(e.node).data("areaid");
+            var msg_last = MAIN.get('last_draft');
+            MAIN.set("last_draft", myval);
+            if ($.trim(myval).length > 0 && myval != msg_last) {
+                send_message(myval,areaid);
+                $("#loading_spinner").show();
+            }
+           // MAIN.set('board_id', generateUUID());
+        })
+
+        // This code is called when the create board button is pressed.
+        MAIN.on("createboard", function(e) {
+            var board_list = MAIN.get('board_dict');
+            MAIN.set('active_draft', "Enter board name here");
+            var numElems = Object.keys(board_list).length;
+            var empty_board= {title: ''};
+            board_list[numElems+1]= empty_board;
+            MAIN.set('board_id',numElems+1);
+            MAIN.set('board_new',true);
+            MAIN.set('board_dict', board_list);
+        });
+
+
+// Loads the initial list of messages.
+        $.ajax("{{=URL('default', 'showboard')}}",
+                {
+                    method: 'POST',
+                    success: function (data) {
+                        MAIN.set('board_dict', data['board_dict']);
+                        MAIN.set('loading', false);
+                        $("#loading_spinner").hide();
+                    }
+                }
+        );
+
+
+
+        function send_message(msg_content,boardid) {
+            $.ajax("{{=URL('default', 'add_msg',user_signature=True)}}",
+            {
+              data: {
+                msg: msg_content, // request.vars.msg
+                 id: boardid
+              },
+              method: 'POST',
+              success: function() {
+                // Reflect in the list of drafts or messages the update sent to the server.
+                  var board_dict = MAIN.get('board_dict');
+                  var n = MAIN.get('board_new');
+                  board_dict[boardid]['board_name']=msg_content;
+                  board_dict[boardid]['board_uid']=boardid;
+                  MAIN.set('board_dict', board_dict);
+                  $("#loading_spinner").hide();
+
+              },
+              error: function() {}
+            }
+            );
+        }
+
+
+ // Called every 10s, or upon switching drafts.
+ //Need to find a way to get last msg and compare to last stored msg, if not the same, send new_msg
+         function periodic_send() {
+             var new_msg = MAIN.get('active_draft');
+             var board_dict = MAIN.get('board_dict');
+             var board_id = MAIN.get('board_id');
+             var initial_msg="Enter board name here";
+             if(board_id in board_dict){
+                 var msg_last = board_dict[board_id]['board_name'];
+                 if(new_msg!=msg_last && new_msg!=initial_msg && new_msg!=""){
+                     send_message(new_msg,board_id);
+                     $("#loading_spinner").show();
+                 }
+             }else if ($.trim(new_msg).length > 0) {
+                 // This is a brand new draft, send it to the server.
+                 send_message(new_msg,board_id);
+                 $("#loading_spinner").show();
+             }
+         }
+
+// http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
+        function generateUUID(){
+            var d = new Date().getTime();
+            if(window.performance && typeof window.performance.now === "function"){
+                d += performance.now();; //use high-precision timer if available
+            }
+            var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = (d + Math.random()*16)%16 | 0;
+                d = Math.floor(d/16);
+                return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+            });
+            return uuid;
+        }
+setInterval(periodic_send, 10000);
+    });
+</script>
+
+

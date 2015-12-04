@@ -1,0 +1,47 @@
+.colorful {
+  color: $clrHilight;
+}
+
+div.board_post {
+
+  min-height: 125px;
+  min-width: 250px;
+  margin: 15px;
+  float:left;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #303030;
+  position: relative;
+
+}
+
+a.board_title{
+  font-size: 150%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.board_buttons{
+
+  bottom: 5px;
+
+}
+
+.board_button1{
+ position: absolute;
+  right: 5px;
+ bottom: 5px;
+}
+
+.board_button2{
+  position: absolute;
+  right: 40px;
+  bottom : 5px;
+
+}
+.post_text{
+  white-space: pre-wrap;
+}
+
+.post_title{
+  white-space: pre-wrap;
+}

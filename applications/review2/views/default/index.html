@@ -1,0 +1,192 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+
+<div id = "target"></div>
+
+<script id = "template" type = "text/ractive">
+
+<div id = "add-board">
+
+
+      <div class="input-group">
+
+      <span class="input-group-btn">
+        <button class="btn btn-default" id="submit_button" type="button">
+        <span class="glyphicon glyphicon-plus"></span>
+        </button>
+      </span>
+    </div>
+
+</div>
+
+<p>{% new_board_name %}</p>
+
+
+<h2>Boards:</h2>
+<div class="message_list">
+  {% #board_dict:msg_id %}
+
+      <div class="board_post">
+          {% #if active_draft == msg_id %}
+         <center> <textarea value="{% active_draft_text %}"></textarea> </center>
+          {% else %}
+          <center> <a class = "board_title"href = {%posts_url + "/"+ msg_id %}> {% board_name %} </a> </center>
+           {% /if %}
+
+               {% #if can_edit %}
+               {% #if active_draft != msg_id %}
+               <button class ="board_button1" data-areaid= {% msg_id %} on-click="startedit"> <span class="glyphicon glyphicon-pencil"></span></button>
+               {% else %}
+               <button class = "board_button1" on-click="stopedit"> <span class="glyphicon glyphicon-ok"></span></button>
+               {% /if %}
+               {% /if %}
+
+      </div>
+
+  {% /board_dict %}
+</div>
+
+
+</script>
+
+
+<script>
+
+  $(function (){
+
+  // Ractive object
+  var MAIN = new Ractive({
+    el: '#target',
+    template: '#template',
+    delimiters: ['{%', '%}'],
+    tripleDelimiters: ['{%%', '%%}'],
+    data: {
+      board_dict: {},
+        posts_url: "{{=URL('default','show_posts')}}",
+        new_board_name: "",
+        draft_id: "",
+        active_draft: "",
+        active_draft_text:"",
+        loading: true
+    },
+  });
+
+
+
+      function loadBoards(){
+           $.ajax("{{=URL('default', 'load_boards', user_signature=True)}}",
+          {
+            method: 'POST',
+            success: function (data) {
+              MAIN.set('board_dict', data['board_dict']);
+              console.log(MAIN.get('board_dict'));
+            },
+             error : function(){
+                 console.log("Load Failed.");
+             }
+          });
+
+
+      }
+
+      function addBoard(){
+
+          $.ajax("{{=URL('default', 'new_board', user_signature=True)}}",
+            {
+              data: {
+                name: "", // request.vars.msg
+                board_id: generateUUID() , // request.vars.is_draft
+                },
+              method: 'POST',
+              success: function() {
+                  loadBoards();
+                  MAIN.set('new_board_name',"");
+                  console.log("addedboard");
+              },
+              error: function() { console.log("addboard failed"); MAIN.set('new_board_name',""); }
+            }
+    );
+
+
+
+      }
+
+      function updateBoardname(new_name,board_id){
+
+          $.ajax("{{=URL('default', 'update_board', user_signature=True)}}",
+            {
+              data: {
+                name: new_name, // request.vars.msg
+                board_id: board_id , // request.vars.is_draft
+                },
+              method: 'POST',
+              success: function() {
+                  loadBoards();
+                  console.log("updatedboardname");
+              },
+              error: function() { console.log("addboard failed"); }
+            }
+    );
+
+
+
+      }
+
+
+
+      function intervalUpload(){
+          intdraft_id = MAIN.get('active_draft');
+          intdraft_text = MAIN.get('active_draft_text');
+          if (intdraft_id.length > 0 && intdraft_text.length > 0) {
+              updateBoardname(intdraft_text,intdraft_id);
+          }
+          loadBoards();
+
+      }
+
+
+
+      // http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
+  function generateUUID(){
+    var d = new Date().getTime();
+    if(window.performance && typeof window.performance.now === "function"){
+        d += performance.now();; //use high-precision timer if available
+    }
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+  }
+
+   loadBoards();
+
+   $("#submit_button").click(function() {
+     addBoard();
+     });
+
+      MAIN.on("startedit", function(e) {
+          var message = $(e.node).data("areaid");
+          var newtext = $(e.node).siblings("center").children("a.board_title").text();
+          console.log($(e.node).siblings("center").children("a.board_title").text());
+          console.log(newtext);
+          console.log(message);
+          MAIN.set("active_draft", message);
+          MAIN.set("active_draft_text", newtext);
+
+  });
+
+       MAIN.on("stopedit", function(e) {
+           updateBoardname(MAIN.get("active_draft_text"),MAIN.get("active_draft"));
+           MAIN.set("active_draft", "");
+           MAIN.set("active_draft_text", "");
+
+  });
+
+   setInterval(intervalUpload, 30000);
+
+
+  });
+
+</script>

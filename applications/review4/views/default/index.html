@@ -1,0 +1,244 @@
+{{extend 'layout.html'}}
+
+<div id="target"></div>
+
+<script id="boards" type="text/ractive">
+<div class="jumbotron">
+    <h1 align="center"><img src="http://i.imgur.com/kV7GqPP.gif"> Boards!</h1>
+    <p align="center">
+    {{if auth.user_id is None:}}
+        {{=A('Sign Up', _class='btn btn-primary', _href=URL('default', 'user', args=['register']))}}
+        {{=A('Sign In', _class='btn btn-success', _href=URL('default', 'user', args=['login']))}}
+    {{else:}}
+        {% #if delete_list.length > 0 %}
+            <button class="btn btn-danger" on-click="delete-board">{{=icon_trash}} Delete Selected</button>
+        {% /if %}
+        <button class="btn btn-primary" on-click="new-board"><i class="fa fa-plus"></i> New Board</button>
+        {{=A('Sign Out', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
+    {{pass}}
+    </p>
+</div>
+
+<div class="board_list">
+  {% #board_dict:display_board_id %}
+      <div class="board">
+        <div align="center" class="quote-container">
+            <i class="pin"></i>
+            <blockquote id="{% display_board_id %}" class="note yellow">
+              {% #if editing && display_board_id == board_id%}
+                  <textarea id="editarea" on-blur="editdone" data-areaid="{% display_board_id %}"
+                  data-areacontent = "{% board_content %}" value="{% board_content %}">
+                  </textarea>
+              {% else %}
+                {% #if author == "{{=auth.user_id}}" %}
+                    <div on-click="startedit" data-areaid="{% display_board_id %}"><p>{% board_content %}</p></div>
+                {% else %}
+                    {% board_content %}
+                {% /if %}
+              {% /if %}
+                <cite class="author">
+                    {% #if author == "{{=auth.user_id}}" %}
+                          <div style="float:left;" id="mark" on-click="mark" data-areaid="{% display_board_id %}" >{{=icon_cross}}</div>
+                    {% /if %}
+                    <a href="boards/{% display_board_id %}" class="btn btn-info" role="button">View {% posts %} Posts</a>
+                </cite>
+            </blockquote>
+          </div>
+      </div>
+  {% /board_dict %}
+</div>
+
+{% #if loading %}
+  <div id="load_spinner" style="width:800px; margin:0 auto;">
+    <i class="fa fa-spinner fa-pulse fa-4x"></i>
+  </div>
+{% /if %}
+
+</script>
+
+<script>
+    $(function () {
+        // Ractive object
+        var MAIN = new Ractive({
+            el: '#target',
+            template: '#boards',
+            delimiters: ['{%', '%}'],
+            tripleDelimiters: ['{%%', '%%}'],
+            data: {
+                board_dict: {},
+                board_id: "{{=board_id}}",
+                board_content: "",
+                board_author: "{{=auth.user_id}}",
+                delete_list: [],
+                loading: true,
+                editing: false
+            }
+        });
+
+        MAIN.on("startedit", function (e) {
+            MAIN.set("editing", true);
+            clearInterval(refreshIntervalId);
+            MAIN.set("board_id", $(e.node).data("areaid"));
+            $("#editarea").focus();
+        });
+
+        MAIN.on("editdone", function (e) {
+            MAIN.set("editing", false);
+            refreshIntervalId = setInterval(load_boards, 10000);
+            var board_id = $(e.node).data("areaid");
+            var content = $(e.node).data("areacontent");
+            edit_boards(board_id, content);
+        });
+
+        // Loads the initial list of messages.
+        function load_boards() {
+            $.ajax("{{=URL('default', 'load_boards', user_signature=True)}}",
+                    {
+                        method: 'POST',
+                        success: function (data) {
+                            MAIN.set('board_dict', data['board_dict']);
+                            MAIN.set('loading', false);
+                        }
+                    }
+            );
+        }
+
+        // Ajax to send edit content to database
+        function edit_boards(board_id, board_content) {
+            $.ajax("{{=URL('default', 'edit_boards', user_signature=True)}}",
+                    {
+                        data: {
+                            board_id: board_id,
+                            board_content: board_content
+                        },
+                        method: 'POST',
+                        success: function () {
+                            load_boards();
+                        },
+                        error: function () {
+                        }
+                    }
+            );
+        }
+
+        // Sends list of boards to be deleted
+        function delete_boards(list) {
+            $.ajax("{{=URL('default', 'delete_boards', user_signature=True)}}",
+                    {
+                        data: {
+                            list: list
+                        },
+                        method: 'POST',
+                        success: function () {
+                            load_boards();
+                        },
+                        error: function () {
+                        }
+                    }
+            );
+        }
+
+        // Adds a new board
+        function send_board(board_content) {
+            var call_board_id = MAIN.get('board_id');
+            $.ajax("{{=URL('default', 'add_board', user_signature=True)}}",
+                    {
+                        data: {
+                            board_content: board_content, // request.vars.msg// request.vars.is_draft
+                            board_id: call_board_id // request.vars.msg_id
+                        },
+                        method: 'POST',
+                        success: function () {
+                            // Reflect in the list of drafts or messages the update sent to the server.
+                            var board_dict = MAIN.get('board_dict');
+                            if (call_board_id in board_dict) {
+                                // We have sent to the server a message/draft we have already in the dict.
+                                board_dict[call_board_id]['board_content'] = board_content;
+
+                            } else {
+                                // This is a new message or draft.  We have to create a new entry in the dict.
+                                board_dict[call_board_id] = {
+                                    board_content: board_content
+                                }
+                            }
+                            MAIN.set('board_dict', board_dict);
+                            load_boards();
+                        },
+                        error: function () {
+                        }
+                    }
+            );
+        }
+
+        // Generates UUID
+        function generateUUID() {
+            var d = new Date().getTime();
+            if (window.performance && typeof window.performance.now === "function") {
+                d += performance.now();
+            }
+            var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                var r = (d + Math.random() * 16) % 16 | 0;
+                d = Math.floor(d / 16);
+                return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+            });
+            return uuid;
+        }
+
+        // Sends modified new board to server
+        function periodic_send() {
+            var new_board = MAIN.get('board_content');
+            var board_dict = MAIN.get('board_dict');
+            var board_id = MAIN.get('board_id');
+            if (board_id in board_dict) {
+                var old_board = board_dict[board_id]['board_content'];
+                if (new_board !== old_board) {
+                    send_board(new_board);
+                }
+            }
+            else if ($.trim(new_board).length > 0) {
+                // This is a brand new board send to server
+                send_board(new_board);
+            }
+        }
+
+        // When the X is pressed it changes the color of the post it
+        MAIN.on("mark", function (e) {
+            var board_id = $(e.node).data("areaid");
+            var delete_list = MAIN.get('delete_list');
+            if ($("#" + board_id).hasClass("yellow")) {
+                $("#" + board_id).removeClass("yellow").addClass("orange");
+                if (delete_list.indexOf(board_id) == -1) {
+                    delete_list.push(board_id);
+                }
+            } else {
+                $("#" + board_id).removeClass("orange").addClass("yellow");
+                var index = delete_list.indexOf(board_id);
+                if (index > -1) {
+                    delete_list.splice(index, 1);
+                }
+            }
+            MAIN.set('delete_list', delete_list);
+        });
+
+        // When delete button is pressed call the ajax call
+        MAIN.on("delete-board", function (e) {
+            var list = MAIN.get('delete_list');
+            delete_boards(list);
+            MAIN.set('delete_list', []);
+        });
+
+        // We want to create a new board
+        MAIN.on("new-board", function (e) {
+            MAIN.set('board_id', generateUUID());
+            MAIN.set('board_content', 'New Board');
+            periodic_send();
+            MAIN.set('board_content', '');
+            MAIN.set('board_id', '');
+            load_boards();
+        });
+
+        load_boards();
+        var refreshIntervalId = setInterval(load_boards, 10000);
+    })
+    ;
+</script>

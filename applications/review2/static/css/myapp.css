@@ -1,0 +1,51 @@
+/* line 1, ../sass/_main.scss */
+.colorful {
+  color: #bb8833;
+}
+
+/* line 5, ../sass/_main.scss */
+div.board_post {
+  min-height: 125px;
+  min-width: 250px;
+  margin: 15px;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #303030;
+  position: relative;
+}
+
+/* line 17, ../sass/_main.scss */
+a.board_title {
+  font-size: 150%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+/* line 23, ../sass/_main.scss */
+.board_buttons {
+  bottom: 5px;
+}
+
+/* line 29, ../sass/_main.scss */
+.board_button1 {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+/* line 35, ../sass/_main.scss */
+.board_button2 {
+  position: absolute;
+  right: 40px;
+  bottom: 5px;
+}
+
+/* line 41, ../sass/_main.scss */
+.post_text {
+  white-space: pre-wrap;
+}
+
+/* line 45, ../sass/_main.scss */
+.post_title {
+  white-space: pre-wrap;
+}

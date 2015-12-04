@@ -1,0 +1,9 @@
+HW5
+
+Periodic send to server: 30:00
+
+-In line editing:
+
+1) Give each board an 'editing' field, set by default to false. DONE
+2) Set the div for each board so that if you click it, editing becomes true.
+3) If editing is true, make text area within div, otherwise just display text. DONE
