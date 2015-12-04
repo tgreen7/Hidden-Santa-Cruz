@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{=response.title or request.application}}</title>
+        <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+        <meta name="application-name" content="{{=request.application}}">
+        <!-- Speaking of Google, don't forget to set your site up:
+         http://google.com/webmasters -->
+        <meta name="google-site-verification" content="">
+
+        <!--font awesome-->
+        <link rel="stylesheet" href="{{=URL('static', 'font-awesome-4.4.0/css/font-awesome.min.css')}}"/>
+        <link rel="stylesheet" type="text/css" href="{{=URL('static', 'slide_menu_css/component.css')}}"/>
+
+        <script src="{{=URL('static', 'slide_menu_js/modernizr.custom.js')}}"></script>
+	</head>
+    <style>
+        .fa-bars {
+            font-size: 2.5em;
+            color: black;
+            cursor:pointer;
+        }
+        .fa-arrow-left {
+            font-size: 1em;
+            float: right;
+            cursor:pointer;
+        }
+        .menu_show {
+            margin-left: 40px;
+        }
+        .no-dec {
+            text-decoration: none;
+        }
+    </style>
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<h3>Menu <i id="hideLeft" class="fa fa-arrow-left"></i></h3>
+			<a style="text-decoration: none;" href="#">Hiking</a>
+			<a style="text-decoration: none;" href="#">Free</a>
+			<a style="text-decoration: none;" href="#">Wine 'N Dine</a>
+			<a style="text-decoration: none;" href="#">Scenic</a>
+			<a style="text-decoration: none;" href="#">Night Life</a>
+		</nav>
+		<div>
+			<div class="menu_show">
+					<!-- Class "cbp-spmenu-open" gets applied to menu -->
+                    <a id="showLeft"><i class = "fa fa-bars"></i> </a>
+					<!--<button id="showLeft">Show/Hide Left Slide Menu</button>-->
+			</div>
+		</div>
+        <h1 align="center">Welcome</h1>
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="{{=URL('static', 'slide_menu_js/classie.js')}}"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeft = document.getElementById( 'showLeft' ),
+                hideLeft = document.getElementById( 'hideLeft' ),
+				body = document.body;
+
+			showLeft.onclick = function() {
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+			};
+
+            hideLeft.onclick = function() {
+                classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+			};
+		</script>
+	</body>
+</html>
+
+
+

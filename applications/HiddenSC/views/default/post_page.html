@@ -1,7 +1,7 @@
 {{extend 'layout.html'}}
 
 
-  <div>
+
 
  <div class="container-fluid">
 
@@ -29,9 +29,12 @@
 {%/if%}
 {{pass}}
 
-<p> {% setAvg(total, numRev) %}</p>
+ {% setAvg(total, numRev) %}
 
 {% average %}
+{%#each range(1,4)%}
+    <i style = "color: #ffad33" class = "fa fa-star"></i>
+{%/each%}
 
  {{if post['image1']:}}
     <div class="item active">
@@ -152,6 +155,7 @@ $(function() {
       },
       setAvg: function(total,num){
           MAIN.set('average', total/num);
+          alert(MAIN.get('average'));
       },
       range: function ( low, high ) {
           var range = [];
