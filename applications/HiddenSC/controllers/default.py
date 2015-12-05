@@ -90,7 +90,8 @@ def load_reviews():
                 'user_id': r.user_id,
                 'user': get_name(r.user_id),
                 'num_stars':r.num_stars,
-                'star_list': range(0,r.num_stars)
+                'star_list': range(0,r.num_stars),
+                'anti_star_list': range(0, 5-r.num_stars)
                 }
 
          for r in rows}
