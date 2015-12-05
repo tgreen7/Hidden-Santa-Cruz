@@ -14,6 +14,16 @@
 
     <!--style for reviews-->
      <style>
+        .fa-trash-o, .fa-pencil{
+            color: #6f6f6f;
+
+        }
+         a:hover {
+             text-decoration: none;
+             color:black;
+
+
+         }
 
          #reviews {
              margin-top: 40px;
@@ -195,13 +205,15 @@ Average Rating:
 
 
 <table>
-<col width="20">
-  <col width="80">
-  <col width="20">
+<col width=10%>
+  <col width=75%>
+  <col width=10%>
+  <col width = 5%>
 <tr>
     <th>User</th>
     <th>Review</th>
     <th>Rating</th>
+    <th></th>
   </tr>
 
 {%#review_dict:id%}
@@ -221,6 +233,13 @@ Average Rating:
                 <i style = "color: #ffad33;" class = "fa fa-star-o"></i>
             {%/anti_star_list%}
             </span>
+            </td>
+            <td>
+                {%#if user_id == {{=auth.user_id}}%}
+                {{=A('', _class='fa fa-trash-o', _href=URL('default', 'user', args=['login']))}}
+                {{=A('', _class='fa fa-pencil', _href=URL('default', 'user', args=['login']))}}
+                {%/if%}
+
             </td>
     </tr>
 {%/review_dict%}
