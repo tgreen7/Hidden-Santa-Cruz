@@ -34,6 +34,9 @@
             background-color: #4CAF50;
             color: white;
         }
+         td{
+            word-wrap:break-word;
+        }
     </style>
 
      <style>
@@ -187,11 +190,15 @@ Average Rating:
 
 
 <table>
+<col width="20">
+  <col width="80">
+  <col width="20">
 <tr>
     <th>User</th>
     <th>Review</th>
     <th>Rating</th>
   </tr>
+
 {%#review_dict:id%}
     <tr>
             <td>
@@ -201,10 +208,14 @@ Average Rating:
             {% body %}
             </td>
             <td>
-             Rating:
             {%#star_list%}
                 <i style = "color: #ffad33" class = "fa fa-star"></i>
             {%/star_list%}
+            <span  style="margin-left: -4px">
+            {%#anti_star_list%}
+                <i style = "color: #ffad33;" class = "fa fa-star-o"></i>
+            {%/anti_star_list%}
+            </span>
             </td>
     </tr>
 {%/review_dict%}
@@ -245,8 +256,11 @@ $(function() {
           MAIN.set('total', MAIN.get('total') + num_stars);
           MAIN.set('numRev', MAIN.get('numRev') + 1);
       },
-      setAvg: function(total,num){
-          MAIN.set('average', total/num);
+
+      setAvg: function(total,num) {
+//          truncate
+          var shorten = Math.floor(total/num * 100) / 100;
+          MAIN.set('average', shorten);
       },
       range: function ( low, high ) {
           var half = high - (high | 0);
