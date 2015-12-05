@@ -87,6 +87,7 @@ def load_reviews():
         return firstname + " " + lastname
 
     d = {r.id: {'body': r.body,
+                'user_id': r.user_id,
                 'user': get_name(r.user_id),
                 'num_stars':r.num_stars,
                 'star_list': range(0,r.num_stars)
