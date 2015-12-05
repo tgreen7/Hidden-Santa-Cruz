@@ -4,7 +4,6 @@
 
 <body  class="cbp-spmenu-push">
 
-
  <div class="container-fluid">
      <!-- #region Jssor Slider Begin -->
 
@@ -12,6 +11,30 @@
 <!-- This is deep minimized demo, it works alone, it doesn't depend on any javascript library. -->
 <!--gallery-->
     <script src="{{=URL('static','js/img-gallery.js')}}"></script>
+
+    <!--style for reviews-->
+     <style>
+
+         #reviews {
+             margin-top: 40px;
+         }
+         table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
 
      <style>
         .jssora05l,.jssora05r{
@@ -172,27 +195,33 @@ jssor_1_slider_init();
 <script id="template" type="text/ractive">
 <span>
 <h1>
-{{if auth.user_id != None:}}
-
-{{pass}}
 </h1>
 
 </span>
-{{if auth.user_id != None:}}
-{% #msg_dict:id%}
-    {%#if user_id == {{=auth.user_id}}%}
-    <p> {% setRev() %} </p>
+
+
+    {% #review_dict:id%}
+        {%#if user_id == {{=auth.user_id}}%}
+        <p> {% setRev() %} </p>
+        {%/if%}
+        <p> {% setTot(num_stars) %} </p>
+    {% /review_dict %}
+    {% #if reviewed === false %}
+        {{if auth.user_id != None:}}
+            {{=A('Review This Spot', _class='btn btn-success', _href=URL('default', 'add_review', args=[post.id]))}}
+       {{pass}}
     {%/if%}
-    <p> {% setTot(num_stars) %} </p>
-{% /msg_dict %}
-{% #if reviewed === false %}
-   {{=A('Review This Spot', _class='btn btn-success', _href=URL('default', 'add_review', args=[post.id]))}}
-{%/if%}
-{{pass}}
+
 
  {% setAvg(total, numRev) %}
-Rating:
-{% average %}
+
+
+<div id="reviews">
+<h2> Reviews </h2>
+
+<div style="float: left; margin-bottom: 15px">
+Average Rating:
+
 {%#each range(1,average)%}
     <i style = "color: #ffad33" class = "fa fa-star"></i>
 {%/each%}
@@ -200,104 +229,45 @@ Rating:
  {% #if halfstar === true %}
         <i style = "color: #ffad33; margin-left: -4px;" class = "fa fa-star-half-o"></i>
  {%/if%}
-
- {{if post['image1']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image1'])}}"  >
-    </div>
- {{pass}}
- {{if post['image2']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image2'])}}"  >
-    </div>
- {{pass}}
- {{if post['image3']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image3'])}}"  >
-    </div>
- {{pass}}
- {{if post['image4']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image4'])}}"  >
-    </div>
- {{pass}}
-  {{if post['image5']:}}
-    <div class="item active">
-        <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post['image5'])}}"  >
-    </div>
- {{pass}}
-
-
-
-
-{%#msg_dict:id%}
-    <div class = "myboard">
-        <div class = "boardtitle">
-            {% body %}
-            {% num_stars %}
-            <br>
-            {%#star_list%}
-                <i style = "color: #ffad33" class = "fa fa-star"></i>
-            {%/star_list%}
-
-        </div>
-    </div>
-{%/msg_dict%}
-
-
-
-
-</script>
-
-
+ ({% average %})
 </div>
 
 
+<table>
+<tr>
+    <th>User</th>
+    <th>Review</th>
+    <th>Rating</th>
+  </tr>
+{%#review_dict:id%}
+    <tr>
+            <td>
+            {% user %}
+            </td>
+            <td>
+            {% body %}
+            </td>
+            <td>
+             Rating:
+            {%#star_list%}
+                <i style = "color: #ffad33" class = "fa fa-star"></i>
+            {%/star_list%}
+            </td>
+    </tr>
+{%/review_dict%}
+</table>
+</div>
 
+</script>
+
+</div>
 
 </body>
 
 
 <script>
 
-
- jQuery('input.rating').each(function(){
-        var span = jQuery('<span style="white-space:nowrap" />');
-        var self = jQuery(this).hide().after(span);
-        var fill_stars = function() {
-            var k = parseInt(self.val()) || 0;
-            for(var i=1; i<6; i++) span.find('.rate'+i).html((i<=k)?'&#x2605;':'&#x2606;');
-        };
-        for(var k=1; k<6; k++) (function(k){
-                span.append('<span class="rate'+k+'">&#x2606;</span>');
-                // el.event1(   ).event2(   ).event3(   )
-                // el.event1(   );
-                // el.event2(   );
-//                span.find('.rate'+k).mouseover(function(){
-//                        for(var i=1; i<6; i++) span.find('.rate'+i).html((i<=k)?'&#x2605;':'&#x2606;');
-//                    }).click(function(){
-//                      self.val(k); // for an input node n, n.val() returns the value, n.val(x) sets value to x
-//                      fill_stars();
-//                      jQuery.post(
-//                              '{{=URL('vote', user_signature=True)}}', // URL for the AJAX call
-//                              {   // Dictionary of names to values. The server will have:
-//                                'picid':self.attr('data-picid'),  // request.vars.picid
-//                                'rating':k   // request.vars.rating
-//                              }
-//                      );
-//                    });
-        })(k); // To ensure k is properly bound inside the event listener.
-       // span.mouseout(fill_stars);  // To make sure we show the correct n of stars, even if we moved
-                                    // the mouse after clicking.
-        fill_stars();
-    });
-
-
-
-
-
 $(function() {
-
   // Ractive object
   var MAIN = new Ractive({
     el: '#target',
@@ -305,7 +275,7 @@ $(function() {
     delimiters: ['{%', '%}'],
     tripleDelimiters: ['{%%', '%%}'],
     data: {
-      msg_dict: {},
+      review_dict: {},
       active_draft: "",
       loading: false,
       editing: true,
@@ -353,37 +323,13 @@ $(function() {
           {
             method: 'POST',
             success: function (data) {
-              MAIN.set('msg_dict', data['msg_dict']);
+              MAIN.set('review_dict', data['review_dict']);
               MAIN.set('loading', false);
             }
           }
 
   );
 
- function setreviewed()  {
-
- }
 
 });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

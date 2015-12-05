@@ -74,17 +74,26 @@ def deletereviews():
 def load_reviews():
     post_board_id = request.args(0)
     rows = db(db.reviews.post == post_board_id).select()
+
+
+
+    def get_name(user_id):
+        test = db(db.auth_user.id == user_id).select()
+        firstname = ""
+        lastname = ""
+        for i in test:
+            firstname = i.first_name
+            lastname =  i.last_name
+        return firstname + " " + lastname
+
     d = {r.id: {'body': r.body,
-                'user_id': r.user_id,
+                'user': get_name(r.user_id),
                 'num_stars':r.num_stars,
                 'star_list': range(0,r.num_stars)
-
                 }
 
          for r in rows}
-    print "d"
-    print d
-    return response.json(dict(msg_dict=d))
+    return response.json(dict(review_dict=d))
 
 def map():
     return dict(postlist = [])
@@ -99,7 +108,7 @@ def post_page():
     reviews = db(db.reviews.post == post_id).select()
     print "reviews"
     print reviews
-    return dict(post = post,reviews=reviews)
+    return dict(post = post, reviews=reviews)
 
 def show_posts():
     post_board_id = request.args(0)
