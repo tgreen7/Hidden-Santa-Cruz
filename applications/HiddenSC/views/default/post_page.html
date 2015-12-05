@@ -162,11 +162,7 @@ jssor_1_slider_init();
         {%/if%}
         <p> {% setTot(num_stars) %} </p>
     {% /review_dict %}
-    {% #if reviewed === false %}
-        {{if auth.user_id != None:}}
-            {{=A('Review This Spot', _class='btn btn-success', _href=URL('default', 'add_review', args=[post.id]))}}
-       {{pass}}
-    {%/if%}
+
 
 
  {% setAvg(total, numRev) %}
@@ -186,7 +182,16 @@ Average Rating:
         <i style = "color: #ffad33; margin-left: -4px;" class = "fa fa-star-half-o"></i>
  {%/if%}
  ({% average %})
+
 </div>
+
+<span style="float: right; margin-bottom: 15px;">
+ {% #if reviewed === false %}
+        {{if auth.user_id != None:}}
+            {{=A('Review This Spot', _class='btn btn-primary', _href=URL('default', 'add_review', args=[post.id]))}}
+       {{pass}}
+{%/if%}
+</span>
 
 
 <table>

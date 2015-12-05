@@ -1,15 +1,1 @@
 {{extend 'layout.html'}}
-
-<h1>Welcome to Board</h1>
-
-
-{{for board_id in board_list:}}
-    <div class = "myboard">
-        <span class="boardtitle">
-        {{=A(board_id['title'],_href=URL('default', 'show_posts', args=[board_id])) }}{{=icon_pencil}}</span>
-        <ul class="boardlist">
-            <li> Title</li>
-            <li> new posts</li>
-        </ul>
-    </div>
-{{pass}}
