@@ -60,10 +60,18 @@ db.define_table('reviews',
                 Field('body','text'),
                 Field('user_id',db.auth_user,default=auth.user_id),
                 Field('num_stars', 'integer'),
-
                 Field('post',db.posts)
                 )
 db.reviews.num_stars.requires=IS_INT_IN_RANGE(0,6)
+
+db.define_table('uploads',
+                Field('username', 'string'),
+                Field('post', db.posts),
+                Field('filename', represent = lambda x, row: "None" if x == None else x[:45]),
+                Field('up_file', 'upload', uploadseparate=True, requires=IS_NOT_EMPTY()),
+                Field('up_date', 'datetime'),
+                Field('notes', 'text')
+                )
 
 
 db.posts.board.readable = db.posts.board.writable = False

@@ -112,60 +112,12 @@
 <div style="position:absolute;display:block;background:url('{{=URL('static','images/loading.gif')}}') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
 </div>
 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
- <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
+    {{for i in range(len(images)):}}
         <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-    <div data-p="144.50" style="display: none;">
-    <img data-u="image" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    <img data-u="thumb" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Natural_bridges_state_beach_Santa_Cruz_California.jpg" />
-    </div>
-
-
+         <img data-u="image" src="{{=URL('default', 'download', args=images[i]['up_file'])}}" />
+         <img data-u="thumb" src="{{=URL('default', 'download', args=images[i]['up_file'])}}" />
+        </div>
+     {{pass}}
 </div>
 <!-- Thumbnail Navigator -->
 <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
@@ -189,6 +141,7 @@
 jssor_1_slider_init();
 </script>
 
+{{=A('Add Images', _class='btn btn-success', _href=URL('default', 'submit', args=[post.id]))}}
 
 <div id="target"></div>
 

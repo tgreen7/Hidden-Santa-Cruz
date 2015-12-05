@@ -103,12 +103,13 @@ def gallery():
 
 def post_page():
     post_id = request.args(0)
-    # print post_id
     post = db.posts[post_id]
     reviews = db(db.reviews.post == post_id).select()
+    images = db(db.uploads.post == post_id).select()
     print "reviews"
     print reviews
-    return dict(post = post, reviews=reviews)
+    return dict(post = post,reviews=reviews, images = images)
+
 
 def show_posts():
     post_board_id = request.args(0)
@@ -204,6 +205,20 @@ def posts_edit():
              _href=URL('default', 'show_posts', args=[posts.id]))
         return dict(form=form, edit_button=edit_button)
 
+def submit():
+    import datetime
+    form = FORM(LABEL("File(s):"), INPUT(_name='up_files', _type='file', _multiple='', requires=IS_NOT_EMPTY()),  BR(),INPUT(_type='submit'))
+    if form.accepts(request.vars, formname="form"):
+        files = request.vars['up_files']
+        if not isinstance(files, list):
+            files = [files]
+        for f in files:
+            print f.filename
+            up_file = db.uploads.up_file.store(f, f.filename)
+            i = db.uploads.insert(notes=request.vars.notes, up_file=up_file, filename=f.filename, post = request.args(0), up_date= datetime.datetime.now())
+            db.commit()
+        redirect(URL('post_page',args=request.args(0)))
+    return dict(form=form)
 
 
 def posts():
