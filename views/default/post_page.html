@@ -236,8 +236,10 @@ Average Rating:
             </td>
             <td>
                 {%#if user_id == {{=auth.user_id}}%}
-                {{=A('', _class='fa fa-trash-o', _href=URL('default', 'user', args=['login']))}}
-                {{=A('', _class='fa fa-pencil', _href=URL('default', 'user', args=['login']))}}
+                    <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o"></i> </a>
+                    <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o"></i> </a>
+                    {{=A('', _class='fa fa-pencil', _href=URL('default', 'user', args=['login']))}}
+
                 {%/if%}
 
             </td>
@@ -273,6 +275,7 @@ $(function() {
       average : 0,
       total: 0,
       numRev: 0,
+
       setRev: function(){
           MAIN.set('reviewed',true);
       },
@@ -317,6 +320,31 @@ $(function() {
           }
         );
     }
+
+    function alerter(rev_id, post) {
+        alert(rev_id);
+        alert(post);
+        alert("test");
+    }
+
+    MAIN.on("Del", function(e, rev_id, post){
+        alerter(rev_id, post);
+        $.ajax("{{=URL('default', 'delete_review', user_signature=True)}}",
+              {
+                data: {
+                  rev_id: rev_id,
+                  post: post
+                },
+                method: 'POST',
+                success: function() {
+//                    alert('deleted');
+                },
+                error: function() {
+                }
+              }
+        );
+    });
+
 
 
 
