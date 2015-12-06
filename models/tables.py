@@ -54,10 +54,10 @@ db.define_table('posts',
                 Field('image3', 'upload'),
                 Field('image4', 'upload'),
                 Field('image5', 'upload'),
-
-                # searchbar
                 Field('created_on', 'datetime', default=request.now),
                 Field('created_by', db.auth_user, default=auth.user_id),
+
+                # searchbar
                 format = '%(title)s'
                 )
 

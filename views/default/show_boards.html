@@ -4,6 +4,21 @@
 
 <body class="cbp-spmenu-push">
 
+    <style>
+        .search_list {
+            list-style-type: square;
+            /*background: #3399ff;*/
+            padding: 20px;
+            background-size: contain;
+        }
+
+        .search_list li {
+            /*background: #cce5ff;*/
+            margin: 5px;
+        }
+
+    </style>
+
 
   <!--shows the sign in sign out buttons-->
   {{if auth.user_id is None:}}
@@ -25,7 +40,12 @@
   {{pass}}
 
 </div>
-  {{=A('Search Specific Location', _class='btn btn-primary', _href=URL('search'))}}
+
+  <div style="margin-left: 50px;">
+      Search for Posts:
+        {{=form}}
+        {{=target_div}}
+  </div>
 
 
 

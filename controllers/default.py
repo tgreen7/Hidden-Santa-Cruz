@@ -10,10 +10,13 @@
 
 def deleteboards():
     db(db.board.id > 0).delete()
+
 def deleteposts():
     db(db.posts.id > 0).delete()
+
 def deletereviews():
     db(db.reviews.id>0).delete()
+
 def map():
     return dict(postlist = [])
 
@@ -23,14 +26,12 @@ def index():
 
 def show_boards():
     board_list = db(db.board).select()
-    return dict(board_list=board_list)
 
-# Search Bar Stuff On Post Page
-def search():
-     "an ajax wiki search page"
-     return dict(form=FORM(INPUT(_id='keyword',_name='keyword',
-              _onkeyup="ajax('callback', ['keyword'], 'target');")),
-              target_div=DIV(_id='target'))
+    # Code for search bar
+    form = FORM(INPUT(_id='keyword', _name='keyword', _onkeyup="ajax('callback', ['keyword'], 'target');"))
+    target_div = DIV(_id='target')
+
+    return dict(board_list=board_list, form=form, target_div=target_div)
 
 def callback():
      "an ajax callback that returns a <ul> of links to post pages"
@@ -38,7 +39,7 @@ def callback():
      posts = db(query).select(orderby=db.posts.title)
      links = [(A(p.title, _href=URL('post_page',args=p.id)))
               for p in posts]
-     return UL(*links)
+     return UL(*links, _class='search_list')
 
 @auth.requires_login()
 def add_board():
