@@ -122,6 +122,7 @@ def show_posts():
     post_list = db(db.posts.board==post_board_id).select()
     return dict(post_list=post_list, post_board_id=post_board_id, board_list=board_list)
 
+
 # Search Bar Stuff On Post Page
 def search():
      "an ajax wiki search page"
@@ -155,6 +156,7 @@ def callback():
 #         # )
 #     return dict(form=form)
 
+
 def add_posts():
     logger.info("My session is: %r" % session)
     form = SQLFORM(db.posts,  upload = URL('download'))
@@ -172,8 +174,6 @@ def add_posts():
 def add_review():
     form = SQLFORM(db.reviews)
     form.vars.post = request.args(0)
-    print "review_post id"
-    print form.vars.post
     form.vars.user_id = auth.user_id
     if form.process().accepted:
         session.flash = T('the data was inserted')
