@@ -74,7 +74,7 @@ def add_posts():
 def posts_edit():
 
     posts = db.posts(request.args(0))
-    if(auth.user_id != posts.user_id_2):
+    if(auth.user_id != posts.user_id):
          redirect(URL('default', 'show_posts', args=[posts.board]))
          session.flass = T('Not permitted for this user')
     else:
@@ -95,14 +95,16 @@ def delete_post():
 def post_page():
     post_id = request.args(0)
     post = db.posts[post_id]
+    title = post.title
+    body = post.body
     reviews = db(db.reviews.post == post_id).select()
     images = db(db.uploads.post == post_id).select()
     print "reviews"
     print reviews
-    return dict(post = post,reviews=reviews, images = images)
+    return dict(post = post,reviews=reviews,title=title, body= body, images = images)
 
 # upload images
-def submit():
+def upload_images():
     import datetime
     form = FORM(LABEL("File(s):"), INPUT(_name='up_files', _type='file', _multiple='', requires=IS_NOT_EMPTY()),  BR(),INPUT(_type='submit'))
     if form.accepts(request.vars, formname="form"):

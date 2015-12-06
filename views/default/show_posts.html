@@ -35,28 +35,19 @@
 
 {{for post_id in post_list:}}
     <div class = "myboard">
-        <span class="boardtitle">
+        <div class="boardtitle">
         {{=A(post_id['title'], _href=URL('default', 'post_page', args=post_id['id']))}}
 
         {{if post_id.user_id == auth.user_id:}}
-        <span class = "icons">
+        <div class = "icons">
         {{=A(icon_pencil, _href=URL('default', 'posts_edit', args=post_id['id']))}}
         {{=A(icon_trash, _href=URL('default', 'delete_post', args=[post_id['id'], post_board_id]))}}
-        </span>
+        </div>
         {{pass}}
-        </span>
-
-        <p>{{=(post_id['body'])}}</p>
-
-
-
-          <!-- Wrapper for slides -->
-
-            <div class="item active">
-              <img style="height: 160px; width: 160px;" src = "{{=URL('download', args=post_id['image1'])}}"  >
-            </div>
-
-
+        </div>
+        <div class="boardbody">
+            Average Rating:
+        </div>
     </div>
 {{pass}}
 

@@ -14,6 +14,9 @@
 
     <!--style for reviews-->
      <style>
+         .hover_hand {
+             cursor:pointer;
+         }
         .fa-trash-o, .fa-pencil{
             color: #6f6f6f;
 
@@ -117,7 +120,7 @@
 
      </style>
 
-
+<h1>{{=title}}</h1>
 <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
 <!-- Loading Screen -->
 <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -154,7 +157,11 @@
 jssor_1_slider_init();
 </script>
 
-{{=A('Add Images', _class='btn btn-success', _href=URL('default', 'submit', args=[post.id]))}}
+{{=A('Add Images', _class='btn btn-success', _href=URL('default', 'upload_images', args=[post.id]))}}
+
+     <div>
+     {{=body}}
+         </div>
 
 <div id="target"></div>
 
@@ -236,9 +243,9 @@ Average Rating:
             </td>
             <td>
                 {%#if user_id == {{=auth.user_id}}%}
-                    <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o"></i> </a>
+                    <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o hover_hand"></i> </a>
                     <!--<a on-click="Edit:{%id%},{%post_id%},{%user_id%}" ><i class = "fa fa-pencil"></i> </a>-->
-                    <a href="../edit_review/{%id%}/{%post_id%}/{%user_id%}"><i class = "fa fa-pencil"></i> </a>
+                    <a href="../edit_review/{%id%}/{%post_id%}/{%user_id%}"><i class = "fa fa-pencil hover_hand"></i> </a>
                 {%/if%}
 
             </td>
@@ -328,7 +335,6 @@ $(function() {
     }
 
     MAIN.on("Del", function(e, rev_id, post){
-        alerter(rev_id, post);
         $.ajax("{{=URL('default', 'delete_review', user_signature=True)}}",
               {
                 data: {
