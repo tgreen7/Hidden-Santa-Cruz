@@ -53,11 +53,28 @@
     }}
   </head>
   <body>
+
+    <style>
+        #showLeft {
+            font-size: 2.5em;
+            margin-top: -50px;
+            margin-left: 40px;
+            cursor: pointer;
+            color: #3385ff;
+        }
+        #hideLeft {
+            font-size: 1em;
+            cursor:pointer;
+            margin-left: 35px;
+            color: #f7f7f7;
+        }
+    </style>
     <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <div class="flash alert alert-dismissable">{{=response.flash or ''}}</div>
     <!-- Navbar ======================================= -->
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-        <h3>Menu</h3>
+        <h3>Menu <i id="hideLeft"  class="fa fa-times"></i></h3>
+
         <a style="text-decoration: none;" href="{{=URL('default','index.html')}}">Home</a>
         <a style="text-decoration: none;" href="#">Hiking</a>
         <a style="text-decoration: none;" href="#">Free</a>
@@ -68,8 +85,7 @@
     <div>
         <div class="menu_show">
                 <!-- Class "cbp-spmenu-open" gets applied to menu -->
-                <a id="showLeft" style="font-size: 2em; margin-left: 40px; cursor:pointer; text-decoration: none; color: #3385ff;">Menu</a>
-                <a  id="hideLeft" style="font-size: 2em; margin-left: 40px; cursor:pointer; display: none; color: #3385ff;"><i class="fa fa-times"></i> </a>
+                <i id="showLeft" class="fa fa-bars"></i>
                 <!--<button id="showLeft">Show/Hide Left Slide Menu</button>-->
         </div>
     </div>
@@ -96,17 +112,15 @@
 				body = document.body;
 
             showLeft.onclick = function() {
+                showLeft.style.opacity = 0;
 				classie.toggle( body, 'cbp-spmenu-push-toright' );
 				classie.toggle( menuLeft, 'cbp-spmenu-open' );
-                showLeft.style.display = 'none';
-                hideLeft.style.display = '';
 			};
 
             hideLeft.onclick = function() {
+                showLeft.style.opacity = 100;
                 classie.toggle( body, 'cbp-spmenu-push-toright' );
 				classie.toggle( menuLeft, 'cbp-spmenu-open' );
-                showLeft.style.display = '';
-                hideLeft.style.display = 'none';
 			};
 		</script>
 
