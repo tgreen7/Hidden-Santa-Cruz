@@ -82,9 +82,7 @@ def posts_edit():
         if form.process().accepted:
             session.flash = T('The data was edited')
             redirect(URL('default', 'show_posts', args=[posts.board]))
-        edit_button = A('View', _class='btn btn-warning',
-             _href=URL('default', 'show_posts', args=[posts.id]))
-        return dict(form=form, edit_button=edit_button)
+        return dict(form=form)
 
 #delete boards
 def delete_post():
@@ -185,14 +183,9 @@ def edit_review():
     user_id = request.args(2)
 
 
-    print "auth"
-    print auth.user_id
-    print "user id"
-    print user_id
-
-    # if auth.user_id != user_id:
-    #     session.flash = T('Not permitted for this user')
-    #     redirect(URL('default', 'post_page', args=[post_id]))
+    if int(auth.user_id) != int(user_id):
+        session.flash = T('Not permitted for this user')
+        redirect(URL('default', 'post_page', args=[post_id]))
 
     form = SQLFORM(db.reviews, record=rev_id)
 
