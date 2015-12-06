@@ -237,7 +237,7 @@ Average Rating:
             <td>
                 {%#if user_id == {{=auth.user_id}}%}
                 {{=A('', _class='fa fa-trash-o', _href=URL('default', 'user', args=['login']))}}
-                {{=A('', _class='fa fa-pencil', _href=URL('default', 'user', args=['login']))}}
+                {{=A('', _class='fa fa-pencil', _href=URL('default', 'delete_review', args=['login']))}}
                 {%/if%}
 
             </td>

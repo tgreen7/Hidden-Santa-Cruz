@@ -53,7 +53,12 @@ db.define_table('posts',
                 Field('image2', 'upload'),
                 Field('image3', 'upload'),
                 Field('image4', 'upload'),
-                Field('image5', 'upload')
+                Field('image5', 'upload'),
+
+                #searchbar
+                Field('created_on', 'datetime', default=request.now),
+                Field('created_by', db.auth_user, default=auth.user_id),
+                format='%(title)s'
                 )
 
 db.define_table('reviews',
