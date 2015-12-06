@@ -1,0 +1,891 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.AttributeError'> 'NoneType' object has no attribute 'id'"
+p3
+sS'layer'
+p4
+S'C:\\Users\\bryce\\Desktop\\web2py\\applications\\cmps183_project\\views\\default/post_page.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\n<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="\', escape=False)\nresponse.write(T.accepted_language or \'en\')\nresponse.write(\'"> <!--<![endif]-->\\n  <head>\\n    <meta charset="utf-8">\\n    <!-- www.phpied.com/conditional-comments-block-downloads/ -->\\n    <!-- Always force latest IE rendering engine\\n         (even in intranet) & Chrome Frame\\n         Remove this if you use the .htaccess -->\\n    <meta http-equiv="X-UA-Compatible" content="IE=edge\', escape=False)\nresponse.write(not request.is_local and \',chrome=1\' or \'\')\nresponse.write(\'">\\n    <!--  Mobile Viewport Fix\\n          j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag\\n          device-width: Occupy full width of the screen in its current orientation\\n          initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height\\n          user-scalable = yes allows the user to zoom in -->\\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\\n    <title>\', escape=False)\nresponse.write(response.title or request.application)\nresponse.write(\'</title>\\n    <!-- http://dev.w3.org/html5/markup/meta.name.html -->\\n    <meta name="application-name" content="\', escape=False)\nresponse.write(request.application)\nresponse.write(\'">\\n    <!-- Speaking of Google, don\\\'t forget to set your site up:\\n         http://google.com/webmasters -->\\n    <meta name="google-site-verification" content="">\\n    <!-- include stylesheets -->\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/bootstrap.min.css\'))\nresponse.write(\'"/>\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/bootstrap-theme.min.css\'))\nresponse.write(\'"/>\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/web2py-bootstrap3.css\'))\nresponse.write(\'"/>\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/myapp.css\'))\nresponse.write(\'"/>\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\', \'font-awesome-4.4.0/css/font-awesome.min.css\'))\nresponse.write(\'"/>\\n      <!--gallery-->\\n\\n      <!--my navmenu-->\\n    <link rel="stylesheet" type="text/css" href="\', escape=False)\nresponse.write(URL(\'static\', \'slide_menu_css/component.css\'))\nresponse.write(\'"/>\\n    <link rel="shortcut icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/favicon.ico\'))\nresponse.write(\'" type="image/x-icon">\\n    <link rel="apple-touch-icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/favicon.png\'))\nresponse.write(\'">\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\', \'slide_menu_js/modernizr.custom.js\'))\nresponse.write(\'"></script>\\n    <!-- All JavaScript at the bottom, except for Modernizr which enables\\n         HTML5 elements & feature detects -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/modernizr-2.8.3.min.js\'))\nresponse.write(\'"></script>\\n    <!--[if lt IE 9]>\\n        <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/respond-1.4.2.min.js\'))\nresponse.write(\'"></script>\\n        <![endif]-->\\n    <!-- Favicons -->\\n    \', escape=False)\nresponse.write(\'<script type="text/javascript"><!--\\n    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).\\n    var w2p_ajax_confirm_message = "\', escape=False)\nresponse.write(T(\'Are you sure you want to delete this object?\'))\nresponse.write(\'";\\n    var w2p_ajax_disable_with_message = "\', escape=False)\nresponse.write(T(\'Working...\'))\nresponse.write(\'";\\n    var w2p_ajax_date_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d\'))\nresponse.write(\'";\\n    var w2p_ajax_datetime_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d %H:%M:%S\'))\nresponse.write(\'";\\n    var ajax_error_500 = \\\'\', escape=False)\nresponse.write(T.M(\'An error occured, please [[reload %s]] the page\') % URL(args=request.args, vars=request.get_vars))\nresponse.write("\'\\n    //--></script>\\n", escape=False)\nresponse.files.insert(0,URL(\'static\',\'js/jquery.js\'))\nresponse.files.insert(1,URL(\'static\',\'css/calendar.css\'))\nresponse.files.insert(2,URL(\'static\',\'js/calendar.js\'))\nresponse.files.insert(3,URL(\'static\',\'js/web2py.js\'))\nresponse.include_meta()\nresponse.include_files()\nresponse.write(\'\\n\', escape=False)\nresponse.write(\' <!-- this includes jquery.js, calendar.js/.css and web2py.js -->\\n    \', escape=False)\nresponse.write(\'\\n    \', escape=False)\n# using sidebars need to know what sidebar you want to use\nmc0 = \'col-md-12\'\nmc1 = \'col-md-9\'\nmc2 = \'col-md-6\'\nleft_sidebar_enabled = globals().get(\'left_sidebar_enabled\', False)\nright_sidebar_enabled = globals().get(\'right_sidebar_enabled\', False)\nmiddle_column = {0: mc0, 1: mc1, 2: mc2}[\n(left_sidebar_enabled and 1 or 0)+(right_sidebar_enabled and 1 or 0)]\nresponse.write(\'\\n  </head>\\n  <body>\\n\\n    <style>\\n        #showLeft {\\n            font-size: 2.5em;\\n            margin-top: -50px;\\n            margin-left: 40px;\\n            cursor: pointer;\\n            color: #3385ff;\\n        }\\n        #hideLeft {\\n            font-size: 1em;\\n            cursor:pointer;\\n            margin-left: 35px;\\n            color: #f7f7f7;\\n        }\\n    </style>\\n    <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->\\n    <div class="flash alert alert-dismissable">\', escape=False)\nresponse.write(response.flash or \'\')\nresponse.write(\'</div>\\n    <!-- Navbar ======================================= -->\\n    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">\\n        <h3>Menu <i id="hideLeft"  class="fa fa-times"></i></h3>\\n\\n        <a style="text-decoration: none;" href="\', escape=False)\nresponse.write(URL(\'default\',\'index.html\'))\nresponse.write(\'">Home</a>\\n        <a style="text-decoration: none;" href="#">Hiking</a>\\n        <a style="text-decoration: none;" href="#">Free</a>\\n        <a style="text-decoration: none;" href="#">Wine \\\'N Dine</a>\\n        <a style="text-decoration: none;" href="#">Scenic</a>\\n        <a style="text-decoration: none;" href="#">Night Life</a>\\n    </nav>\\n    <div>\\n        <div class="menu_show">\\n                <!-- Class "cbp-spmenu-open" gets applied to menu -->\\n                <i id="showLeft" class="fa fa-bars"></i>\\n                <!--<button id="showLeft">Show/Hide Left Slide Menu</button>-->\\n        </div>\\n    </div>\\n    <!-- Masthead ===================================== -->\\n    \', escape=False)\nresponse.write(\'\\n    \', escape=False)\nresponse.write(\'\\n    <!-- Main ========================================= -->\\n    <!-- Begin page content -->\\n    <div class="container-fluid main-container">\\n      <div class="\', escape=False)\nresponse.write(middle_column)\nresponse.write(\'">\\n        \', escape=False)\nresponse.write(\'\\n        \', escape=False)\nresponse.write(\'\\n\\n\\n\\n<body  class="cbp-spmenu-push">\\n\\n <div class="container-fluid">\\n     <!-- #region Jssor Slider Begin -->\\n\\n<!-- Generated by Jssor Slider Maker Online. -->\\n<!-- This is deep minimized demo, it works alone, it doesn\\\'t depend on any javascript library. -->\\n<!--gallery-->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/img-gallery.js\'))\nresponse.write(\'"></script>\\n\\n    <!--style for reviews-->\\n     <style>\\n        .fa-trash-o, .fa-pencil{\\n            color: #6f6f6f;\\n\\n        }\\n         a:hover {\\n             text-decoration: none;\\n             color:black;\\n\\n\\n         }\\n\\n         #reviews {\\n             margin-top: 40px;\\n         }\\n         table {\\n            border-collapse: collapse;\\n            width: 100%;\\n        }\\n\\n        th, td {\\n            text-align: left;\\n            padding: 8px;\\n        }\\n\\n        tr:nth-child(even){background-color: #f2f2f2}\\n\\n        th {\\n            background-color: #4CAF50;\\n            color: white;\\n        }\\n         td{\\n            word-wrap:break-word;\\n        }\\n    </style>\\n\\n     <style>\\n        .jssora05l,.jssora05r{\\n            display:block;\\n            position:absolute;\\n            width:40px;\\n            height:40px;\\n            cursor:pointer;\\n            background:url(\\\'\', escape=False)\nresponse.write(URL(\'static\',\'images/a17.png\'))\nresponse.write("\') no-repeat;\\n            overflow:hidden\\n        }\\n        .jssora05l{\\n            background-position:-10px -40px}.jssora05r{background-position:-70px -40px}.jssora05l:hover{\\n            background-position:-130px -40px}.jssora05r:hover{background-position:-190px -40px}.jssora05l.jssora05ldn{\\n            background-position:-250px -40px}.jssora05r.jssora05rdn{background-position:-310px -40px}.jssort01 .p{\\n            position:absolute;\\n            top:0;\\n            left:0;\\n            width:72px;\\n            height:72px}.jssort01 .t{position:absolute;\\n            top:0;\\n            left:0;\\n            width:100%;\\n            height:100%;\\n            border:none\\n            }\\n        .jssort01 .w{\\n            position:absolute;\\n            top:0;\\n            left:0;\\n            width:100%;\\n            height:100%\\n        }\\n        .jssort01 .c{\\n            position:absolute;\\n            top:0;\\n            left:0;\\n            width:68px;\\n            height:68px;\\n            border:#000 2px solid;\\n            box-sizing:content-box;\\n            background:url(\'", escape=False)\nresponse.write(URL(\'static\',\'images/t01.png\'))\nresponse.write(\'\\\') -800px -800px no-repeat;\\n            _background:none}.jssort01 .pav .c{\\n            top:2px;\\n            _top:0;\\n            left:2px;\\n            _left:0;\\n            width:68px;\\n            height:68px;\\n            border:#000 0 solid;\\n            _border:#fff 2px solid;\\n            background-position:50% 50%}.jssort01 .p:hover .c{top:0;\\n            left:0;\\n            width:70px;\\n            height:70px;\\n            border:#fff 1px solid;\\n            background-position:50% 50%}.jssort01 .p.pdn .c{\\n            background-position:50% 50%;\\n            width:68px;\\n            height:68px;\\n            border:#000 2px solid\\n        }\\n        * html .jssort01 .c,* html .jssort01 .pdn .c,* html .jssort01 .pav .c{\\n            width:72px;\\n            height:72px\\n        }\\n\\n     </style>\\n\\n\\n<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">\\n<!-- Loading Screen -->\\n<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">\\n<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>\\n<div style="position:absolute;display:block;background:url(\\\'\', escape=False)\nresponse.write(URL(\'static\',\'images/loading.gif\'))\nresponse.write(\'\\\') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>\\n</div>\\n<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">\\n    \', escape=False)\nfor i in range(len(images)):\n    response.write(\'\\n        <div data-p="144.50" style="display: none;">\\n         <img data-u="image" src="\', escape=False)\n    response.write(URL(\'default\', \'download\', args=images[i][\'up_file\']))\n    response.write(\'" />\\n         <img data-u="thumb" src="\', escape=False)\n    response.write(URL(\'default\', \'download\', args=images[i][\'up_file\']))\n    response.write(\'" />\\n        </div>\\n     \', escape=False)\n    pass\nresponse.write(\'\\n</div>\\n<!-- Thumbnail Navigator -->\\n<div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">\\n<!-- Thumbnail Item Skin Begin -->\\n<div data-u="slides" style="cursor: default;">\\n<div data-u="prototype" class="p">\\n<div class="w">\\n<div data-u="thumbnailtemplate" class="t"></div>\\n</div>\\n<div class="c"></div>\\n</div>\\n</div>\\n<!-- Thumbnail Item Skin End -->\\n</div>\\n<!-- Arrow Navigator -->\\n<span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>\\n<span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>\\n<a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>\\n</div>\\n<script>\\njssor_1_slider_init();\\n</script>\\n\\n\', escape=False)\nresponse.write(A(\'Add Images\', _class=\'btn btn-success\', _href=URL(\'default\', \'submit\', args=[post.id])))\nresponse.write(\'\\n\\n<div id="target"></div>\\n\\n<script id="template" type="text/ractive">\\n<span>\\n<h1>\\n</h1>\\n\\n</span>\\n\\n\\n    {% #review_dict:id%}\\n        {%#if user_id == \', escape=False)\nresponse.write(auth.user_id)\nresponse.write(\'%}\\n        <p> {% setRev() %} </p>\\n        {%/if%}\\n        <p> {% setTot(num_stars) %} </p>\\n    {% /review_dict %}\\n\\n\\n\\n {% setAvg(total, numRev) %}\\n\\n\\n<div id="reviews">\\n<h2> Reviews </h2>\\n\\n<div style="float: left; margin-bottom: 15px">\\nAverage Rating:\\n\\n{%#each range(1,average)%}\\n    <i style = "color: #ffad33" class = "fa fa-star"></i>\\n{%/each%}\\n\\n {% #if halfstar === true %}\\n        <i style = "color: #ffad33; margin-left: -4px;" class = "fa fa-star-half-o"></i>\\n {%/if%}\\n ({% average %})\\n\\n</div>\\n\\n<span style="float: right; margin-bottom: 15px;">\\n <!--{% #if reviewed === false %}-->\\n        <!--\', escape=False)\nif auth.user_id != None:\n    response.write(\'-->\\n            \', escape=False)\n    response.write(A(\'Review This Spot\', _class=\'btn btn-primary\', _href=URL(\'default\', \'add_review\', args=[post.id])))\n    response.write(\'\\n       <!--\', escape=False)\n    pass\nresponse.write(\'-->\\n<!--{%/if%}-->\\n</span>\\n\\n\\n<table>\\n<col width=10%>\\n  <col width=75%>\\n  <col width=10%>\\n  <col width = 5%>\\n<tr>\\n    <th>User</th>\\n    <th>Review</th>\\n    <th>Rating</th>\\n    <th></th>\\n  </tr>\\n\\n{%#review_dict:id%}\\n    <tr>\\n            <td>\\n            {% user %}\\n            </td>\\n            <td>\\n            {% body %}\\n            </td>\\n            <td>\\n            {%#star_list%}\\n                <i style = "color: #ffad33" class = "fa fa-star"></i>\\n            {%/star_list%}\\n            <span  style="margin-left: -4px">\\n            {%#anti_star_list%}\\n                <i style = "color: #ffad33;" class = "fa fa-star-o"></i>\\n            {%/anti_star_list%}\\n            </span>\\n            </td>\\n            <td>\\n                {%#if user_id == \', escape=False)\nresponse.write(auth.user_id)\nresponse.write(\'%}\\n                    <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o"></i> </a>\\n                    <!--<a on-click="Edit:{%id%},{%post_id%},{%user_id%}" ><i class = "fa fa-pencil"></i> </a>-->\\n                    <a href="../edit_review/{%id%}/{%post_id%}/{%user_id%}"><i class = "fa fa-pencil"></i> </a>\\n                {%/if%}\\n\\n            </td>\\n    </tr>\\n{%/review_dict%}\\n</table>\\n</div>\\n\\n</script>\\n\\n</div>\\n\\n</body>\\n\\n\\n<script>\\n\\n$(function() {\\n  // Ractive object\\n  var MAIN = new Ractive({\\n    el: \\\'#target\\\',\\n    template: \\\'#template\\\',\\n    delimiters: [\\\'{%\\\', \\\'%}\\\'],\\n    tripleDelimiters: [\\\'{%%\\\', \\\'%%}\\\'],\\n    data: {\\n      review_dict: {},\\n      active_draft: "",\\n      loading: false,\\n      editing: true,\\n      newboard: false,\\n      message_content: "default",\\n      reviewed : false,\\n      average : 0,\\n      total: 0,\\n      numRev: 0,\\n\\n      setRev: function(){\\n          MAIN.set(\\\'reviewed\\\',true);\\n      },\\n      setTot: function(num_stars)  {\\n          MAIN.set(\\\'total\\\', MAIN.get(\\\'total\\\') + num_stars);\\n          MAIN.set(\\\'numRev\\\', MAIN.get(\\\'numRev\\\') + 1);\\n      },\\n\\n      setAvg: function(total,num) {\\n//          truncate\\n          var shorten = Math.floor(total/num * 100) / 100;\\n          MAIN.set(\\\'average\\\', shorten);\\n      },\\n      range: function ( low, high ) {\\n          var half = high - (high | 0);\\n          if (half >= .5){\\n              MAIN.set(\\\'halfstar\\\', true);\\n          }\\n          else{\\n              MAIN.set(\\\'halfstar\\\', false);\\n          }\\n          high = high | 0;\\n          var range = [];\\n          for ( i = low; i <= high; i += 1 ) {\\n            range.push( i );\\n          }\\n          return range;\\n        }\\n\\n\\n    }\\n  });\\n\\n    function load_reviews () {\\n       $.ajax("\', escape=False)\nresponse.write(URL(\'default\', \'load_reviews\', args= [post.id]))\nresponse.write(\'",\\n          {\\n            method: \\\'POST\\\',\\n            success: function (data) {\\n              MAIN.set(\\\'review_dict\\\', data[\\\'review_dict\\\']);\\n              MAIN.set(\\\'loading\\\', false);\\n            }\\n          }\\n        );\\n    }\\n\\n    function alerter(rev_id, post, u) {\\n        alert(rev_id);\\n        alert(post);\\n        alert(u);\\n        alert("test");\\n    }\\n\\n    MAIN.on("Del", function(e, rev_id, post){\\n        alerter(rev_id, post);\\n        $.ajax("\', escape=False)\nresponse.write(URL(\'default\', \'delete_review\', user_signature=True))\nresponse.write(\'",\\n              {\\n                data: {\\n                  rev_id: rev_id,\\n                  post: post\\n                },\\n                method: \\\'POST\\\',\\n                success: function() {\\n//                    alert(\\\'deleted\\\');\\n                },\\n                error: function() {\\n                }\\n              }\\n        );\\n    });\\n\\n    MAIN.on("Edit", function(e, rev_id, post, user_id){\\n        alerter(rev_id, post,user_id);\\n    });\\n\\n\\n\\n\\n   // Loads the initial list of messages.\\n  // Loads the initial list of messages.\\n  $.ajax("\', escape=False)\nresponse.write(URL(\'default\', \'load_reviews\', args= [post.id]))\nresponse.write(\'",\\n          {\\n            method: \\\'POST\\\',\\n            success: function (data) {\\n              MAIN.set(\\\'review_dict\\\', data[\\\'review_dict\\\']);\\n              MAIN.set(\\\'loading\\\', false);\\n            }\\n          }\\n  );\\n\\n    setInterval(load_reviews, 5000);\\n\\n});\\n</script>\\n\', escape=False)\nresponse.write(\'\\n        \', escape=False)\nresponse.write(\'\\n      </div>\\n    </div>\\n\\n\\n    <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\', \'slide_menu_js/classie.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script>\\n\\t\\t\\tvar menuLeft = document.getElementById( \\\'cbp-spmenu-s1\\\' ),\\n\\t\\t\\t\\tshowLeft = document.getElementById( \\\'showLeft\\\' ),\\n                hideLeft = document.getElementById( \\\'hideLeft\\\' ),\\n\\t\\t\\t\\tbody = document.body;\\n\\n            showLeft.onclick = function() {\\n                showLeft.style.opacity = 0;\\n\\t\\t\\t\\tclassie.toggle( body, \\\'cbp-spmenu-push-toright\\\' );\\n\\t\\t\\t\\tclassie.toggle( menuLeft, \\\'cbp-spmenu-open\\\' );\\n\\t\\t\\t};\\n\\n            hideLeft.onclick = function() {\\n                showLeft.style.opacity = 100;\\n                classie.toggle( body, \\\'cbp-spmenu-push-toright\\\' );\\n\\t\\t\\t\\tclassie.toggle( menuLeft, \\\'cbp-spmenu-open\\\' );\\n\\t\\t\\t};\\n\\t\\t</script>\\n\\n\\n    <!-- The javascript =============================== -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/bootstrap.min.js\'))\nresponse.write(\'"></script>\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/web2py-bootstrap3.js\'))\nresponse.write(\'"></script>\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\', \'js/ractive.min.js\'))\nresponse.write(\'"></script>\\n\\n    <!--maps-->\\n    <script src="https://maps.googleapis.com/maps/api/js"></script>\\n\\n\\n\\n\\n    \', escape=False)\nresponse.write(\'\\n    \', escape=False)\nif response.google_analytics_id:\n    response.write(\'\\n    <!-- Analytics ==================================== -->\\n    <script src="\', escape=False)\n    response.write(URL(\'static\',\'js/analytics.min.js\'))\n    response.write(\'"></script>\\n    <script type="text/javascript">\\n      analytics.initialize({\\n      \\\'Google Analytics\\\':{trackingId:\\\'\', escape=False)\n    response.write(response.google_analytics_id)\n    response.write("\'}\\n      });\\n    </script>\\n    ", escape=False)\n    pass\nresponse.write(\'\\n    <!-- Share ============================y============ -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/share.js\',vars=dict(static=URL(\'static\',\'images\'))))\nresponse.write(\'"></script>\\n  </body>\\n</html>\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.AttributeError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.AttributeError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.AttributeError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.AttributeError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.AttributeError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.AttributeError object>'
+p23
+sS'__reduce__'
+p24
+S'<built-in method __reduce__ of exceptions.AttributeError object>'
+p25
+sS'__str__'
+p26
+S"<method-wrapper '__str__' of exceptions.AttributeError object>"
+p27
+sS'__format__'
+p28
+S'<built-in method __format__ of exceptions.AttributeError object>'
+p29
+sS'__getattribute__'
+p30
+S"<method-wrapper '__getattribute__' of exceptions.AttributeError object>"
+p31
+sS'__class__'
+p32
+S"<type 'exceptions.AttributeError'>"
+p33
+sS'__unicode__'
+p34
+S'<built-in method __unicode__ of exceptions.AttributeError object>'
+p35
+sS'__delattr__'
+p36
+S"<method-wrapper '__delattr__' of exceptions.AttributeError object>"
+p37
+sS'__subclasshook__'
+p38
+S'<built-in method __subclasshook__ of type object>'
+p39
+sS'__repr__'
+p40
+S"<method-wrapper '__repr__' of exceptions.AttributeError object>"
+p41
+sS'args'
+p42
+S'("\'NoneType\' object has no attribute \'id\'",)'
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.AttributeError object>'
+p47
+sS'__doc__'
+p48
+S"'Attribute not found.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.AttributeError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"'NoneType' object has no attribute 'id'"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's]h\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>cmps183_project</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-8af8ed87-dd42-49f1-a59b-c1564d11673b<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_cmps183_project</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-fb2b2930-db41-43a2-ae87-9a08dae5e2fd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_hiddensc</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-60f7fc54-dd30-43b5-b2af-da260450502a<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-09e875d7-1c16-4def-8efc-f8e5cee51745<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CACHE_CONTROL</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>_ym_uid=1446504907970760301; _ym_isad=1; __lfcc=1; session_id_hiddensc=127.0.0.1-60f7fc54-dd30-43b5-b2af-da260450502a; session_id_welcome=127.0.0.1-09e875d7-1c16-4def-8efc-f8e5cee51745; session_id_cmps183_project=127.0.0.1-fb2b2930-db41-43a2-ae87-9a08dae5e2fd; session_id_admin=127.0.0.1-8af8ed87-dd42-49f1-a59b-c1564d11673b</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8800</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8800/cmps183_project/default/post_page/66</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_UPGRADE_INSECURE_REQUESTS</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/cmps183_project/default/post_page/1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>59039</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>bryce</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8800</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py\\\\applications\\\\cmps183_project\\\\&#x27;, &#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py\\\\applications\\\\welcome\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\bryce\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x3625a30: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.135.1&#x27;, &#x27;fe80::f9e6:f222:2d98:bdbc%12&#x27;, &#x27;fe80::496c:8fc9:766:d900%4&#x27;, &#x27;192.168.22.1&#x27;, &#x27;192.168.1.131&#x27;, &#x27;fe80::a81b:78a:7bdb:dbe2%10&#x27;, &#x27;fe80::b53b:7062:8784:2062%5&#x27;, &#x27;192.168.56.1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8800, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;bryce&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: True, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;helloclass&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\bryce\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cache_control</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>_ym_uid=1446504907970760301; _ym_isad=1; __lfcc=1; session_id_hiddensc=127.0.0.1-60f7fc54-dd30-43b5-b2af-da260450502a; session_id_welcome=127.0.0.1-09e875d7-1c16-4def-8efc-f8e5cee51745; session_id_cmps183_project=127.0.0.1-fb2b2930-db41-43a2-ae87-9a08dae5e2fd; session_id_admin=127.0.0.1-8af8ed87-dd42-49f1-a59b-c1564d11673b</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8800</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8800/cmps183_project/default/post_page/66</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_upgrade_insecure_requests</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>192.168.135.1</div></td></tr><tr><td><div>fe80::f9e6:f222:2d98:bdbc%12</div></td></tr><tr><td><div>bryce</div></td></tr><tr><td><div>fe80::496c:8fc9:766:d900%4</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>192.168.1.131</div></td></tr><tr><td><div>fe80::a81b:78a:7bdb:dbe2%10</div></td></tr><tr><td><div>192.168.22.1</div></td></tr><tr><td><div>fe80::b53b:7062:8784:2062%5</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>192.168.56.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/cmps183_project/default/post_page/1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>59039</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/cmps183_project/default/post_page/1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>bryce</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8800</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\bryce\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.12.3-stable+timestamp.2015.08.19.00.18.03</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x024FD0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x035A7998&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x05D58470&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x024FD0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x035A7998&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x05D58470&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\bryce\\Desktop\\web2py\\applications\\cmps183_project\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>post_page</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py\\\\applications\\\\cmps183_project\\\\&#x27;, &#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py\\\\applications\\\\welcome\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\bryce\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x3625a30: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;192.168.135.1&#x27;, &#x27;fe80::f9e6:f222:2d98:bdbc%12&#x27;, &#x27;fe80::496c:8fc9:766:d900%4&#x27;, &#x27;192.168.22.1&#x27;, &#x27;192.168.1.131&#x27;, &#x27;fe80::a81b:78a:7bdb:dbe2%10&#x27;, &#x27;fe80::b53b:7062:8784:2062%5&#x27;, &#x27;192.168.56.1&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8800, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;bryce&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: True, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;helloclass&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\bryce\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>192.168.135.1</div></td></tr><tr><td><div>fe80::f9e6:f222:2d98:bdbc%12</div></td></tr><tr><td><div>bryce</div></td></tr><tr><td><div>fe80::496c:8fc9:766:d900%4</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>192.168.1.131</div></td></tr><tr><td><div>fe80::a81b:78a:7bdb:dbe2%10</div></td></tr><tr><td><div>192.168.22.1</div></td></tr><tr><td><div>fe80::b53b:7062:8784:2062%5</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>192.168.56.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.12.3-stable+timestamp.2015.08.19.00.18.03</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_sheduler</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 12, 5, 22, 30, 47, 806000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/cmps183_project/default/post_page/1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 12, 6, 6, 30, 47, 806000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x05B20FD0&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'C:\\Users\\bryce\\Desktop\\web2py\\gluon\\restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 05BC9E78, file "C:\\User...83_project\\views\\default/post_page.html", line 1>'
+p69
+ssS'lnum'
+p70
+I227
+sS'lines'
+p71
+(dp72
+I224
+S'            ccode = code'
+p73
+sI225
+S'        else:'
+p74
+sI226
+S'            ccode = compile2(code, layer)'
+p75
+sI227
+S'        exec ccode in environment'
+p76
+sI228
+S'    except HTTP:'
+p77
+sI229
+S'        raise'
+p78
+sI230
+S'    except RestrictedError:'
+p79
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p80
+sI222
+S'    try:'
+p81
+sI223
+S'        if isinstance(code, types.CodeType):'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<!DOCTYPE html>\\\\n<!--[if (gt IE ..."></script>\\\\n  </body>\\\\n</html>\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=r\'C:\\Users\\bryce\\Desktop\\web2py\\applications\\cmps183_project\\views\\default/post_page.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'C:\\Users\\bryce\\Desktop\\web2py\\applications\\cmps183_project\\views\\default\\post_page.html'
+p88
+sg64
+(dp89
+S'left'
+p90
+S'undefined'
+p91
+ssg70
+I87
+sg71
+(dp92
+I96
+S'response.write(\'-->\\n<!--{%/if%}-->\\n</span>\\n\\n\\n<table>\\n<col width=10%>\\n  <col width=75%>\\n  <col width=10%>\\n  <col width = 5%>\\n<tr>\\n    <th>User</th>\\n    <th>Review</th>\\n    <th>Rating</th>\\n    <th></th>\\n  </tr>\\n\\n{%#review_dict:id%}\\n    <tr>\\n            <td>\\n            {% user %}\\n            </td>\\n            <td>\\n            {% body %}\\n            </td>\\n            <td>\\n            {%#star_list%}\\n                <i style = "color: #ffad33" class = "fa fa-star"></i>\\n            {%/star_list%}\\n            <span  style="margin-left: -4px">\\n            {%#anti_star_list%}\\n                <i style = "color: #ffad33;" class = "fa fa-star-o"></i>\\n            {%/anti_star_list%}\\n            </span>\\n            </td>\\n            <td>\\n                {%#if user_id == \', escape=False)'
+p93
+sI97
+S'response.write(auth.user_id)'
+p94
+sI78
+S'response.write(\'\\\') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>\\n</div>\\n<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">\\n    \', escape=False)'
+p95
+sI79
+S'for i in range(len(images)):'
+p96
+sI80
+S'    response.write(\'\\n        <div data-p="144.50" style="display: none;">\\n         <img data-u="image" src="\', escape=False)'
+p97
+sI81
+S"    response.write(URL('default', 'download', args=images[i]['up_file']))"
+p98
+sI82
+S'    response.write(\'" />\\n         <img data-u="thumb" src="\', escape=False)'
+p99
+sI83
+S"    response.write(URL('default', 'download', args=images[i]['up_file']))"
+p100
+sI84
+S'    response.write(\'" />\\n        </div>\\n     \', escape=False)'
+p101
+sI85
+S'    pass'
+p102
+sI86
+S'response.write(\'\\n</div>\\n<!-- Thumbnail Navigator -->\\n<div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">\\n<!-- Thumbnail Item Skin Begin -->\\n<div data-u="slides" style="cursor: default;">\\n<div data-u="prototype" class="p">\\n<div class="w">\\n<div data-u="thumbnailtemplate" class="t"></div>\\n</div>\\n<div class="c"></div>\\n</div>\\n</div>\\n<!-- Thumbnail Item Skin End -->\\n</div>\\n<!-- Arrow Navigator -->\\n<span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>\\n<span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>\\n<a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>\\n</div>\\n<script>\\njssor_1_slider_init();\\n</script>\\n\\n\', escape=False)'
+p103
+sI87
+S"response.write(A('Add Images', _class='btn btn-success', _href=URL('default', 'submit', args=[post.id])))"
+p104
+sI88
+S'response.write(\'\\n\\n<div id="target"></div>\\n\\n<script id="template" type="text/ractive">\\n<span>\\n<h1>\\n</h1>\\n\\n</span>\\n\\n\\n    {% #review_dict:id%}\\n        {%#if user_id == \', escape=False)'
+p105
+sI89
+S'response.write(auth.user_id)'
+p106
+sI90
+S'response.write(\'%}\\n        <p> {% setRev() %} </p>\\n        {%/if%}\\n        <p> {% setTot(num_stars) %} </p>\\n    {% /review_dict %}\\n\\n\\n\\n {% setAvg(total, numRev) %}\\n\\n\\n<div id="reviews">\\n<h2> Reviews </h2>\\n\\n<div style="float: left; margin-bottom: 15px">\\nAverage Rating:\\n\\n{%#each range(1,average)%}\\n    <i style = "color: #ffad33" class = "fa fa-star"></i>\\n{%/each%}\\n\\n {% #if halfstar === true %}\\n        <i style = "color: #ffad33; margin-left: -4px;" class = "fa fa-star-half-o"></i>\\n {%/if%}\\n ({% average %})\\n\\n</div>\\n\\n<span style="float: right; margin-bottom: 15px;">\\n <!--{% #if reviewed === false %}-->\\n        <!--\', escape=False)'
+p107
+sI91
+S'if auth.user_id != None:'
+p108
+sI92
+S"    response.write('-->\\n            ', escape=False)"
+p109
+sI93
+S"    response.write(A('Review This Spot', _class='btn btn-primary', _href=URL('default', 'add_review', args=[post.id])))"
+p110
+sI94
+S"    response.write('\\n       <!--', escape=False)"
+p111
+sI95
+S'    pass'
+p112
+ssg83
+S'()'
+p113
+sg85
+S'<module>'
+p114
+sasS'pyver'
+p115
+S'Python 2.7.10: C:\\Python27\\python.exe (prefix: C:\\Python27)'
+p116
+sS'session'
+p117
+g57
+(S's\xe6\x08\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">auth</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">expiration</td><td style="vertical-align:top;">:</td><td><div>3600</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">hmac_key</td><td style="vertical-align:top;">:</td><td><div>ab2ba0c5-b8ae-4417-a488-b457e78d3f4f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_visit</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 12, 5, 22, 29, 45, 201000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remember_me</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>bpaine@ucsc.edu</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">first_name</td><td style="vertical-align:top;">:</td><td><div>bryce</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">id</td><td style="vertical-align:top;">:</td><td><div>1L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_name</td><td style="vertical-align:top;">:</td><td><div>paine</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_id</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">reset_password_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user_groups</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">1</td><td style="vertical-align:top;">:</td><td><div>user_1</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr></table></div>'
+tRp118
+sS'etype'
+p119
+S"<type 'exceptions.AttributeError'>"
+p120
+sS'date'
+p121
+S'Sat Dec 05 22:30:47 2015'
+p122
+sS'response'
+p123
+g57
+(S'sEA\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x05A82240&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_cmps183_project</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-fb2b2930-db41-43a2-ae87-9a08dae5e2fd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>/cmps183_project/static/js/jquery.js</div></td></tr><tr><td><div>/cmps183_project/static/css/calendar.css</div></td></tr><tr><td><div>/cmps183_project/static/js/calendar.js</div></td></tr><tr><td><div>/cmps183_project/static/js/web2py.js</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap3_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="navbar-brand" href="http://www.web2py.com/" id="web2py-logo"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/cmps183_project/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>My Sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>This App</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Design</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/cmps183_project</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Controller</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/cmps183_project/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>View</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/cmps183_project/views/default/post_page.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>DB Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/cmps183_project/models/db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Menu Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/cmps183_project/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/cmps183_project/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Layout</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/cmps183_project/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Stylesheet</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/cmps183_project/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/cmps183_project/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Errors</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/cmps183_project</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>About</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/cmps183_project</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Download</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Support</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Quick Examples</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>FAQ</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Videos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Free Applications</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentation</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Online book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Preface</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introduction</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Overview</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Core</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Views</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Forms and Validators</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Email and SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Access Control</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Services</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ajax Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Components and Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Deployment Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Other Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Helping web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Buy web2py\'s book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Community</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Groups</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Live Chat</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/post_page/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_cmps183_project</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;C:\\\\Users\\\\bryce\\\\Desktop\\\\web2py\\\\applications\\\\cmps183_project\\\\sessions\\\\1f3\\\\1ec\\\\127.0.0.1-fb2b2930-db41-43a2-ae87-9a08dae5e2fd&#x27;, mode &#x27;rb+&#x27; at 0x05E46F40&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\bryce\\Desktop\\web2py\\applications\\cmps183_project\\sessions\\127.0.0.1-fb2b2930-db41-43a2-ae87-9a08dae5e2fd</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>f52abf61acc8ec24042b5ec5c4bbf243</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-fb2b2930-db41-43a2-ae87-9a08dae5e2fd</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_cmps183_project</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>cmps183_project</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Cmps183 Project</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/post_page.html</div></td></tr></table></div>'
+tRp124
+sS'locals'
+p125
+(dp126
+S'Service'
+p127
+S"<class 'gluon.tools.Service'>"
+p128
+sS'FORMAT'
+p129
+S"'%(asctime)s %(levelname)s %(process)s %(thread)s %(funcName)s():%(lineno)d %(message)s'"
+p130
+sS'OBJECT'
+p131
+S"<class 'gluon.html.OBJECT'>"
+p132
+sS'datetime'
+p133
+S"<type 'datetime.datetime'>"
+p134
+sg117
+S"<Storage {'_formkey[reviews/create]': ['d380cbfe...5c667', '77584a1a-84ce-47c0-991d-85bbc7c16a29']}>"
+p135
+sS'LINK'
+p136
+S"<class 'gluon.html.LINK'>"
+p137
+sS'BR'
+p138
+S"<class 'gluon.html.BR'>"
+p139
+sS'local_import'
+p140
+S'<function <lambda>>'
+p141
+sS'OPTGROUP'
+p142
+S"<class 'gluon.html.OPTGROUP'>"
+p143
+sS'__package__'
+p144
+S'None'
+p145
+sS'PRE'
+p146
+S"<class 'gluon.html.PRE'>"
+p147
+sS'IS_INT_IN_RANGE'
+p148
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p149
+sS'left_sidebar_enabled'
+p150
+S'False'
+p151
+sS'IS_LOWER'
+p152
+S"<class 'gluon.validators.IS_LOWER'>"
+p153
+sS'IS_STRONG'
+p154
+S"<class 'gluon.validators.IS_STRONG'>"
+p155
+sS'cache'
+p156
+S'<gluon.cache.Cache object>'
+p157
+sS'IS_IN_DB'
+p158
+S"<class 'gluon.validators.IS_IN_DB'>"
+p159
+sS'TAG'
+p160
+S'<gluon.html.__TAG__ object>'
+p161
+sS'SQLField'
+p162
+S"<class 'pydal.objects.Field'>"
+p163
+sS'mail'
+p164
+S'<gluon.tools.Mail object>'
+p165
+sS'logger'
+p166
+S'<logging.Logger object>'
+p167
+sS'BODY'
+p168
+S"<class 'gluon.html.BODY'>"
+p169
+sS'IS_DATE_IN_RANGE'
+p170
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p171
+sS'IFRAME'
+p172
+S"<class 'gluon.html.IFRAME'>"
+p173
+sS'URL'
+p174
+S'<function URL>'
+p175
+sS'__file__'
+p176
+S"r'C:\\Users\\bryce\\Desktop\\web2py\\applications\\cmps183_project\\views\\default/post_page.html'"
+p177
+sS'db'
+p178
+S'<DAL uri="sqlite://storage.sqlite">'
+p179
+sS'auth'
+p180
+S'<gluon.tools.Auth object>'
+p181
+sS'P'
+S"<class 'gluon.html.P'>"
+p182
+sS'TFOOT'
+p183
+S"<class 'gluon.html.TFOOT'>"
+p184
+sS'timedelta'
+p185
+S"<type 'datetime.timedelta'>"
+p186
+sS'XHTML'
+p187
+S"<class 'gluon.html.XHTML'>"
+p188
+sS'now'
+p189
+S'datetime.datetime(2015, 12, 6, 6, 30, 47, 836000)'
+p190
+sS'ON'
+p191
+S'True'
+p192
+sS'OL'
+p193
+S"<class 'gluon.html.OL'>"
+p194
+sS'TEXTAREA'
+p195
+S"<class 'gluon.html.TEXTAREA'>"
+p196
+sS'MENU'
+p197
+S"<class 'gluon.html.MENU'>"
+p198
+sS'EM'
+p199
+S"<class 'gluon.html.EM'>"
+p200
+sS'CODE'
+p201
+S"<class 'gluon.html.CODE'>"
+p202
+sS'HTTP'
+p203
+S"<class 'gluon.http.HTTP'>"
+p204
+sS'HR'
+p205
+S"<class 'gluon.html.HR'>"
+p206
+sS'IS_DATETIME'
+p207
+S"<class 'gluon.validators.IS_DATETIME'>"
+p208
+sS'STYLE'
+p209
+S"<class 'gluon.html.STYLE'>"
+p210
+sS'LABEL'
+p211
+S"<class 'gluon.html.LABEL'>"
+p212
+sS'CLEANUP'
+p213
+S"<class 'gluon.validators.CLEANUP'>"
+p214
+sS'plugins'
+p215
+S'<gluon.tools.PluginManager object>'
+p216
+sS'images'
+p217
+S'<Rows (0)>'
+p218
+sS'SELECT'
+p219
+S"<class 'gluon.html.SELECT'>"
+p220
+sS'CENTER'
+p221
+S"<class 'gluon.html.CENTER'>"
+p222
+sS'prettydate'
+p223
+S'<function prettydate>'
+p224
+sS'Auth'
+p225
+S"<class 'gluon.tools.Auth'>"
+p226
+sS'DEVELOPMENT_MENU'
+p227
+g192
+sS'__builtins__'
+p228
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p229
+sS'HTML'
+p230
+S"<class 'gluon.html.HTML'>"
+p231
+sS'SQLFORM'
+p232
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p233
+sS'LOAD'
+p234
+S'<function LOAD>'
+p235
+sS'redirect'
+p236
+S'<function redirect>'
+p237
+sS'FIELDSET'
+p238
+S"<class 'gluon.html.FIELDSET'>"
+p239
+sS'IS_EQUAL_TO'
+p240
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p241
+sS'embed64'
+p242
+S'<function embed64>'
+p243
+sS'in_production'
+p244
+g151
+sS'IS_LIST_OF'
+p245
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p246
+sS'INPUT'
+p247
+S"<class 'gluon.html.INPUT'>"
+p248
+sS'EMBED'
+p249
+S"<class 'gluon.html.EMBED'>"
+p250
+sS'_'
+S'<function _>'
+p251
+sS'FORM'
+p252
+S"<class 'gluon.html.FORM'>"
+p253
+sS'logging'
+p254
+S"<module 'logging' from 'C:\\Python27\\lib\\logging\\__init__.pyc'>"
+p255
+sS'myconf'
+p256
+S"{'forms': {'formstyle': 'bootstrap3_inline', 'se...'you@gmail.com', 'server': 'smtp.gmail.com:587'}}"
+p257
+sS'H2'
+p258
+S"<class 'gluon.html.H2'>"
+p259
+sS'H3'
+p260
+S"<class 'gluon.html.H3'>"
+p261
+sS'AppConfig'
+p262
+S'<function AppConfig>'
+p263
+sS'H1'
+p264
+S"<class 'gluon.html.H1'>"
+p265
+sS'H6'
+p266
+S"<class 'gluon.html.H6'>"
+p267
+sS'H4'
+p268
+S"<class 'gluon.html.H4'>"
+p269
+sS'H5'
+p270
+S"<class 'gluon.html.H5'>"
+p271
+sS'UL'
+p272
+S"<class 'gluon.html.UL'>"
+p273
+sS'IS_UPPER'
+p274
+S"<class 'gluon.validators.IS_UPPER'>"
+p275
+sS'xmlescape'
+p276
+S'<function xmlescape>'
+p277
+sS'IS_TIME'
+p278
+S"<class 'gluon.validators.IS_TIME'>"
+p279
+sS'OPTION'
+p280
+S"<class 'gluon.html.OPTION'>"
+p281
+sS'TITLE'
+p282
+S"<class 'gluon.html.TITLE'>"
+p283
+sS'CRYPT'
+p284
+S"<class 'gluon.validators.CRYPT'>"
+p285
+sS'IS_EMPTY_OR'
+p286
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p287
+sS'MARKMIN'
+p288
+S"<class 'gluon.html.MARKMIN'>"
+p289
+sS'__name__'
+p290
+S"'__restricted__'"
+p291
+sS'STRONG'
+p292
+S"<class 'gluon.html.STRONG'>"
+p293
+sS'COL'
+p294
+S"<class 'gluon.html.COL'>"
+p295
+sS'mc1'
+p296
+S"'col-md-9'"
+p297
+sS'mc0'
+p298
+S"'col-md-12'"
+p299
+sS'service'
+p300
+S'<gluon.tools.Service object>'
+p301
+sS'SCRIPT'
+p302
+S"<class 'gluon.html.SCRIPT'>"
+p303
+sS'TABLE'
+p304
+S"<class 'gluon.html.TABLE'>"
+p305
+sS'IS_IPV4'
+p306
+S"<class 'gluon.validators.IS_IPV4'>"
+p307
+sS'IS_LENGTH'
+p308
+S"<class 'gluon.validators.IS_LENGTH'>"
+p309
+sS'IS_IPV6'
+p310
+S"<class 'gluon.validators.IS_IPV6'>"
+p311
+sS'XML'
+p312
+S"<class 'gluon.html.XML'>"
+p313
+sS'B'
+S"<class 'gluon.html.B'>"
+p314
+sS'IMG'
+p315
+S"<class 'gluon.html.IMG'>"
+p316
+sS'SQLTABLE'
+p317
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p318
+sS'IS_MATCH'
+p319
+S"<class 'gluon.validators.IS_MATCH'>"
+p320
+sS'IS_ALPHANUMERIC'
+p321
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p322
+sS'SPAN'
+p323
+S"<class 'gluon.html.SPAN'>"
+p324
+sS'IS_JSON'
+p325
+S"<class 'gluon.validators.IS_JSON'>"
+p326
+sS'IS_IPADDRESS'
+p327
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p328
+sS'IS_SLUG'
+p329
+S"<class 'gluon.validators.IS_SLUG'>"
+p330
+sS'reviews'
+p331
+S'<Rows (0)>'
+p332
+sS'BEAUTIFY'
+p333
+S"<class 'gluon.html.BEAUTIFY'>"
+p334
+sS'META'
+p335
+S"<class 'gluon.html.META'>"
+p336
+sS'SQLDB'
+p337
+S"<class 'pydal.base.DAL'>"
+p338
+sS'BUTTON'
+p339
+S"<class 'gluon.html.BUTTON'>"
+p340
+sS'IS_DATE'
+p341
+S"<class 'gluon.validators.IS_DATE'>"
+p342
+sS'IS_EMAIL'
+p343
+S"<class 'gluon.validators.IS_EMAIL'>"
+p344
+sS'middle_column'
+p345
+S"'col-md-12'"
+p346
+sS'IS_NOT_EMPTY'
+p347
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p348
+sS'IS_FLOAT_IN_RANGE'
+p349
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p350
+sS'TBODY'
+p351
+S"<class 'gluon.html.TBODY'>"
+p352
+sS'CAT'
+p353
+S"<class 'gluon.html.CAT'>"
+p354
+sS'Field'
+p355
+S"<class 'pydal.objects.Field'>"
+p356
+sS'mc2'
+p357
+S"'col-md-6'"
+p358
+sS'IS_LIST_OF_EMAILS'
+p359
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p360
+sS'DIV'
+p361
+S"<class 'gluon.html.DIV'>"
+p362
+sS'LEGEND'
+p363
+S"<class 'gluon.html.LEGEND'>"
+p364
+sS'COLGROUP'
+p365
+S"<class 'gluon.html.COLGROUP'>"
+p366
+sS'DAL'
+p367
+S"<class 'pydal.base.DAL'>"
+p368
+sS'ASSIGNJS'
+p369
+S'<function ASSIGNJS>'
+p370
+sS'TR'
+p371
+S"<class 'gluon.html.TR'>"
+p372
+sS'LI'
+p373
+S"<class 'gluon.html.LI'>"
+p374
+sS'right_sidebar_enabled'
+p375
+g151
+sS'post'
+p376
+S'None'
+p377
+sS'TH'
+p378
+S"<class 'gluon.html.TH'>"
+p379
+sS'TD'
+p380
+S"<class 'gluon.html.TD'>"
+p381
+sS'PluginManager'
+p382
+S"<class 'gluon.tools.PluginManager'>"
+p383
+sS'IS_URL'
+p384
+S"<class 'gluon.validators.IS_URL'>"
+p385
+sS'A'
+S"<class 'gluon.html.A'>"
+p386
+sS'HEAD'
+p387
+S"<class 'gluon.html.HEAD'>"
+p388
+sS'IS_DATETIME_IN_RANGE'
+p389
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p390
+sS'IS_IMAGE'
+p391
+S"<class 'gluon.validators.IS_IMAGE'>"
+p392
+sS'I'
+S"<class 'gluon.html.I'>"
+p393
+sS'icon_trash'
+p394
+S'<gluon.html.I object>'
+p395
+sS'yesterday'
+p396
+S'datetime.datetime(2015, 12, 5, 6, 30, 47, 836000)'
+p397
+sS'icon_pencil'
+p398
+S'<gluon.html.I object>'
+p399
+sS'sys'
+p400
+S"<module 'sys' (built-in)>"
+p401
+sS'IS_NOT_IN_DB'
+p402
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p403
+sg123
+S"<Storage {'body': <cStringIO.StringO object at 0...t 0x05D589B0>, 'view': 'default/post_page.html'}>"
+p404
+sS'THEAD'
+p405
+S"<class 'gluon.html.THEAD'>"
+p406
+sS'ANY_OF'
+p407
+S"<class 'gluon.validators.ANY_OF'>"
+p408
+sS'IS_NULL_OR'
+p409
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p410
+sg56
+S"<Storage {'_vars': <Storage {}>, 'function': 'po...sktop\\\\web2py\\\\applications\\\\cmps183_project\\\\'}>"
+p411
+sS'IS_EXPR'
+p412
+S"<class 'gluon.validators.IS_EXPR'>"
+p413
+sS'T'
+S'<gluon.languages.translator object>'
+p414
+sS'IS_IN_SET'
+p415
+S"<class 'gluon.validators.IS_IN_SET'>"
+p416
+sS'IS_UPLOAD_FILENAME'
+p417
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p418
+sS'TT'
+p419
+S"<class 'gluon.html.TT'>"
+p420
+sS'IS_DECIMAL_IN_RANGE'
+p421
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p422
+sssS'traceback'
+p423
+S'Traceback (most recent call last):\n  File "C:\\Users\\bryce\\Desktop\\web2py\\gluon\\restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "C:\\Users\\bryce\\Desktop\\web2py\\applications\\cmps183_project\\views\\default/post_page.html", line 87, in <module>\n    left:0;\nAttributeError: \'NoneType\' object has no attribute \'id\'\n'
+p424
+s.

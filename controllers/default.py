@@ -164,6 +164,35 @@ def delete_review():
     db(db.reviews.id == rev_id).delete()
     redirect(URL('default', 'post_page', args= request.vars.get("post")))
 
+# def edit_review():
+#     rev_id = request.vars.get("rev_id")
+#     if(auth.user_id != request.vars.get("user_id")):
+#          redirect(URL('default', 'post_page', args=request.vars.get("post")))
+#          print "hi"
+#          session.flash = T('Not permitted for this user')
+#     else:
+#         form = SQLFORM(db.rev_id, record=rev_id, upload = URL('download'))
+#         if form.process().accepted:
+#             session.flash = T('The data was edited')
+#             redirect(URL('default', 'edit_review', args=request.vars.get("post")))
+#         edit_button = A('View', _class='btn btn-warning',
+#             _href=URL('default', 'post_page', args=[request.vars.get("post")]))
+#         return dict(form=form,edit_button=edit_button)
+
+def edit_review():
+    rev_id = request.args(0)
+    if(auth.user_id != request.args(1)):
+         redirect(URL('default', 'post_page', args=request.args(2)))
+         print "hi"
+         session.flash = T('Not permitted for this user')
+    else:
+        form = SQLFORM(db.rev_id, record=rev_id, upload = URL('download'))
+        if form.process().accepted:
+            session.flash = T('The data was edited')
+            redirect(URL('default', 'edit_review', args=request.args(2)))
+        return dict(form=form)
+
+
 def user():
     """
     exposes:

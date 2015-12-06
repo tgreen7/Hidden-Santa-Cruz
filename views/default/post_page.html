@@ -237,9 +237,8 @@ Average Rating:
             <td>
                 {%#if user_id == {{=auth.user_id}}%}
                     <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o"></i> </a>
-                    <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o"></i> </a>
-                    {{=A('', _class='fa fa-pencil', _href=URL('default', 'user', args=['login']))}}
-
+                    <!--<a on-click="Edit:{%id%},{%post_id%},{%user_id%}" ><i class = "fa fa-pencil"></i> </a>-->
+                    <a href="../edit_review/{%id%}/{%post_id%}/{%user_id%}"><i class = "fa fa-pencil"></i> </a>
                 {%/if%}
 
             </td>
@@ -321,9 +320,10 @@ $(function() {
         );
     }
 
-    function alerter(rev_id, post) {
+    function alerter(rev_id, post, u) {
         alert(rev_id);
         alert(post);
+        alert(u);
         alert("test");
     }
 
@@ -344,6 +344,10 @@ $(function() {
               }
         );
     });
+//
+//    MAIN.on("Edit", function(e, rev_id, post, user_id){
+//        alerter(rev_id, post,user_id);
+//    });
 
 
 
