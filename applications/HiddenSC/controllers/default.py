@@ -159,8 +159,6 @@ def add_posts():
 def add_review():
     form = SQLFORM(db.reviews)
     form.vars.post = request.args(0)
-    print "review_post id"
-    print form.vars.post
     form.vars.user_id = auth.user_id
     if form.process().accepted:
         session.flash = T('the data was inserted')

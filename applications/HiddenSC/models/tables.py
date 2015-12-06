@@ -57,9 +57,9 @@ db.define_table('posts',
                 )
 
 db.define_table('reviews',
-                Field('body','text'),
+                Field('body','text', label="Review"),
                 Field('user_id',db.auth_user,default=auth.user_id, writable=False, readable=False),
-                Field('num_stars', 'integer'),
+                Field('num_stars', 'integer', label="Rating (0-5)"),
                 Field('post',db.posts, writable=False, readable=False)
                 )
 db.reviews.num_stars.requires=IS_INT_IN_RANGE(0,6)
