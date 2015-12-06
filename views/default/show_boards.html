@@ -32,6 +32,7 @@
     <div class = "buttons">
         <a class="btn btn-success" href="add_board.html">Add Board</a>
            <div style="display: inline-block; float:right;">
+           {{=A('Edit Profile', _class='btn btn-primary', _href=URL('default', 'user', args=['profile']))}}
            {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
             </div>
     </div>
