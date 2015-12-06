@@ -122,26 +122,6 @@ def show_posts():
     post_list = db(db.posts.board==post_board_id).select()
     return dict(post_list=post_list, post_board_id=post_board_id, board_list=board_list)
 
-
-
-# def submit():
-#     import datetime
-#
-#     form = FORM(LABEL("File(s):"),
-#                 INPUT(_name='up_files', _type='file', _multiple='', requires=IS_NOT_EMPTY()),  BR(),INPUT(_type='submit'))
-#     if form.accepts(request.vars, formname="form"):
-#         files = request.vars['up_files']
-#         if not isinstance(files, list):
-#             files = [files]
-#         for f in files:
-#             print f.filename
-#             up_file = db.uploads.up_file.store(f, f.filename)
-#             i = db.uploads.insert(up_file=up_file)
-#             db.commit()
-#         return "form submitted" #redirect(URL('data', 'index')
-#         # )
-#     return dict(form=form)
-
 def add_posts():
     logger.info("My session is: %r" % session)
     form = SQLFORM(db.posts,  upload = URL('download'))

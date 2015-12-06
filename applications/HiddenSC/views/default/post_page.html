@@ -196,11 +196,11 @@ Average Rating:
 </div>
 
 <span style="float: right; margin-bottom: 15px;">
- {% #if reviewed === false %}
-        {{if auth.user_id != None:}}
+ <!--{% #if reviewed === false %}-->
+        <!--{{if auth.user_id != None:}}-->
             {{=A('Review This Spot', _class='btn btn-primary', _href=URL('default', 'add_review', args=[post.id]))}}
-       {{pass}}
-{%/if%}
+       <!--{{pass}}-->
+<!--{%/if%}-->
 </span>
 
 
@@ -306,6 +306,18 @@ $(function() {
     }
   });
 
+    function load_reviews () {
+       $.ajax("{{=URL('default', 'load_reviews', args= [post.id])}}",
+          {
+            method: 'POST',
+            success: function (data) {
+              MAIN.set('review_dict', data['review_dict']);
+              MAIN.set('loading', false);
+            }
+          }
+        );
+    }
+
 
 
    // Loads the initial list of messages.
@@ -318,9 +330,9 @@ $(function() {
               MAIN.set('loading', false);
             }
           }
-
   );
 
+    setInterval(load_reviews, 5000);
 
 });
 </script>
