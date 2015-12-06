@@ -53,11 +53,23 @@ def add_board():
 def show_posts():
     post_board_id = request.args(0)
     board_list =db(db.board).select()
-    print "fuck"
-    print post_board_id
-    print "fuck again"
+
     post_list = db(db.posts.board==post_board_id).select()
-    return dict(post_list=post_list, post_board_id=post_board_id, board_list=board_list)
+
+    avglist = {}
+
+
+    for post in post_list:
+        reviews = db(db.reviews.post == post.id).select()
+        total = 0
+        count = db(db.reviews.post == post.id).count()
+        for i in reviews:
+            total += i.num_stars
+        avglist[post.id] = float('%.2f'%(total / float(count)))
+
+    
+
+    return dict(post_list=post_list, avglist=avglist, post_board_id=post_board_id, board_list=board_list)
 
 def add_posts():
     logger.info("My session is: %r" % session)
@@ -98,10 +110,11 @@ def post_page():
     title = post.title
     body = post.body
     reviews = db(db.reviews.post == post_id).select()
+    num_rev = db(db.reviews.post == post_id).count()
+    # print "numrev" + str(num_rev)
+
     images = db(db.uploads.post == post_id).select()
-    print "reviews"
-    print reviews
-    return dict(post = post,reviews=reviews,title=title, body= body, images = images)
+    return dict(post = post,reviews=reviews, num_rev=num_rev, title=title, body= body, images = images)
 
 # upload images
 def upload_images():
