@@ -67,7 +67,7 @@ def show_posts():
             total += i.num_stars
         avglist[post.id] = float('%.2f'%(total / float(count)))
 
-    
+
 
     return dict(post_list=post_list, avglist=avglist, post_board_id=post_board_id, board_list=board_list)
 

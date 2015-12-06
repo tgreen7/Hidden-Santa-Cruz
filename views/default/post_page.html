@@ -203,11 +203,11 @@ Average Rating:
 </div>
 
 <span style="float: right; margin-bottom: 15px;">
- <!--{% #if reviewed === false %}-->
-        <!--{{if auth.user_id != None:}}-->
+ {% #if reviewed === false %}
+        {{if auth.user_id != None:}}
             {{=A('Review This Spot', _class='btn btn-primary', _href=URL('default', 'add_review', args=[post.id]))}}
-       <!--{{pass}}-->
-<!--{%/if%}-->
+       {{pass}}
+ {%/if%}
 </span>
 
 
