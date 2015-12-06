@@ -47,10 +47,12 @@
         </div>
         <div class="boardbody">
             Average Rating:
-            {{for i in range(0,int(avglist[post_id['id']])):}}
-            <i style = "color: #ffad33" class = "fa fa-star"></i>
+
+            {{for i in range(0, 5):}}
+                <i style = "color: #ffad33" class = "fa fa-star"></i>
             {{pass}}
-            ({{=avglist[post_id['id']]}})
+
+            ({{=post_id['avg_rate']}})
         </div>
     </div>
 {{pass}}

@@ -43,10 +43,12 @@ db.define_table('posts',
                 Field('body', 'text'),
                 Field('board', db.board, writable=False, readable=False),
                 Field('user_id', db.auth_user, default=auth.user_id, readable=False, writable=False),
+                Field('avg_rate', 'float', default=0, readable=False, writable=False),
                 Field('created_on', 'datetime', default=request.now, writable=False),
                 # searchbar
                 format = '%(title)s'
                 )
+
 db.posts.id.readable = db.posts.id.writable = False
 
 db.define_table('reviews',

@@ -52,24 +52,39 @@ def add_board():
 
 def show_posts():
     post_board_id = request.args(0)
-    board_list =db(db.board).select()
 
     post_list = db(db.posts.board==post_board_id).select()
 
-    avglist = {}
 
+    # avglist = {}
+    #
+    # for post in post_list:
+    #     reviews = db(db.reviews.post == post.id).select()
+    #     total = 0
+    #     count = db(db.reviews.post == post.id).count()
+    #     for i in reviews:
+    #         total += i.num_stars
+    #     avglist[post.id] = float('%.2f'%(total / float(count)))
 
     for post in post_list:
         reviews = db(db.reviews.post == post.id).select()
         total = 0
         count = db(db.reviews.post == post.id).count()
+        if count == 0:
+            break
         for i in reviews:
             total += i.num_stars
-        avglist[post.id] = float('%.2f'%(total / float(count)))
+        # post.avg_rate = float('%.2f' % (total / float(count)))
+        dub = float('%.2f' % (total / float(count)))
+        db.posts(post.id).update_record(avg_rate = dub)
+
+    post_list = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
+
+    for post in post_list:
+        print post.avg_rate
 
 
-
-    return dict(post_list=post_list, avglist=avglist, post_board_id=post_board_id, board_list=board_list)
+    return dict(post_list=post_list, post_board_id=post_board_id)
 
 def add_posts():
     logger.info("My session is: %r" % session)
