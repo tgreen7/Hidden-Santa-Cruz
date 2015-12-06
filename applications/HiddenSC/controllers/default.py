@@ -122,6 +122,22 @@ def show_posts():
     post_list = db(db.posts.board==post_board_id).select()
     return dict(post_list=post_list, post_board_id=post_board_id, board_list=board_list)
 
+
+# Search Bar Stuff On Post Page
+def search():
+     "an ajax wiki search page"
+     return dict(form=FORM(INPUT(_id='keyword',_name='keyword',
+              _onkeyup="ajax('callback', ['keyword'], 'target');")),
+              target_div=DIV(_id='target'))
+
+def callback():
+     "an ajax callback that returns a <ul> of links to post pages"
+     query = db.posts.title.contains(request.vars.keyword)
+     posts = db(query).select(orderby=db.posts.title)
+     links = [(A(p.title, _href=URL('post_page',args=p.id)))
+              for p in posts]
+     return UL(*links)
+
 def add_posts():
     logger.info("My session is: %r" % session)
     form = SQLFORM(db.posts,  upload = URL('download'))
