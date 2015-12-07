@@ -247,7 +247,7 @@ Average Rating:
                 {%#if user_id == {{=auth.user_id}}%}
                     <a on-click="Del:{%id%},{%post_id%}" ><i class = "fa fa-trash-o hover_hand"></i> </a>
                     <!--<a on-click="Edit:{%id%},{%post_id%},{%user_id%}" ><i class = "fa fa-pencil"></i> </a>-->
-                    <a href="../edit_review/{%id%}/{%post_id%}/{%user_id%}"><i class = "fa fa-pencil hover_hand"></i> </a>
+                    <a href="{{=URL('default', 'edit_review')}}/{%id%}/{%post_id%}/{%user_id%}"><i class = "fa fa-pencil hover_hand"></i> </a>
                 {%/if%}
 
             </td>

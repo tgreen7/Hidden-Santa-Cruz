@@ -92,8 +92,8 @@
             <br>
             <br>
             {% #if user_id == {{=auth.user_id}} %}
-                <a href="../posts_edit/{%id%}" class="btn btn-info" >Edit</a>
-                <a href="../delete_post/{%id%}/{%board%}" class="btn btn-danger" >Delete</a>
+                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" class="btn btn-info" >Edit</a>
+                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%board%}" class="btn btn-danger" >Delete</a>
             {% /if %}
         </div>
     </div>
@@ -183,7 +183,7 @@ $(function() {
 
     //goes to the page for that post
     MAIN.on("go_to_post", function(e, post_id, board){
-        window.location.href = '../post_page/' + post_id + '/' + board;
+        window.location.href = '{{=URL('default', 'post_page')}}' + '/' + post_id + '/' + board;
     });
 
   // Called every 10s, checks for changes in posts and loads them

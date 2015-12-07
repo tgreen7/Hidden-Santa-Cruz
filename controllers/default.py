@@ -106,6 +106,8 @@ def show_posts():
         for i in reviews:
             total += i.num_stars
         dub = float('%.2f' % (total / float(count)))
+        print "dub"
+        print dub
         db.posts(post.id).update_record(avg_rate=dub)
 
     post_list = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)

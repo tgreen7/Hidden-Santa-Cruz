@@ -78,7 +78,7 @@
     <div class="container-fluid">
 
 <!--if user is not logged in dont let them create a board, if they are then show button-->
-
+            {{=A('create board', _class='btn btn-primary', _href=URL('default', 'add_board'))}}
            {{for board_id in board_list:}}
             <div class = "myboard" >
               <span class="boardtitle" >
