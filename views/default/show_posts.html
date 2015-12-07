@@ -11,11 +11,11 @@
   {{if auth.user_id is None:}}
             <h1>
             <div style = "float:left">
-            {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+            {{=A('Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
             </div>
             <div style = "float:right" id="main_login">
             {{=A('Sign Up', _class='btn btn-warning', _href=URL('default', 'user', args=['register']))}}
-            {{=A('Sign In', _class='btn btn-success', _href=URL('default', 'user', args=['login']))}}
+            {{=A('Sign In', _class='btn btn-primary', _href=URL('default', 'user', args=['login']))}}
              <br><br>
             </div>
                 <div style="clear: both;"></div>
@@ -27,12 +27,10 @@
             {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
         </div>
 
-        {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
-        {{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_board_id]))}}
+        {{=A('Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+        {{=A('Create Post', _class='btn btn-warning', _href=URL('default', 'add_posts', args=[post_board_id]))}}
 
     </div>
-            <br>
-            <br>
   {{pass}}
     <div class="dropdown">
         Sort By: <br>
@@ -63,7 +61,7 @@
 
   {% #post_list %}
     <div class = "myboard" >
-        <div class="boardtitle hover_hand" on-click="go_to_post:{%id%}">
+        <div class="boardtitle hover_hand" on-click="go_to_post:{%id%},{%board%}">
             {% title %}
             {% id %}
         </div>
@@ -72,10 +70,20 @@
             {% #star_dict[id]%}
                 <i style = "color: #ffad33" class = "fa fa-star"></i>
             {% /star_dict %}
-            <span style=" margin-left: -5px;">
+
+
+            {% #if half_star_dict[id] %}
+                <span style=" margin-left: -4px;">
+                <i style = "color: #ffad33" class = "fa fa-star-half-o"></i>
+                </span>
+            {% /if %}
+
+
+            <span style=" margin-left: -4px;">
             {% #anti_star_dict[id]%}
                 <i style = "color: #ffad33;" class = "fa fa-star-o"></i>
             {% /star_dict %}
+
             </span>
             ({% avg_rate %})
             <br>
@@ -110,6 +118,7 @@ $(function() {
         post_list: [],
         star_dict: {},
         anti_star_dict: {},
+        half_star_dict: {},
         sort_rated: false,
         sort_recent: false,
         loading: false
@@ -124,6 +133,11 @@ $(function() {
                 MAIN.set('post_list', data['post_list']);
                 MAIN.set('star_dict', data['star_dict']);
                 MAIN.set('anti_star_dict', data['anti_star_dict']);
+
+
+                MAIN.set('half_star_dict', data['half_star_dict']);
+
+
                 MAIN.set('sort_recent', true);
                 MAIN.set('sort_rated', false);
             }
@@ -157,7 +171,7 @@ $(function() {
                             MAIN.set('post_list', data['post_list']);
                             MAIN.set('star_dict', data['star_dict']);
                             MAIN.set('anti_star_dict', data['anti_star_dict']);
-                             MAIN.set('loading', false);
+                            MAIN.set('loading', false);
 
                             MAIN.set('sort_recent', true);
                             MAIN.set('sort_rated', false);
@@ -167,8 +181,10 @@ $(function() {
         }
     });
 
-    MAIN.on("go_to_post", function(e, post_id){
-        window.location.href = '../post_page/' + post_id;
+    MAIN.on("go_to_post", function(e, post_id, board){
+//        alert(post_id);
+//        alert(board);
+        window.location.href = '../post_page/' + post_id + '/' + board;
     });
 
 //    MAIN.on("post_page", function(e, post_id){

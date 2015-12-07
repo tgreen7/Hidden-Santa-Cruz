@@ -37,7 +37,7 @@ def callback():
      "an ajax callback that returns a <ul> of links to post pages"
      query = db.posts.title.contains(request.vars.keyword)
      posts = db(query).select(orderby=db.posts.title)
-     links = [(A(p.title, _href=URL('post_page',args=p.id)))
+     links = [(A(p.title, _href=URL('post_page',args=[p.id, p.board])))
               for p in posts]
      return UL(*links, _class='search_list')
 
@@ -57,12 +57,19 @@ def load_posts_rating():
 
     star_dict = {}
     anti_star_dict = {}
+    half_star_dict = {}
 
     for post in posts:
-        star_dict[post.id] = range(0, int(post.avg_rate))
-        anti_star_dict[post.id] = range(0, int(5-int(post.avg_rate)))
+        if (post.avg_rate - int(post.avg_rate)) >= 0.5:
+            half_star_dict[post.id] = True
+            anti_star_dict[post.id] = range(0, int(4 - int(post.avg_rate)))
+        else:
+            anti_star_dict[post.id] = range(0, int(5 - int(post.avg_rate)))
+            half_star_dict[post.id] = False
 
-    return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict))
+        star_dict[post.id] = range(0, int(post.avg_rate))
+
+    return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict, half_star_dict=half_star_dict))
 
 def load_posts_recent():
     post_board_id = request.args(0)
@@ -71,12 +78,20 @@ def load_posts_recent():
 
     star_dict = {}
     anti_star_dict = {}
+    half_star_dict = {}
 
     for post in posts:
-        star_dict[post.id] = range(0, int(post.avg_rate))
-        anti_star_dict[post.id] = range(0, int(5-int(post.avg_rate)))
+        if (post.avg_rate - int(post.avg_rate)) >= 0.5:
+            half_star_dict[post.id] = True
+            anti_star_dict[post.id] = range(0, int(4 - int(post.avg_rate)))
+        else:
+            anti_star_dict[post.id] = range(0, int(5 - int(post.avg_rate)))
+            half_star_dict[post.id] = False
 
-    return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict))
+        star_dict[post.id] = range(0, int(post.avg_rate))
+
+
+    return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict, half_star_dict=half_star_dict))
 
 def show_posts():
     post_board_id = request.args(0)
@@ -152,6 +167,7 @@ def delete_post():
 
 def post_page():
     post_id = request.args(0)
+    board = request.args(1)
     post = db.posts[post_id]
     title = post.title
     body = post.body
@@ -160,7 +176,7 @@ def post_page():
     # print "numrev" + str(num_rev)
 
     images = db(db.uploads.post == post_id).select()
-    return dict(post = post,reviews=reviews, num_rev=num_rev, title=title, body= body, images = images)
+    return dict(post = post, reviews=reviews, num_rev=num_rev, title=title, body= body, images = images, board=board)
 
 # upload images
 def upload_images():
