@@ -111,26 +111,7 @@ def show_posts():
     post_list = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
     return dict(post_list=post_list, post_board_id=post_board_id)
 
-def show_posts_backup():
-    post_board_id = request.args(0)
-
-    post_list = db(db.posts.board==post_board_id).select()
-
-    for post in post_list:
-        reviews = db(db.reviews.post == post.id).select()
-        total = 0
-        count = db(db.reviews.post == post.id).count()
-        if count == 0:
-            break
-        for i in reviews:
-            total += i.num_stars
-        dub = float('%.2f' % (total / float(count)))
-        db.posts(post.id).update_record(avg_rate = dub)
-
-    post_list = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
-
-    return dict(post_list=post_list, post_board_id=post_board_id)
-
+@auth.requires_login()
 def add_posts():
     logger.info("My session is: %r" % session)
     form = SQLFORM(db.posts,  upload = URL('download'))
@@ -148,7 +129,7 @@ def posts_edit():
     posts = db.posts(request.args(0))
     if(auth.user_id != posts.user_id):
          redirect(URL('default', 'show_posts', args=[posts.board]))
-         session.flass = T('Not permitted for this user')
+         session.flash = T('Not permitted for this user')
     else:
         form = SQLFORM(db.posts, record=posts, upload = URL('download'))
         if form.process().accepted:
@@ -156,18 +137,22 @@ def posts_edit():
             redirect(URL('default', 'show_posts', args=[posts.board]))
         return dict(form=form)
 
-#delete boards
+#delete post
 @auth.requires_login()
 def delete_post():
+    post = db.posts(request.args(0))
+    if (auth.user_id != post.user_id):
+        redirect(URL('default', 'show_posts', args=request.args(1)))
+        session.flash = T('Not permitted for this user')
 
-    post_id = request.args(0)
-    db(db.posts.id == post_id).delete()
-    redirect(URL('default','show_posts', args=request.args(1)))
+    else:
+        db(db.posts.id == post).delete()
+        redirect(URL('default','show_posts', args=request.args(1)))
 
 
 def post_page():
     post_id = request.args(0)
-    board = request.args(1)
+    board = db.posts(post_id).board
     post = db.posts[post_id]
     title = post.title
     body = post.body
@@ -209,8 +194,6 @@ def load_reviews():
     post_board_id = request.args(0)
     rows = db(db.reviews.post == post_board_id).select()
 
-
-
     def get_name(user_id):
         test = db(db.auth_user.id == user_id).select()
         firstname = ""
@@ -235,25 +218,9 @@ def load_reviews():
 @auth.requires_login()
 def delete_review():
     rev_id = request.vars.get("rev_id")
-    print "rev"
-    print rev_id
     db(db.reviews.id == rev_id).delete()
     redirect(URL('default', 'post_page', args= request.vars.get("post")))
 
-# def edit_review():
-#     rev_id = request.vars.get("rev_id")
-#     if(auth.user_id != request.vars.get("user_id")):
-#          redirect(URL('default', 'post_page', args=request.vars.get("post")))
-#          print "hi"
-#          session.flash = T('Not permitted for this user')
-#     else:
-#         form = SQLFORM(db.rev_id, record=rev_id, upload = URL('download'))
-#         if form.process().accepted:
-#             session.flash = T('The data was edited')
-#             redirect(URL('default', 'edit_review', args=request.vars.get("post")))
-#         edit_button = A('View', _class='btn btn-warning',
-#             _href=URL('default', 'post_page', args=[request.vars.get("post")]))
-#         return dict(form=form,edit_button=edit_button)
 
 @auth.requires_login()
 def edit_review():
