@@ -2,80 +2,628 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98b0364e-11dd-47f0-b8d5-61ea6ff91760" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-03-52.5533ade0-a975-4eae-a9e7-5154c6829d8e" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-03-53.ea68292f-7af0-4854-ab0c-30958010330b" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-06-40.01471680-e371-417e-bb47-a0634d4c630b" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-06-40.2b56e951-d3ad-4709-8063-b0a3c68f09ad" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-23-32.c434aecc-69b4-489b-9f9e-329c372cf189" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-23-33.fa0f03df-d81e-493c-a09f-f760b6a21b7d" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-25-48.26e2be5b-06ed-4803-9cf8-fee8c58cb291" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.14-25-48.f250ffaa-aa6a-4dce-928f-ca7ae510556c" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-02-03.17b9593a-aba2-4f58-b0da-b2f2516fd7c0" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-02-03.7b70a956-14f2-4ad1-bd47-3c7adc8ca889" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-40.1195db6f-dd79-4718-ab3b-8372b36153a0" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-40.efce1f53-922c-4762-b54e-4dacae06884c" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-47.3085952b-a462-42e3-ac63-ca82006ac708" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-08-47.c0764ac0-308f-41f2-829b-b9e67ec68227" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-09-16.96e2c37d-87a9-4e77-8b27-7948935bc802" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-09-17.135ff739-04f7-4e1a-a437-2b5988de703b" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-12-24.6e0e943f-fdba-492b-a89c-848d2ca3a06a" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-12-25.5129f1a1-993f-419f-afab-374d4b85df69" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-15-06.28775b55-4ee9-424b-a60b-d00e221a87f1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-15-07.4a0e8043-19dd-49f4-9435-39e9f874301f" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-16-08.a935bcca-cc93-4859-8189-88965093a729" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-16-08.f108bba8-6949-4d50-a82d-22ce604414f1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-29-52.0b4c8c12-5c60-40e4-b720-f2cc874b3e98" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-29-52.b882a68e-d0b5-46ec-83b6-f6ea19569f12" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-31-30.d6a78047-f2a6-48b6-b4d8-34a0f85932e5" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-31-31.e976846c-2882-40e7-bc69-0376de128d6c" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-32-18.7d3c1c27-d195-4253-a64d-7b3dfdf072b4" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-32-19.3d5c8e6f-af94-44df-bc64-55f5275d6917" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-33-57.006a6708-427b-41df-a71f-c307ed416e2a" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-33-57.1378a5cd-34a3-4f61-90a4-884bf91dee1d" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-33-59.c80280eb-4b89-4544-b5a8-f96e2734db12" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-34-04.9b2a1e89-8e8a-4452-af13-0492197dba0d" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-37-13.2707250c-70f8-411d-860e-0d38b04248f9" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-37-13.f4c6bb4c-b857-4923-bd21-2e09135576b7" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-37-14.64f484f6-8064-4794-a8e4-4bca33ba420b" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-38-10.da71e511-0782-433b-be13-6005229e6ad2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-39-24.8f064261-8092-4ac4-b9d9-945158a62e39" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-40-25.ccd30a9e-6651-49c8-b6cb-e7d213b9d070" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-41-18.fbd9aceb-dc26-4d4b-aec4-eb19f65de8e1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-49-18.1caf6882-45f7-46d1-9f39-3b6f1f4d3c0a" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-49-18.64bf6094-fdeb-4742-aa5e-c1aae2e4a3fd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-30.cfde425c-d2d4-455e-82e9-132594ba5983" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-30.d2369cdd-78f1-4c2c-b3c1-9ad471ebd12b" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-38.08094300-6a8d-47de-8c69-086d82626666" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-38.76f08867-ba54-498e-9033-4c14fd65078a" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-43.d35d93f3-2f90-4990-8b1c-cdf2d43c6b0b" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-51-44.53c32dd8-7a3e-4285-be86-dbcabca671ef" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-54-17.4b3c1e14-9b19-41d9-ab39-45662f93e44b" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-54-17.abe34e7a-9481-4516-8e4d-cce765bad44a" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-55-47.1a8d8d47-8701-4fee-8e7d-a011358432a9" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.16-55-48.04ea7581-3794-497c-afae-ef167e15835f" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-45-52.51088f51-93c1-4446-810f-d5070be892d7" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-53-11.614313c3-6d08-4117-98d2-6825c30f3ef1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-57-47.965714c1-be5b-4e8a-a49c-475f73658111" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-59-02.c5b1b76f-5c77-41d5-923b-7e99d5a4d863" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\errors\127.0.0.1.2015-11-30.17-59-25.5173bf7b-85b4-44ee-95d8-9a6a171e9078" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\043\125\127.0.0.1-e1731e73-b226-4647-bcfd-5ff809d227d0" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\050\054\127.0.0.1-85f94dbd-ad6b-4580-81f8-45d7fff31539" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\0f1\0eb\127.0.0.1-812ac3b5-17de-4581-a1d0-abf15a148af1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\162\0b3\127.0.0.1-fe21cc1f-50c5-472a-8668-5ec2b2b9c104" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\17b\021\127.0.0.1-39dd0e38-dac5-46aa-a6ec-a687c3b61396" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\bryce\Desktop\web2py\applications\HiddenSC\sessions\1b6\01e\127.0.0.1-27c889d9-1131-49e7-981e-cb6414c19d54" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/admin/sessions/113/1eb/127.0.0.1-c07dbf34-c6e3-4a6b-9870-49c999cdd1b7" afterPath="$PROJECT_DIR$/applications/admin/sessions/113/1eb/127.0.0.1-c07dbf34-c6e3-4a6b-9870-49c999cdd1b7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/storage.sqlite" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/storage.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/c8b669d15150d7109e5f7ab36744a5b7_posts.table" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/c8b669d15150d7109e5f7ab36744a5b7_posts.table" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" afterPath="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\ABOUT" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\controllers\appadmin.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\controllers\default.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\cron\crontab" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\cron\crontab.example" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_cas.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_event.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_group.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_membership.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_permission.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_user.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_board.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_canpost.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_images.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_people.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_posts.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_reviews.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\c8b669d15150d7109e5f7ab36744a5b7_uploads.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\sql.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\databases\storage.sqlite" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-07-03.1850c3a7-d015-41d0-a08b-e87ba6114779" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-07-03.d9270b04-20e0-433c-8647-f822f07ae704" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-09-49.e858b918-9b54-426f-9347-7a37202ec139" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-09-49.f4cebcc4-bd63-4b59-ba46-857c47f6fcc4" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-10-10.bc9d825e-3a40-42fd-8796-82ef02fbcbac" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-10-11.8d11d609-8b82-4391-a189-2b7b80a672d1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-13-04.064d5839-d201-44d9-ab55-e4374b7754cd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-14-09.22a4cdfa-de76-4fa6-83e2-032af3718211" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-14-10.633411bd-8cb5-4949-89c4-d6ee8f67ebf4" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-11-30.19-14-12.44e68ae1-d63f-4fc4-bba5-206c200f1701" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-09-28.28c608f8-faaa-4426-a228-a189ff702847" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-09-29.8e9debf4-c9a0-4696-ae80-54bb7477824e" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-57-27.2b48a83e-6802-41ee-808f-97e053c5bd20" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-58-28.e27ed9e9-c6f1-42d1-bf87-e022aa387ba1" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-58-29.eb1eff31-c497-4a19-aa7d-650941b6814e" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-58-57.ed48526c-8ddc-4aa7-8c8a-cdd5474ff8fb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-58-58.4b31883a-ef8f-4acf-b4ca-294b45498a71" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.11-59-20.a69c7790-4430-4770-b3ed-5797e8456e87" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-02-11.b5ca1fe1-9449-409a-8672-1d47dd181e7b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-02-14.8b59f7d7-1b6e-4ef0-a971-cc08047f2915" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-02-59.a030a408-27aa-48fc-81ba-79b5ef8743da" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-03-33.aeb7f5cc-d380-4503-8870-5e3b066fae3b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-03-34.3a60baf4-91e6-4a6b-a11b-408cf16300cd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-04-25.eb8c6ee8-11f5-4ee3-beb3-17a66ece75bf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-06-25.2555cc58-63f9-492f-a5a9-de7da7a5bdda" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-06-25.8f59442b-3c46-4e67-a82c-c94ced5637fc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-11-57.b15c4723-8580-4730-a592-13f6ac46427b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-14-46.df6057a2-2c44-4b07-b762-b913e9e61cef" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-16-52.12f5aa2e-7cc4-43db-b668-841e8e8578c4" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-16-52.e0603a71-c139-4978-ab58-2911baee4c05" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-17-25.93753c8d-c6d1-4ed0-bb7e-ed67130fcbed" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-17-26.8128f0b8-4096-4500-9942-add24c115fdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-17-28.74de9a26-1f0b-4fd6-901a-4e99c5a3208c" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-17-28.f01ce355-3608-49ca-83a2-234f97404a2a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-18-48.a2e02815-00c0-4538-a347-f0d19fb457e6" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-18-48.e9b81c5c-ef35-4be8-99a8-e622b3362a41" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-19-08.9235fd5d-ae5e-472d-9ba8-478c8e3add5e" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-19-09.95eaef0b-27f5-423f-a5fc-cf348c289e66" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-21-05.16ba431c-6c3c-486d-be82-ebe311b63241" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-27-39.6d54be5e-8dbe-4449-bb6f-89d644a8af74" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-27-39.76b90a2a-ee53-4ad2-942b-f9b19ac3fc1e" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-28-53.fcf461f7-64c6-4f5e-bc42-c892ad55061a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-28-54.fee79e5f-1c5d-4375-a818-334998adfb3a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-30-58.52ae56ad-7e98-4f50-b75e-33940a114b94" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-33-15.d1368b91-99eb-44b6-8731-e261629ba103" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-33-16.ca6675d3-0943-4303-8e6e-f58d88f7f10a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-33-18.2e51d7b3-3a6d-4021-91cf-473f7970dc12" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-33-19.df75dffe-13b2-4b4a-90f8-55d11b2553fd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-33-35.4b6c1dd6-73fb-4fa5-a135-7bc809d997ad" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-33-36.7db23958-1743-453a-afde-1764f52ac80d" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-34-14.ea2eefdc-5f8e-4d45-a0af-b0ce824dce9e" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-34-15.ce04b4e0-f2bd-4faa-b470-f31af74a1fcd" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-39-57.5bd50933-6673-407f-8f3f-00755986df18" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\errors\127.0.0.1.2015-12-01.12-39-58.907035c8-b0c0-470a-b3d3-27eec904d1cb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\ar.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\ca.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\cs.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\de.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\default.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\es.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\fr-ca.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\fr.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\hi.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\hu.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\id.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\it.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\my-mm.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\my.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\nl.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\pl.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\plural-cs.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\plural-en.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\plural-es.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\plural-ru.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\plural-uk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\pt-br.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\pt.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\ro.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\ru.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\sk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\tr.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\uk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\zh-cn.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\zh-tw.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\languages\zh.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\models\db.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\models\icons.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\models\menu.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\models\tables.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\modules\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\private\appconfig.ini" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\routes.example.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\sessions\072\01e\127.0.0.1-04d0be24-0a58-42d9-aa84-628ad3cc99e7" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\sessions\0da\1ce\127.0.0.1-3be0af8a-0835-419b-87c9-3b9a6cd4ef07" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\sessions\111\0c6\127.0.0.1-558e7a4f-5f66-4a90-9b12-c49e6db21b44" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\sessions\187\1c7\127.0.0.1-20b43121-c9aa-4bb1-b40a-7573dd7a9385" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\sessions\1f7\1e9\127.0.0.1-f682f4d4-8b4a-4e40-83fc-8047171d400a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\1777925fcfc6b011e1b5c2a790d84a3609711d64\_constants.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\1777925fcfc6b011e1b5c2a790d84a3609711d64\_main.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\1777925fcfc6b011e1b5c2a790d84a3609711d64\myapp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\2d23aa7a37a6569c5e77370dd89245b84143c3a7\_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\2d23aa7a37a6569c5e77370dd89245b84143c3a7\_float.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\2d23aa7a37a6569c5e77370dd89245b84143c3a7\_hacks.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\2d23aa7a37a6569c5e77370dd89245b84143c3a7\_min.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\2d23aa7a37a6569c5e77370dd89245b84143c3a7\_reset.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\2d23aa7a37a6569c5e77370dd89245b84143c3a7\_tag-cloud.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\34720f55b9d0fc34e378e65d86f9a8eb5dc95db1\_color.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\34720f55b9d0fc34e378e65d86f9a8eb5dc95db1\_general.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\34720f55b9d0fc34e378e65d86f9a8eb5dc95db1\_sprites.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\34720f55b9d0fc34e378e65d86f9a8eb5dc95db1\_tables.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\5e872e48a61414dbf329637deeb4ca82dbac93cb\_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\5e872e48a61414dbf329637deeb4ca82dbac93cb\_sprite-img.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\69ed967277b2768370b24c4d4b60a9c5656d96ca\_compass.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\6a39d557561fce3062c28258a96cd332b6c27afc\_alternating-rows-and-columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\6a39d557561fce3062c28258a96cd332b6c27afc\_borders.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\6a39d557561fce3062c28258a96cd332b6c27afc\_scaffolding.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\7873d2bdfc5807464d17278b3e8f0a8140769719\_brightness.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\7873d2bdfc5807464d17278b3e8f0a8140769719\_contrast.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\7a61f2e63f93373dc8570014a09eb714a32c071e\_ellipsis.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\7a61f2e63f93373dc8570014a09eb714a32c071e\_force-wrap.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\7a61f2e63f93373dc8570014a09eb714a32c071e\_nowrap.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\7a61f2e63f93373dc8570014a09eb714a32c071e\_replacement.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_animation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_appearance.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_background-clip.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_background-origin.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_background-size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_border-radius.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_box-shadow.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_box-sizing.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_deprecated-support.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_filter.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_flexbox.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_font-face.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_hyphenation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_images.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_inline-block.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_opacity.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_regions.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_text-shadow.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_transform.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_transition.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\812f8370d2bb4094bf0c252f4302563caeca02b0\_user-interface.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\8c0c2661e19cb8617daac4fbfe1ca8002054d6bb\_grid-background.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\8d868174feca2fd9a0459eb91b3fef66366fb3d7\_css3.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\8d868174feca2fd9a0459eb91b3fef66366fb3d7\_support.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\8d868174feca2fd9a0459eb91b3fef66366fb3d7\_typography.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\8d868174feca2fd9a0459eb91b3fef66366fb3d7\_utilities.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\962c9a818292fb7ab8fff301c8250376c36aeafe\_utilities.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\c246cf5e36ea8cfa8a3d11f94259089cdf507531\_hover-link.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\c246cf5e36ea8cfa8a3d11f94259089cdf507531\_link-colors.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\c246cf5e36ea8cfa8a3d11f94259089cdf507531\_unstyled-link.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\ceed0894d80e4d192f8116fe45fe9068e8f35c71\_links.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\ceed0894d80e4d192f8116fe45fe9068e8f35c71\_lists.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\ceed0894d80e4d192f8116fe45fe9068e8f35c71\_text.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\ceed0894d80e4d192f8116fe45fe9068e8f35c71\_units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\ceed0894d80e4d192f8116fe45fe9068e8f35c71\_vertical_rhythm.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\e6b21fb9198d816706e0a08ce143dda965dc918a\_bullets.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\e6b21fb9198d816706e0a08ce143dda965dc918a\_horizontal-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\e6b21fb9198d816706e0a08ce143dda965dc918a\_inline-block-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\.sass-cache\e6b21fb9198d816706e0a08ce143dda965dc918a\_inline-list.scssc" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\403.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\404.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\500.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\config.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\css\calendar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\css\myapp.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\css\web2py-bootstrap3.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\css\web2py.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\HELP-US-OUT.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\animated.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\font-awesome-4.4.0\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\images\background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\images\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\images\favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\images\gplus-32.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\images\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\analytics.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\modernizr-2.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\ractive.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\respond-1.4.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\share.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\web2py-bootstrap3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\js\web2py.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\color.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\colorpicker.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\graybar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\grid.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\mColorPicker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\mColorPicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\meta100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\mColorPicker\transparentpixel.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\sass\_constants.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\sass\_main.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\static\sass\myapp.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.8d629c5bbd9911f5.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.904ec11c00cf6ea2.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.9792c16876946d7f.32303135313130345f3230303630382e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.a4b17cbcd2bc7dde.32303135313130345f3230303630382e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.a559dfd9f3dcc46f.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.a5c4f21901620b1b.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.ab1fdcea7e7fdbb0.32303135303131325f3135333132372e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.acdbf83ef859e5ac.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image.b75cfe8f30b9422d.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.8a5b70eaf3c742f2.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.8cc59c44d2341116.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.8e13bed8c5901c88.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.96fcbe4b49bada63.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.98d22b4200c9274c.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.a0459f2320c1b93b.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.a75144d0cb6ce7fb.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.image1.ba73dc23a03e8b2c.32303135313130345f3230303330382e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\posts.up_file\8d\posts.up_file.8df4f65b10e90f04.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\83\uploads.up_file.834f46e61a1a2ef0.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\85\uploads.up_file.85201bdc66706c3d.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\85\uploads.up_file.85f5410f60f753a2.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\87\uploads.up_file.870c192e6da44aa5.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\a3\uploads.up_file.a3bbaeb8291f706a.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\a8\uploads.up_file.a839492bcfe8cf67.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\aa\uploads.up_file.aaf9d84d2f04bbda.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\ad\uploads.up_file.ad3ef96b1c7f091d.3230313546616c6c5363686564756c652e706e67.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\uploads\uploads.up_file\b1\uploads.up_file.b1028823347d3e8d.636f795f706f6e642e6a7067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\appadmin.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\add_board.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\add_posts.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\post_page.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\posts.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\posts_details.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\show_boards.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\show_posts.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\default\user.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.ics" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.load" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.rss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\generic.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\layout.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\HiddenSC\views\web2py_ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\ABOUT" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\controllers\appadmin.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\controllers\default.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\cron\crontab" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\cron\crontab.example" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\71af41af6457e21d6c7414e7ccb45c9a_textblob.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_cas.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_event.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_group.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_membership.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_permission.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_user.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_board.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_canbuy.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_ingredient.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_messages.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_people.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_rating.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_recipe.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_store.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\c8b669d15150d7109e5f7ab36744a5b7_stores.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\storage.sqlite" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\databases\storage2.sqlite" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\ar.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\ca.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\cs.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\de.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\default.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\es.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\fr-ca.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\fr.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\hi.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\hu.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\id.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\it.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\my-mm.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\my.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\nl.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\pl.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\plural-cs.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\plural-en.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\plural-es.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\plural-ru.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\plural-uk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\pt-br.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\pt.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\ro.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\ru.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\sk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\tr.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\uk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\zh-cn.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\zh-tw.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\languages\zh.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\models\db.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\models\menu.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\models\tables.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\modules\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\modules\try.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\private\appconfig.ini" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\routes.example.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\sessions\076\191\127.0.0.1-a1def761-88e1-41fb-8637-4502974d9417" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\sessions\1a5\14c\127.0.0.1-e476bc0c-eeec-4156-a7fe-83d82daa0ace" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\403.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\404.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\500.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\config.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\css\calendar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\css\myapp.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\css\web2py-bootstrap3.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\css\web2py.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\HELP-US-OUT.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\animated.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\font-awesome-4.4.0\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\images\background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\images\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\images\favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\images\gplus-32.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\images\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\analytics.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\modernizr-2.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\respond-1.4.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\share.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\web2py-bootstrap3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\js\web2py.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\sass\_constants.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\sass\_main.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\static\sass\myapp.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\appadmin.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\default\add_board.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\default\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\default\show_board.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\default\user.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.ics" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.load" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.rss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\generic.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\layout.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw4\views\web2py_ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\ABOUT" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\controllers\appadmin.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\controllers\default.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\cron\crontab" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\cron\crontab.example" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_cas.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_event.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_group.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_membership.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_permission.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_user.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_board.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_canpost.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_people.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_post.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\c8b669d15150d7109e5f7ab36744a5b7_posts.table" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\databases\storage.sqlite" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\ar.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\ca.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\cs.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\de.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\default.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\es.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\fr-ca.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\fr.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\hi.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\hu.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\id.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\it.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\my-mm.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\my.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\nl.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\pl.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\plural-cs.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\plural-en.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\plural-es.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\plural-ru.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\plural-uk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\pt-br.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\pt.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\ro.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\ru.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\sk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\tr.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\uk.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\zh-cn.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\zh-tw.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\languages\zh.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\models\db.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\models\icons.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\models\menu.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\models\tables.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\modules\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\private\appconfig.ini" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\routes.example.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\sessions\021\061\127.0.0.1-bf723c6d-28a5-4e78-ae52-e8278c206e3b" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\sessions\0a8\155\127.0.0.1-4debc786-cb77-4d26-9a6e-32cc1abde29a" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\403.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\404.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\500.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\config.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\css\calendar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\css\myapp.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\css\web2py-bootstrap3.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\css\web2py.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\HELP-US-OUT.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\fonts\fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\animated.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\font-awesome-4.4.0\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\images\background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\images\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\images\favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\images\gplus-32.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\images\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\analytics.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\modernizr-2.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\ractive.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\respond-1.4.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\share.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\web2py-bootstrap3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\js\web2py.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\color.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\colorpicker.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\graybar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\grid.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\mColorPicker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\mColorPicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\meta100.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\mColorPicker\transparentpixel.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\sass\_constants.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\sass\_main.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\static\sass\myapp.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\appadmin.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\add_board.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\add_posts.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\posts.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\posts_details.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\show_boards.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\show_posts.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\default\user.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.ics" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.jsonp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.load" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.pdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.rss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\generic.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\layout.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\hw5\views\web2py_ajax.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/httpserver.log" afterPath="$PROJECT_DIR$/httpserver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/httpserver.pid" afterPath="$PROJECT_DIR$/httpserver.pid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters_8800.py" afterPath="$PROJECT_DIR$/parameters_8800.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" afterPath="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html" afterPath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html" afterPath="$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/databases/sql.log" afterPath="$PROJECT_DIR$/applications/HiddenSC/databases/sql.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" afterPath="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameters_8000.py" afterPath="$PROJECT_DIR$/parameters_8000.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applications/cmps183_project/views/default/show_boards.html" afterPath="$PROJECT_DIR$/applications/cmps183_project/views/default/show_boards.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="web2py.iws" />
@@ -90,7 +638,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/web2py$web2py.coverage" NAME="web2py Coverage Results" MODIFIED="1449001032819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/web2py$web2py.coverage" NAME="web2py Coverage Results" MODIFIED="1449456586201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -100,76 +648,88 @@
     <favorites_list name="web2py" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="tables.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/models/tables.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show_boards.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6727273">
-              <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show_posts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post_page.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17073171">
-              <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#4;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/controllers/default.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.034483">
-              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_posts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/add_posts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="show_boards.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/default/show_boards.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.38539043">
+                  <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+                  <folding>
+                    <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/layout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.3076923">
+                  <caret line="78" column="49" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="49" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="add_board.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/applications/Raq_final/views/default/add_board.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myapp.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/applications/cmps183_project/static/css/myapp.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myapp.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/applications/cmps183_project/static/images/css/myapp.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="show_boards.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/applications/Raq_final/views/default/show_boards.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.8992443">
+                  <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myapp.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/applications/Raq_final/static/css/myapp.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,11 +737,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html" />
         <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html" />
         <option value="$PROJECT_DIR$/applications/HiddenSC/models/tables.py" />
-        <option value="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" />
         <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html" />
+        <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html" />
+        <option value="$PROJECT_DIR$/applications/HiddenSC/controllers/default.py" />
+        <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/hiking_test.html" />
+        <option value="$PROJECT_DIR$/applications/HiddenSC/views/default/image_test.html" />
+        <option value="$PROJECT_DIR$/applications/Raq_final/views/default/show_boards.html" />
+        <option value="$PROJECT_DIR$/applications/cmps183_project/static/css/myapp.css" />
+        <option value="$PROJECT_DIR$/applications/cmps183_project/views/layout.html" />
+        <option value="$PROJECT_DIR$/applications/cmps183_project/views/default/show_boards.html" />
       </list>
     </option>
   </component>
@@ -193,10 +759,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1280" />
+    <option name="height" value="680" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,7 +785,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -237,7 +800,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
+              <option name="myItemId" value="cmps183_project" />
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -247,7 +810,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
+              <option name="myItemId" value="cmps183_project" />
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,7 +824,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
+              <option name="myItemId" value="cmps183_project" />
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -269,7 +832,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenSC" />
+              <option name="myItemId" value="cmps183_project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,7 +842,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
+              <option name="myItemId" value="cmps183_project" />
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -287,86 +850,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenSC" />
+              <option name="myItemId" value="cmps183_project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenSC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenSC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HiddenSC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,6 +869,13 @@
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12.6.15/cmps183_project" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sajan\Desktop\CS183\Final - HiddenSC\cmps183_project\applications\cmps183_project\static\images" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.web2py">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -447,6 +948,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -565,7 +1072,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Sajan\Anaconda\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -573,7 +1080,7 @@
       <module name="web2py" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web2py.py" />
-      <option name="PARAMETERS" value="-e --port=8800 --password=helloclass" />
+      <option name="PARAMETERS" value="-e" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -582,6 +1089,9 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="98b0364e-11dd-47f0-b8d5-61ea6ff91760" name="Default" comment="" />
@@ -592,29 +1102,58 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="680" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10980967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21229509" sideWeight="0.49223948" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46849757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17850637" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2090164" sideWeight="0.5077605" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17850637" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2090164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -624,15 +1163,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_boards.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6727273">
-          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/add_posts.html">
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/static/css/calendar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -640,42 +1171,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/controllers/default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.034483">
-          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/show_posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/models/tables.py">
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/default/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applications/HiddenSC/views/default/post_page.html">
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/default/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17073171">
-          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+        <state vertical-scroll-proportion="10.230769">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/default/post_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.738035">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/controllers/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.633839">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/default/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/Raq_final/static/css/myapp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/Raq_final/views/default/show_boards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8992443">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/static/images/css/myapp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/static/css/myapp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/Raq_final/views/default/add_board.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3076923">
+          <caret line="78" column="49" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/cmps183_project/views/default/show_boards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38539043">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

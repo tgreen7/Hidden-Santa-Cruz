@@ -1,0 +1,68 @@
+{{extend 'layout.html'}}
+
+
+  <body class="cbp-spmenu-push">
+  <!--shows the sign in sign out buttons-->
+  {{if auth.user_id is None:}}
+            <h1>
+            <div style = "float:left">
+            {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+            </div>
+            <div style = "float:right" id="main_login">
+            {{=A('Sign Up', _class='btn btn-warning', _href=URL('default', 'user', args=['register']))}}
+            {{=A('Sign In', _class='btn btn-success', _href=URL('default', 'user', args=['login']))}}
+             <br><br>
+            </div>
+                <div style="clear: both;"></div>
+            </h1>
+  {{else:}}
+    <div class = "buttons">
+
+           <div style="display: inline-block; float:right;">
+           {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
+            </div>
+
+    {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+
+{{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_board_id]))}}
+
+    </div>
+            <br>
+            <br>
+  {{pass}}
+
+
+
+{{for post_id in post_list:}}
+    <div class = "myboard">
+        <div class="boardtitle">
+        {{=A(post_id['title'], _href=URL('default', 'post_page', args=post_id['id']))}}
+
+        {{if post_id.user_id == auth.user_id:}}
+        <div class = "icons">
+        {{=A(icon_pencil, _href=URL('default', 'posts_edit', args=post_id['id']))}}
+        {{=A(icon_trash, _href=URL('default', 'delete_post', args=[post_id['id'], post_board_id]))}}
+        </div>
+        {{pass}}
+        </div>
+        <div class="boardbody">
+            Average Rating:
+
+            {{for i in range(0, 5):}}
+                <i style = "color: #ffad33" class = "fa fa-star"></i>
+            {{pass}}
+
+            ({{=post_id['avg_rate']}})
+        </div>
+    </div>
+{{pass}}
+
+  </body>
+
+
+
+
+
+
+
+
