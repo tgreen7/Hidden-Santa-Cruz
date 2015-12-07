@@ -35,20 +35,29 @@
             <br>
   {{pass}}
     <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+        Sort By: <br>
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        {% #if sort_rated %}
+            Highest Rating
+        {% /if %}
+        {% #if sort_recent %}
+            Most Recent
+        {% /if %}
+
       <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li class="hover_hand"><a on-click="loadposts:1">
             {% #if sort_rated %}
             ✔
             {% /if %}
-            Rating
+            Highest Rating
         </a></li>
         <li class="hover_hand"><a on-click="loadposts:2">
             {% #if sort_recent %}
             ✔
             {% /if %}
-        Recent</a></li>
+            Most Recent
+        </a></li>
       </ul>
     </div>
 
