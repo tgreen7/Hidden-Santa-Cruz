@@ -1,4 +1,5 @@
-{{extend 'layout.html'}}
+<link rel="stylesheet" href="{{=URL('static','css/myapp.css')}}"/>
+
         <!--comment-->
 {{from datetime import datetime}}
 
@@ -11,34 +12,59 @@
             padding: 20px;
             background-size: contain;
         }
-
         .search_list li {
             /*background: #cce5ff;*/
             margin: 5px;
         }
+    </style>
 
+    {{if auth.user_id is None:}}
+
+    <style>
+        body  {
+        background-image: url("{{=URL('static','images/index_background.jpg')}}");
+        /*background-size: 1350px 1000px;*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+
+        .ghost-button a {
+            text-decoration: none;
+        }
     </style>
 
 
   <!--shows the sign in sign out buttons-->
-  {{if auth.user_id is None:}}
-            <h1>
-            <div align="right" id="main_login">
-            {{=A('Sign Up', _class='btn btn-warning', _href=URL('default', 'user', args=['register']))}}
-            {{=A('Sign In', _class='btn btn-success', _href=URL('default', 'user', args=['login']))}}
-             <br><br></div>
-            </h1>
-  {{else:}}
-    <div class = "buttons">
-        <a class="btn btn-success" href="add_board.html">Add Board</a>
-           <div style="display: inline-block; float:right;">
-           {{=A('Edit Profile', _class='btn btn-primary', _href=URL('default', 'user', args=['profile']))}}
-           {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
-            </div>
+  <div id="main_login">
+    <body>
+    <div class = "buttons" style="float: right;">
+        {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
+        {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
     </div>
+    </body></div>
+    <br><br><br><br><br><br>
+    <h1 class="index_heading"><center><b>Hidden Santa Cruz</b></center></h1>
+    <div class = "intro-statement">
+        <p><center> Hidden Santa Cruz gives a chance for people to visit all hidden and amazing spots located in the mystic </center></p>
+        <p><center> county of Santa Cruz. Whether you are a local or somone here on a short visit, there is now </center></p>
+        <p><center> a go-to site that will allow you to both post sites and explore new ones.</center></p>
+    </div>
+
+  {{else:}}
+<br>
+    {{extend 'layout.html'}}
+    <style>
+        body {
+            background-color: grey
+        }
+    </style>
+
+    <p align= "right">
+           {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
+           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
+    </p>
             <br>
             <br>
-  {{pass}}
 
 </div>
 
@@ -47,9 +73,6 @@
         {{=form}}
         {{=target_div}}
   </div>
-
-
-
 
   <!--Also from dashboard, this does the sidebar and the main page-->
     <div class="container-fluid">
@@ -64,11 +87,58 @@
             </div>
            {{pass}}
 
-
 </div>
-
 
   </body>
 
 
+<br><br><br><br>
+<h1 class="index_heading"><center>Welcome to Hidden Santa Cruz</center></h1>
+<br><br><br>
 
+<body>
+
+  <div class = "all_boards">
+
+        <a href="{{=URL('default', 'show_posts')}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/art.jpg')}}"/>
+            </div>
+        </a>
+
+        <a href="{{=URL('default', 'show_posts')}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/hiking.jpg')}}"/>
+            </div>
+        </a>
+
+        <a href="{{=URL('default', 'show_posts')}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/local_events.jpg')}}"/>
+            </div>
+        </a>
+
+        <a href="{{=URL('default', 'show_posts')}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/night_life.jpg')}}"/>
+            </div>
+        </a>
+
+         <a href="{{=URL('default', 'show_posts')}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/restaurants.jpg')}}"/>
+            </div>
+         </a>
+
+
+        <a href="{{=URL('default', 'show_posts')}}">
+            <div class="main_boards" >
+                  <img class="circle_frame" src="{{=URL('static', 'images/scenic.jpg')}}"/>
+            </div>
+        </a>
+
+  </div>
+</body>
+
+
+  {{pass}}
