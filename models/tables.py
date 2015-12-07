@@ -44,7 +44,7 @@ db.define_table('posts',
                 Field('board', db.board, writable=False, readable=False),
                 Field('user_id', db.auth_user, default=auth.user_id, readable=False, writable=False),
                 Field('avg_rate', 'float', default=0, readable=False, writable=False),
-                Field('created_on', 'datetime', default=request.now, writable=False),
+                Field('created_on', 'datetime', default=request.now, requires=IS_DATETIME(str(T('%m/%d/%Y %I:%M%p'))), writable=False),
                 # searchbar
                 format = '%(title)s'
                 )

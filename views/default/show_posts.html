@@ -1,7 +1,12 @@
 {{extend 'layout.html'}}
 
 
-  <body class="cbp-spmenu-push">
+<div id="target"></div>
+
+<body class="cbp-spmenu-push">
+
+<script id="template" type="text/ractive">
+
   <!--shows the sign in sign out buttons-->
   {{if auth.user_id is None:}}
             <h1>
@@ -18,48 +23,141 @@
   {{else:}}
     <div class = "buttons">
 
-           <div style="display: inline-block; float:right;">
-           {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
-            </div>
+        <div style="display: inline-block; float:right;">
+            {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
+        </div>
 
-    {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
-
-{{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_board_id]))}}
+        {{=A('Go Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+        {{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_board_id]))}}
 
     </div>
             <br>
             <br>
   {{pass}}
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li class="hover_hand"><a on-click="loadposts:1">Rating</a></li>
+        <li class="hover_hand"><a on-click="loadposts:2">Recent</a></li>
+      </ul>
+    </div>
 
-
-
-{{for post_id in post_list:}}
-    <div class = "myboard">
-        <div class="boardtitle">
-        {{=A(post_id['title'], _href=URL('default', 'post_page', args=post_id['id']))}}
-
-        {{if post_id.user_id == auth.user_id:}}
-        <div class = "icons">
-        {{=A(icon_pencil, _href=URL('default', 'posts_edit', args=post_id['id']))}}
-        {{=A(icon_trash, _href=URL('default', 'delete_post', args=[post_id['id'], post_board_id]))}}
-        </div>
-        {{pass}}
+  {% #post_list %}
+    <div class = "myboard" >
+        <div class="boardtitle hover_hand" on-click="go_to_post:{%id%}">
+            {% title %}
+            {% id %}
         </div>
         <div class="boardbody">
             Average Rating:
-
-            {{for i in range(0, 5):}}
+            {% #star_dict[id]%}
                 <i style = "color: #ffad33" class = "fa fa-star"></i>
-            {{pass}}
-
-            ({{=post_id['avg_rate']}})
+            {% /star_dict %}
+            <span style=" margin-left: -5px;">
+            {% #anti_star_dict[id]%}
+                <i style = "color: #ffad33;" class = "fa fa-star-o"></i>
+            {% /star_dict %}
+            </span>
+            ({% avg_rate %})
+            <br>
+            <br>
+            Posted On: {% created_on %}
+            <br>
+            <br>
+            {% #if user_id == {{=auth.user_id}} %}
+                <a href="../posts_edit/{%id%}" class="btn btn-info" >Edit</a>
+                <a href="../delete_post/{%id%}/{%board%}" class="btn btn-danger" >Delete</a>
+            {% /if %}
         </div>
     </div>
-{{pass}}
-
-  </body>
+  {% /post_list %}
 
 
+  </script>
+
+
+
+
+<script>
+$(function() {
+
+  // Ractive object
+  var MAIN = new Ractive({
+    el: '#target',
+    template: '#template',
+    delimiters: ['{%', '%}'],
+    tripleDelimiters: ['{%%', '%%}'],
+    data: {
+        post_list: [],
+        star_dict: {},
+        anti_star_dict: {},
+        loading: false
+    }
+  });
+
+  // Loads the initial list of messages.
+  $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_board_id)}}",
+          {
+            method: 'POST',
+            success: function (data) {
+                MAIN.set('post_list', data['post_list']);
+                MAIN.set('star_dict', data['star_dict']);
+                MAIN.set('anti_star_dict', data['anti_star_dict']);
+                 MAIN.set('loading', false);
+            }
+          }
+  );
+
+
+    MAIN.on("loadposts", function(e, num){
+        if(num == 1) {
+             $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_board_id)}}",
+                      {
+                        method: 'POST',
+                        success: function (data) {
+                            MAIN.set('post_list', data['post_list']);
+                            MAIN.set('star_dict', data['star_dict']);
+                            MAIN.set('anti_star_dict', data['anti_star_dict']);
+                             MAIN.set('loading', false);
+                        }
+                      }
+              );
+
+        }
+        else if(num==2){
+            $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_board_id)}}",
+                      {
+                        method: 'POST',
+                        success: function (data) {
+                            MAIN.set('post_list', data['post_list']);
+                            MAIN.set('star_dict', data['star_dict']);
+                            MAIN.set('anti_star_dict', data['anti_star_dict']);
+                             MAIN.set('loading', false);
+                        }
+                      }
+              );
+        }
+    });
+
+    MAIN.on("go_to_post", function(e, post_id){
+        window.location.href = '../post_page/' + post_id;
+    });
+
+//    MAIN.on("post_page", function(e, post_id){
+//        window.location.href =
+//    });
+
+  // Called every 10s
+//  function periodic_load() {
+//  }
+
+//  setInterval(periodic_load, 10000);
+
+});
+</script>
+
+</body>
 
 
 

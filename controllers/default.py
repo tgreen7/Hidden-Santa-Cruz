@@ -50,21 +50,37 @@ def add_board():
         redirect(URL('show_boards')) #might change to index
     return dict(form=form)
 
+def load_posts_rating():
+    post_board_id = request.args(0)
+    # print post_board_id
+    posts = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
+
+    star_dict = {}
+    anti_star_dict = {}
+
+    for post in posts:
+        star_dict[post.id] = range(0, int(post.avg_rate))
+        anti_star_dict[post.id] = range(0, int(5-int(post.avg_rate)))
+
+    return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict))
+
+def load_posts_recent():
+    post_board_id = request.args(0)
+    # print post_board_id
+    posts = db(db.posts.board == post_board_id).select(orderby=~db.posts.created_on)
+
+    star_dict = {}
+    anti_star_dict = {}
+
+    for post in posts:
+        star_dict[post.id] = range(0, int(post.avg_rate))
+        anti_star_dict[post.id] = range(0, int(5-int(post.avg_rate)))
+
+    return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict))
+
 def show_posts():
     post_board_id = request.args(0)
-
-    post_list = db(db.posts.board==post_board_id).select()
-
-
-    # avglist = {}
-    #
-    # for post in post_list:
-    #     reviews = db(db.reviews.post == post.id).select()
-    #     total = 0
-    #     count = db(db.reviews.post == post.id).count()
-    #     for i in reviews:
-    #         total += i.num_stars
-    #     avglist[post.id] = float('%.2f'%(total / float(count)))
+    post_list = db(db.posts.board == post_board_id).select()
 
     for post in post_list:
         reviews = db(db.reviews.post == post.id).select()
@@ -74,15 +90,29 @@ def show_posts():
             break
         for i in reviews:
             total += i.num_stars
-        # post.avg_rate = float('%.2f' % (total / float(count)))
+        dub = float('%.2f' % (total / float(count)))
+        db.posts(post.id).update_record(avg_rate=dub)
+
+    post_list = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
+    return dict(post_list=post_list, post_board_id=post_board_id)
+
+def show_posts_backup():
+    post_board_id = request.args(0)
+
+    post_list = db(db.posts.board==post_board_id).select()
+
+    for post in post_list:
+        reviews = db(db.reviews.post == post.id).select()
+        total = 0
+        count = db(db.reviews.post == post.id).count()
+        if count == 0:
+            break
+        for i in reviews:
+            total += i.num_stars
         dub = float('%.2f' % (total / float(count)))
         db.posts(post.id).update_record(avg_rate = dub)
 
     post_list = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
-
-    for post in post_list:
-        print post.avg_rate
-
 
     return dict(post_list=post_list, post_board_id=post_board_id)
 
@@ -98,8 +128,8 @@ def add_posts():
         redirect(URL('default','show_posts', args=request.args(0))) #might change to index
     return dict(form=form)
 
+@auth.requires_login()
 def posts_edit():
-
     posts = db.posts(request.args(0))
     if(auth.user_id != posts.user_id):
          redirect(URL('default', 'show_posts', args=[posts.board]))
@@ -112,6 +142,7 @@ def posts_edit():
         return dict(form=form)
 
 #delete boards
+@auth.requires_login()
 def delete_post():
 
     post_id = request.args(0)
@@ -185,6 +216,7 @@ def load_reviews():
          for r in rows}
     return response.json(dict(review_dict=d))
 
+@auth.requires_login()
 def delete_review():
     rev_id = request.vars.get("rev_id")
     print "rev"
@@ -207,6 +239,7 @@ def delete_review():
 #             _href=URL('default', 'post_page', args=[request.vars.get("post")]))
 #         return dict(form=form,edit_button=edit_button)
 
+@auth.requires_login()
 def edit_review():
     rev_id = request.args(0)
     post_id = request.args(1)

@@ -31,6 +31,8 @@ div.maincontent {
     text-align: center;
     font-family: Impact, Charcoal, sans-serif;
     padding: 15px 60px;
+    color: #ffbc00;
+  font-size: 1.5em;
     border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     -mos-border-radius: 5px 5px 5px 5px;
@@ -38,10 +40,6 @@ div.maincontent {
     background-size: contain;
 }
 
-.myboard .boardtitle a {
-  color: #ffff00;
-  font-size: 1.5em;
-}
 
 /* line 35, ../sass/_main.scss */
 .myboard .icons {
@@ -55,4 +53,14 @@ div.maincontent {
   font-size: .9em;
   background: #D8E6F2;
   padding: 20px 80px;
+}
+
+.hover_hand:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 30px;
 }
