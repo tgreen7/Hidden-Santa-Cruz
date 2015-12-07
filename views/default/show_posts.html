@@ -38,8 +38,17 @@
       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sort By
       <span class="caret"></span></button>
       <ul class="dropdown-menu">
-        <li class="hover_hand"><a on-click="loadposts:1">Rating</a></li>
-        <li class="hover_hand"><a on-click="loadposts:2">Recent</a></li>
+        <li class="hover_hand"><a on-click="loadposts:1">
+            {% #if sort_rated %}
+            ✔
+            {% /if %}
+            Rating
+        </a></li>
+        <li class="hover_hand"><a on-click="loadposts:2">
+            {% #if sort_recent %}
+            ✔
+            {% /if %}
+        Recent</a></li>
       </ul>
     </div>
 
@@ -92,19 +101,22 @@ $(function() {
         post_list: [],
         star_dict: {},
         anti_star_dict: {},
+        sort_rated: false,
+        sort_recent: false,
         loading: false
     }
   });
 
   // Loads the initial list of messages.
-  $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_board_id)}}",
+  $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_board_id)}}",
           {
             method: 'POST',
             success: function (data) {
                 MAIN.set('post_list', data['post_list']);
                 MAIN.set('star_dict', data['star_dict']);
                 MAIN.set('anti_star_dict', data['anti_star_dict']);
-                 MAIN.set('loading', false);
+                MAIN.set('sort_recent', true);
+                MAIN.set('sort_rated', false);
             }
           }
   );
@@ -119,7 +131,10 @@ $(function() {
                             MAIN.set('post_list', data['post_list']);
                             MAIN.set('star_dict', data['star_dict']);
                             MAIN.set('anti_star_dict', data['anti_star_dict']);
-                             MAIN.set('loading', false);
+                            MAIN.set('loading', false);
+
+                            MAIN.set('sort_recent', false);
+                            MAIN.set('sort_rated', true);
                         }
                       }
               );
@@ -134,6 +149,9 @@ $(function() {
                             MAIN.set('star_dict', data['star_dict']);
                             MAIN.set('anti_star_dict', data['anti_star_dict']);
                              MAIN.set('loading', false);
+
+                            MAIN.set('sort_recent', true);
+                            MAIN.set('sort_rated', false);
                         }
                       }
               );
