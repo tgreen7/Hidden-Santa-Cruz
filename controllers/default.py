@@ -8,9 +8,6 @@
 ## - download is for downloading files uploaded in the db (does streaming)
 #########################################################################
 
-def deleteboards():
-    db(db.board.id > 0).delete()
-
 def deleteposts():
     db(db.posts.id > 0).delete()
 
@@ -25,35 +22,25 @@ def index():
     return dict(board_list = [])
 
 def show_boards():
-    board_list = db(db.board).select()
 
     # Code for search bar
-    form = FORM(INPUT(_id='keyword', _name='keyword', _onkeyup="ajax('callback', ['keyword'], 'target');"))
-    target_div = DIV(_id='target')
+    search_form = FORM(INPUT(_id='keyword', _name='keyword', _onkeyup="ajax('callback', ['keyword'], 'target');"))
+    target_div = DIV(_id='target', _class='searchlist')
 
-    return dict(board_list=board_list, form=form, target_div=target_div)
+    return dict(search_form=search_form, target_div=target_div)
 
 def callback():
      "an ajax callback that returns a <ul> of links to post pages"
      query = db.posts.title.contains(request.vars.keyword)
      posts = db(query).select(orderby=db.posts.title)
-     links = [(A(p.title, _href=URL('post_page',args=[p.id, p.board])))
+     links = [(A(p.title, _href=URL('post_page',args=[p.id, p.category])))
               for p in posts]
-     return UL(*links, _class='search_list')
-
-@auth.requires_login()
-def add_board():
-    logger.info("My session is: %r" % session)
-    form = SQLFORM(db.board)
-    if form.process().accepted:
-        session.flash = T('the data was inserted')
-        redirect(URL('show_boards')) #might change to index
-    return dict(form=form)
+     return UL(*links)
 
 def load_posts_rating():
-    post_board_id = request.args(0)
+    post_category = request.args(0)
     # print post_board_id
-    posts = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
+    posts = db(db.posts.category == post_category).select(orderby=~db.posts.avg_rate)
 
     star_dict = {}
     anti_star_dict = {}
@@ -72,9 +59,9 @@ def load_posts_rating():
     return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict, half_star_dict=half_star_dict))
 
 def load_posts_recent():
-    post_board_id = request.args(0)
+    category = request.args(0)
     # print post_board_id
-    posts = db(db.posts.board == post_board_id).select(orderby=~db.posts.created_on)
+    posts = db(db.posts.category == category).select(orderby=~db.posts.created_on)
 
     star_dict = {}
     anti_star_dict = {}
@@ -94,49 +81,53 @@ def load_posts_recent():
     return response.json(dict(post_list=posts.as_list(), star_dict=star_dict, anti_star_dict=anti_star_dict, half_star_dict=half_star_dict))
 
 def show_posts():
-    post_board_id = request.args(0)
-    post_list = db(db.posts.board == post_board_id).select()
+    post_category = request.args(0)
+
+    post_list = db(db.posts.category == post_category).select()
 
     for post in post_list:
-        reviews = db(db.reviews.post == post.id).select()
-        total = 0
+        # update the average review
         count = db(db.reviews.post == post.id).count()
         if count == 0:
             break
+
+        reviews = db(db.reviews.post == post.id).select()
+        total = 0
+
         for i in reviews:
             total += i.num_stars
         dub = float('%.2f' % (total / float(count)))
-        print "dub"
-        print dub
         db.posts(post.id).update_record(avg_rate=dub)
 
-    post_list = db(db.posts.board == post_board_id).select(orderby=~db.posts.avg_rate)
-    return dict(post_list=post_list, post_board_id=post_board_id)
+    post_list = db(db.posts.category == post_category).select(orderby=~db.posts.avg_rate)
+    return dict(post_list=post_list, post_category=post_category)
 
 @auth.requires_login()
 def add_posts():
     logger.info("My session is: %r" % session)
-    form = SQLFORM(db.posts,  upload = URL('download'))
+    form = SQLFORM(db.posts)
 
-    form.vars.board = request.args(0)
+    category = request.args(0)
+
+    form.vars.category = category
     form.vars.user_id = auth.user_id
 
     if form.process().accepted:
         session.flash = T('the data was inserted')
-        redirect(URL('default','show_posts', args=request.args(0))) #might change to index
+        redirect(URL('default','show_posts', args=[category])) #might change to index
     return dict(form=form)
 
 @auth.requires_login()
 def posts_edit():
     posts = db.posts(request.args(0))
     if(auth.user_id != posts.user_id):
-         redirect(URL('default', 'show_posts', args=[posts.board]))
+         redirect(URL('default', 'show_posts', args=[posts.category]))
          session.flash = T('Not permitted for this user')
     else:
         form = SQLFORM(db.posts, record=posts, upload = URL('download'))
         if form.process().accepted:
             session.flash = T('The data was edited')
-            redirect(URL('default', 'show_posts', args=[posts.board]))
+            redirect(URL('default', 'show_posts', args=[posts.category]))
         return dict(form=form)
 
 #delete post
@@ -154,7 +145,7 @@ def delete_post():
 
 def post_page():
     post_id = request.args(0)
-    board = db.posts(post_id).board
+    board = db.posts(post_id).category
     post = db.posts[post_id]
     title = post.title
     body = post.body

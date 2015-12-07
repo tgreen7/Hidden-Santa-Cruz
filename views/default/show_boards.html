@@ -8,7 +8,7 @@
     <style>
         .search_list {
             list-style-type: square;
-            /*background: #3399ff;*/
+            background: #3399ff;
             padding: 20px;
             background-size: contain;
         }
@@ -69,25 +69,11 @@
 </div>
 
   <div style="margin-left: 50px;">
-      Search for Posts:
-        {{=form}}
+      <p style="font-size: 1.5em">Search for Posts:</p>
+        {{=search_form}}
         {{=target_div}}
   </div>
 
-  <!--Also from dashboard, this does the sidebar and the main page-->
-    <div class="container-fluid">
-
-<!--if user is not logged in dont let them create a board, if they are then show button-->
-            {{=A('create board', _class='btn btn-primary', _href=URL('default', 'add_board'))}}
-           {{for board_id in board_list:}}
-            <div class = "myboard" >
-              <span class="boardtitle" >
-                {{=A(board_id['title'],_href=URL('default', 'show_posts', args=board_id['id'])) }}
-              </span>
-            </div>
-           {{pass}}
-
-</div>
 
   </body>
 
@@ -100,38 +86,38 @@
 
   <div class = "all_boards">
 
-        <a href="{{=URL('default', 'show_posts')}}">
+        <a href="{{=URL('default', 'show_posts', args=['art'])}}">
             <div class="main_boards">
                   <img class="circle_frame" src="{{=URL('static', 'images/art.jpg')}}"/>
             </div>
         </a>
 
-        <a href="{{=URL('default', 'show_posts')}}">
+        <a href="{{=URL('default', 'show_posts', args=['hiking'])}}">
             <div class="main_boards">
                   <img class="circle_frame" src="{{=URL('static', 'images/hiking.jpg')}}"/>
             </div>
         </a>
 
-        <a href="{{=URL('default', 'show_posts')}}">
+        <a href="{{=URL('default', 'show_posts', args=['local_events'])}}">
             <div class="main_boards">
                   <img class="circle_frame" src="{{=URL('static', 'images/local_events.jpg')}}"/>
             </div>
         </a>
 
-        <a href="{{=URL('default', 'show_posts')}}">
+        <a href="{{=URL('default', 'show_posts', args=['night_life'])}}">
             <div class="main_boards">
                   <img class="circle_frame" src="{{=URL('static', 'images/night_life.jpg')}}"/>
             </div>
         </a>
 
-         <a href="{{=URL('default', 'show_posts')}}">
+         <a href="{{=URL('default', 'show_posts', args=['restaurants'])}}">
             <div class="main_boards">
                   <img class="circle_frame" src="{{=URL('static', 'images/restaurants.jpg')}}"/>
             </div>
          </a>
 
 
-        <a href="{{=URL('default', 'show_posts')}}">
+        <a href="{{=URL('default', 'show_posts', args=['scenic'])}}">
             <div class="main_boards" >
                   <img class="circle_frame" src="{{=URL('static', 'images/scenic.jpg')}}"/>
             </div>

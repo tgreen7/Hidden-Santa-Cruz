@@ -31,17 +31,11 @@ db.people.description.represent = lambda v, r: DIV(v, _class="msg_content")
 
 
 
-db.define_table('board',
-                Field('title'),
-                Field('created_on', 'datetime', default=request.now, writable=False, readable=False),
-                )
-
-
 #all these tables have id already defined
 db.define_table('posts',
                 Field('title', 'text'),
                 Field('body', 'text'),
-                Field('board', db.board, writable=False, readable=False),
+                Field('category', 'text', readable=False, writable=False),
                 Field('user_id', db.auth_user, default=auth.user_id, readable=False, writable=False),
                 Field('avg_rate', 'float', default=0, readable=False, writable=False),
                 Field('created_on', 'datetime', default=request.now, requires=IS_DATETIME(str(T('%m/%d/%Y %I:%M%p'))), writable=False),

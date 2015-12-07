@@ -28,7 +28,7 @@
         </div>
 
         {{=A('Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
-        {{=A('Create Post', _class='btn btn-warning', _href=URL('default', 'add_posts', args=[post_board_id]))}}
+        {{=A('Create Post', _class='btn btn-warning', _href=URL('default', 'add_posts', args=[post_category]))}}
 
     </div>
   {{pass}}
@@ -61,9 +61,8 @@
 
   {% #post_list %}
     <div class = "myboard" >
-        <div class="boardtitle hover_hand" on-click="go_to_post:{%id%},{%board%}">
+        <div class="boardtitle hover_hand" on-click="go_to_post:{%id%},{%category%}">
             {% title %}
-            {% id %}
         </div>
         <div class="boardbody">
             Average Rating:
@@ -93,7 +92,7 @@
             <br>
             {% #if user_id == {{=auth.user_id}} %}
                 <a href="{{=URL('default', 'posts_edit')}}/{%id%}" class="btn btn-info" >Edit</a>
-                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%board%}" class="btn btn-danger" >Delete</a>
+                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" class="btn btn-danger" >Delete</a>
             {% /if %}
         </div>
     </div>
@@ -126,14 +125,13 @@ $(function() {
   });
 
   // Loads the initial list of posts.
-  $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_board_id)}}",
+  $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_category)}}",
           {
             method: 'POST',
             success: function (data) {
                 MAIN.set('post_list', data['post_list']);
                 MAIN.set('star_dict', data['star_dict']);
                 MAIN.set('anti_star_dict', data['anti_star_dict']);
-
 
                 MAIN.set('half_star_dict', data['half_star_dict']);
 
@@ -147,13 +145,14 @@ $(function() {
     //loads the posts by rating or most recent depending on args
     MAIN.on("loadposts", function(e, num){
         if(num == 1) {
-             $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_board_id)}}",
+             $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_category)}}",
                       {
                         method: 'POST',
                         success: function (data) {
                             MAIN.set('post_list', data['post_list']);
                             MAIN.set('star_dict', data['star_dict']);
                             MAIN.set('anti_star_dict', data['anti_star_dict']);
+                            MAIN.set('half_star_dict', data['half_star_dict']);
                             MAIN.set('loading', false);
 
                             MAIN.set('sort_recent', false);
@@ -164,13 +163,14 @@ $(function() {
 
         }
         else if(num==2){
-            $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_board_id)}}",
+            $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_category)}}",
                       {
                         method: 'POST',
                         success: function (data) {
                             MAIN.set('post_list', data['post_list']);
                             MAIN.set('star_dict', data['star_dict']);
                             MAIN.set('anti_star_dict', data['anti_star_dict']);
+                            MAIN.set('half_star_dict', data['half_star_dict']);
                             MAIN.set('loading', false);
 
                             MAIN.set('sort_recent', true);
@@ -182,8 +182,8 @@ $(function() {
     });
 
     //goes to the page for that post
-    MAIN.on("go_to_post", function(e, post_id, board){
-        window.location.href = '{{=URL('default', 'post_page')}}' + '/' + post_id + '/' + board;
+    MAIN.on("go_to_post", function(e, post_id, category){
+        window.location.href = '{{=URL('default', 'post_page')}}' + '/' + post_id + '/' + category;
     });
 
   // Called every 10s, checks for changes in posts and loads them
@@ -191,7 +191,7 @@ $(function() {
       var sort_recent = MAIN.get('sort_recent');
       var sort_rated = MAIN.get('sort_rated');
       if(sort_rated) {
-             $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_board_id)}}",
+             $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_category)}}",
                       {
                         method: 'POST',
                         success: function (data) {
@@ -205,7 +205,7 @@ $(function() {
 
         }
         else if(sort_recent){
-            $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_board_id)}}",
+            $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_category)}}",
                       {
                         method: 'POST',
                         success: function (data) {
