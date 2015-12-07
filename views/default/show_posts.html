@@ -125,7 +125,7 @@ $(function() {
     }
   });
 
-  // Loads the initial list of messages.
+  // Loads the initial list of posts.
   $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_board_id)}}",
           {
             method: 'POST',
@@ -144,7 +144,7 @@ $(function() {
           }
   );
 
-
+    //loads the posts by rating or most recent depending on args
     MAIN.on("loadposts", function(e, num){
         if(num == 1) {
              $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_board_id)}}",
@@ -181,17 +181,12 @@ $(function() {
         }
     });
 
+    //goes to the page for that post
     MAIN.on("go_to_post", function(e, post_id, board){
-//        alert(post_id);
-//        alert(board);
         window.location.href = '../post_page/' + post_id + '/' + board;
     });
 
-//    MAIN.on("post_page", function(e, post_id){
-//        window.location.href =
-//    });
-
-  // Called every 10s
+  // Called every 10s, checks for changes in posts and loads them
   function periodic_load() {
       var sort_recent = MAIN.get('sort_recent');
       var sort_rated = MAIN.get('sort_rated');
