@@ -192,10 +192,42 @@ $(function() {
 //    });
 
   // Called every 10s
-//  function periodic_load() {
-//  }
+  function periodic_load() {
+      var sort_recent = MAIN.get('sort_recent');
+      var sort_rated = MAIN.get('sort_rated');
+      if(sort_rated) {
+             $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=post_board_id)}}",
+                      {
+                        method: 'POST',
+                        success: function (data) {
+                            MAIN.set('post_list', data['post_list']);
+                            MAIN.set('star_dict', data['star_dict']);
+                            MAIN.set('anti_star_dict', data['anti_star_dict']);
+                            MAIN.set('loading', false);
+                        }
+                      }
+              );
 
-//  setInterval(periodic_load, 10000);
+        }
+        else if(sort_recent){
+            $.ajax("{{=URL('default', 'load_posts_recent', user_signature=True, args=post_board_id)}}",
+                      {
+                        method: 'POST',
+                        success: function (data) {
+                            MAIN.set('post_list', data['post_list']);
+                            MAIN.set('star_dict', data['star_dict']);
+                            MAIN.set('anti_star_dict', data['anti_star_dict']);
+                            MAIN.set('loading', false);
+
+                            MAIN.set('sort_recent', true);
+                            MAIN.set('sort_rated', false);
+                        }
+                      }
+              );
+        }
+  }
+
+  setInterval(periodic_load, 10000);
 
 });
 </script>
