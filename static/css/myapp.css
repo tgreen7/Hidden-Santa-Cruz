@@ -16,6 +16,8 @@ div.maincontent {
 }
 
 .intro-statement{
+  margin-top: -30px;
+  text-align: center;
   font-size: 150%;
   color: white;
   text-shadow: black 0.03em 0.03em 0.03em;
@@ -33,57 +35,77 @@ div.maincontent {
 }
 
 .ghost-button:hover {
-    text-decoration: none;
-    color: #e2e2e2;
-    border: 1px solid #e2e2e2;
+    color: #4747d1;
+    background: white;
+    opacity: 0.75;
+    filter: alpha(opacity=40);
+}
+
+.other-button {
+  display: inline-block;
+  width: 100px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+
+}
+
+.other-button:hover{
+    color: #4747d1;
+    background: white;
+    opacity: 0.75;
+    filter: alpha(opacity=40);
 }
 
 .circle_frame {
-                width: 350px;
-               height: 300px;
-               border-radius: 150px;
-               -webkit-border-radius: 150px;
-               -moz-border-radius: 150px;
-               box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               float: left;
-               margin: 25px;
-              }
+    width: 350px;
+    height: 300px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    float: left;
+    margin: 25px;
+}
 
 .img_style {
-                max-width:300%;
-                max-height:500%;
-                margin:auto;
-                border-radius: 150px;
-               -webkit-border-radius: 150px;
-               -moz-border-radius: 150px;
-                box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-                display: inline-block;
-           }
+    max-width:300%;
+    max-height:500%;
+    margin:auto;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    display: inline-block;
+}
 
 .main_boards {
-                height:140px;
-                width:140px;
-                float: left;
-                margin-right: 250px;
-                margin-bottom: 200px;
-                display: inline-block;
+    height:140px;
+    width:140px;
+    float: left;
+    margin-right: 250px;
+    margin-bottom: 200px;
+    display: inline-block;
 }
 
 .box {
-                width: 100px;
-               height: 100px;
-               border-radius: 150px;
-               -webkit-border-radius: 100px;
-               -moz-border-radius: 100px;
-               box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-               float: left;
-               margin: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    float: left;
+    margin: 50px;
 }
 
 /* line 14, ../sass/_main.scss */
@@ -93,21 +115,21 @@ div.maincontent {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 1px solid #696373;
-  border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -mos-border-radius: 5px 5px 5px 5px;
-    background-color: #8269cc;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -mos-border-radius: 10px 10px 10px 10px;
+  background-color: #e59d5c;
 }
 /* line 24, ../sass/_main.scss */
 .myboard .boardtitle {
     text-align: center;
     font-family: Impact, Charcoal, sans-serif;
-    padding: 15px 60px;
-    color: #ffbc00;
+    padding: 15px 40px;
+    color: #2a3132;
   font-size: 1.5em;
-    border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -mos-border-radius: 5px 5px 5px 5px;
+    border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -mos-border-radius: 10px 10px 10px 10px;
     /*background-color: #8269cc;*/
     background-size: contain;
 }
@@ -123,8 +145,11 @@ div.maincontent {
 .myboard .boardbody {
   text-align: center;
   font-size: .9em;
-  background: #D8E6F2;
-  padding: 20px 80px;
+  background: #acd0c0;
+  padding: 20px 40px;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -mos-border-radius: 0px 0px 10px 10px;
 }
 
 .hover_hand:hover {
@@ -135,4 +160,97 @@ div.maincontent {
     margin-top: 30px;
     margin-bottom: 40px;
     margin-right: 30px;
+}
+
+.fa-pencil{
+    font-size: 40px;
+    color: black
+}
+
+.fa-trash{
+    font-size: 40px;
+    color: black;
+}
+
+.fa-pencil:hover{
+    color: #f5ff07
+}
+
+.fa-trash:hover{
+    color: red;
+}
+
+.search_list {
+    list-style-type: square;
+    /*background: #3399ff;*/
+    padding: 20px;
+    background-size: contain;
+}
+
+.search_list li {
+    /*background: #cce5ff;*/
+    margin: 5px;
+}
+
+.header-bar{
+    height: 170px;
+    background-image: url("https://abs.twimg.com/a/1449191867/img/t1/lohp_streams_header_bg_v4.png");
+    background-size: 100%;
+    position: absolute;
+    resize: both;
+    width: 110%;
+    z-index: -1;
+    top: -100px;
+
+}
+
+.go_back{
+margin-top: -55px;
+  margin-left: 100px;
+
+}
+
+h3{
+    color: white;
+    font-weight: lighter;
+    font-size: 250%;
+    margin-top: 35px;
+}
+
+.buttons{
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  margin-top: 70px;
+  margin-right: 530px;
+  font-size: 250%;
+
+}
+
+.buttons:hover{
+    color: #00e5e6;
+    background: white;
+    opacity: 0.75;
+    filter: alpha(opacity=40);
+}
+
+h2{
+color: white;
+font-weight: lighter;
+margin-top: 50px;
+ margin-left: -130px;
+
+}
+
+h3{
+ margin-left: -130px;
+}
+
+.all_boards{
+ margin-left: 100px;
 }

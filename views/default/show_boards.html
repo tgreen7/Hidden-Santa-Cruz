@@ -1,61 +1,33 @@
-<link rel="stylesheet" href="{{=URL('static','css/myapp.css')}}"/>
-
+{{extend 'layout.html'}}
         <!--comment-->
 {{from datetime import datetime}}
 
+{{if auth.user_id is None:}}
 <body class="cbp-spmenu-push">
 
+<div class="header-bar">
+    <br><br>
 
+    <h3 class="main_title"><center>Welcome to Hidden Santa Cruz</center></h3>
 
-    {{if auth.user_id is None:}}
+</div>
 
-    <style>
-        body  {
-        background-image: url("{{=URL('static','images/index_background.jpg')}}");
-        /*background-size: 1350px 1000px;*/
-        background-size: cover;
-        background-repeat: no-repeat;
-        }
-
-        .ghost-button a {
-            text-decoration: none;
-        }
-    </style>
+<style>
+body {background-color:#f2f2f2}
+</style>
 
 
   <!--shows the sign in sign out buttons-->
-  <div id="main_login">
-    <body>
-    <div class = "buttons" style="float: right;">
-        {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
-        {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
-    </div>
-    </body></div>
-    <br><br><br><br><br><br>
-    <h1 class="index_heading"><center><b>Hidden Santa Cruz</b></center></h1>
-    <div class = "intro-statement">
-        <p><center> Hidden Santa Cruz gives a chance for people to visit all hidden and amazing spots located in the mystic </center></p>
-        <p><center> county of Santa Cruz. Whether you are a local or somone here on a short visit, there is now </center></p>
-        <p><center> a go-to site that will allow you to both post sites and explore new ones.</center></p>
-    </div>
+  <p style="float:right; margin-top: -100px">
 
-  {{else:}}
-<br>
-    {{extend 'layout.html'}}
-    <style>
-        body {
-            background-color: grey
-        }
-    </style>
+    {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
+    {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
+          <!-- {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
+           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}} -->
+  </p>
 
-    <p align= "right">
-           {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
-           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
-    </p>
-            <br>
-            <br>
+<br><br><br><br>
 
-</div>
 
     <!-- Search Bar -->
     <style>
@@ -72,9 +44,8 @@
               class="suggestions">
          </div>
       <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
-
-
     </form>
+
     <script>
         $(document).ready(function() {
             $("#keyword").keyup(function () {
@@ -103,9 +74,6 @@
 
   </body>
 
-
-<br><br><br><br>
-<h1 class="index_heading"><center>Welcome to Hidden Santa Cruz</center></h1>
 <br><br><br>
 
 <body>
@@ -152,5 +120,117 @@
   </div>
 </body>
 
+  {{else:}}
 
-  {{pass}}
+<body class="cbp-spmenu-push">
+
+<div class="header-bar">
+    <br><br><br>
+
+    <h3><center>Welcome to Hidden Santa Cruz</center></h3>
+
+</div>
+
+<style>
+body {background-color:#f2f2f2}
+</style>
+
+<p style="float:right; margin-top: -80px">
+
+          {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
+           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
+</p>
+
+<br><br><br><br>
+
+<!-- Search Bar -->
+    <style>
+        #suggestions { position: relative; }
+        .suggestions { background: white; }
+        .search_list {
+            padding: 4px 6px 4px 6px;
+        }
+    </style>
+
+  <form>
+      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px; display: none;" />
+         <div style="position: absolute;" id="suggestions"
+              class="suggestions">
+         </div>
+      <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $("#keyword").keyup(function () {
+                ajax('{{=URL('default', 'post_selector')}}', ['keyword'], 'suggestions')
+            });
+            $("#searcher").click(function(){
+
+
+                if($('#search_text').text() == ""){
+                    $('#search_text').text("Hide");
+                    $('#search_icon').removeClass( "fa fa-search" );
+                } else {
+                    $('#search_text').text("");
+                    $('#search_icon').addClass( "fa fa-search" );
+                }
+
+                $("#keyword").animate(
+                        {width:'toggle'},350
+                );
+                $(".search_list").toggle()
+
+            });
+        });
+    </script>
+
+
+  </body>
+
+
+<br><br><br>
+
+<body>
+
+  <div class = "all_boards">
+
+        <a href="{{=URL('default', 'show_posts', args=['art'])}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/art.jpg')}}"/>
+            </div>
+        </a>
+
+        <a href="{{=URL('default', 'show_posts', args=['hiking'])}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/hiking.jpg')}}"/>
+            </div>
+        </a>
+
+        <a href="{{=URL('default', 'show_posts', args=['local_events'])}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/local_events.jpg')}}"/>
+            </div>
+        </a>
+
+        <a href="{{=URL('default', 'show_posts', args=['night_life'])}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/night_life.jpg')}}"/>
+            </div>
+        </a>
+
+         <a href="{{=URL('default', 'show_posts', args=['restaurants'])}}">
+            <div class="main_boards">
+                  <img class="circle_frame" src="{{=URL('static', 'images/restaurants.jpg')}}"/>
+            </div>
+         </a>
+
+        <a href="{{=URL('default', 'show_posts', args=['scenic'])}}">
+            <div class="main_boards" >
+                  <img class="circle_frame" src="{{=URL('static', 'images/scenic.jpg')}}"/>
+            </div>
+        </a>
+
+  </div>
+</body>
+{{pass}}

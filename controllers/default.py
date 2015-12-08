@@ -18,7 +18,6 @@ def map():
     return dict(postlist = [])
 
 def index():
-    redirect(URL('show_boards'))
     return dict(board_list = [])
 
 def show_boards():

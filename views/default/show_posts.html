@@ -5,17 +5,23 @@
 
 <body class="cbp-spmenu-push">
 
+<style>
+    body {
+        background-color: #f2f2f2
+    }
+</style>
+
 <script id="template" type="text/ractive">
 
   <!--shows the sign in sign out buttons-->
   {{if auth.user_id is None:}}
             <h1>
             <div style = "float:left">
-            {{=A('Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+            {{=A('Back', _class='ghost_button', _href=URL('default', 'show_boards', args=[]))}}
             </div>
             <div style = "float:right" id="main_login">
-            {{=A('Sign Up', _class='btn btn-warning', _href=URL('default', 'user', args=['register']))}}
-            {{=A('Sign In', _class='btn btn-primary', _href=URL('default', 'user', args=['login']))}}
+            {{=A('Sign Up', _class='ghost_button', _href=URL('default', 'user', args=['register']))}}
+            {{=A('Sign In', _class='ghost_button', _href=URL('default', 'user', args=['login']))}}
              <br><br>
             </div>
                 <div style="clear: both;"></div>
@@ -24,11 +30,11 @@
     <div class = "buttons">
 
         <div style="display: inline-block; float:right;">
-            {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
+            {{=A('Logout', _class='ghost_button', _href=URL('default', 'user', args=['logout']))}}
         </div>
 
-        {{=A('Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
-        {{=A('Create Post', _class='btn btn-warning', _href=URL('default', 'add_posts', args=[post_category]))}}
+        {{=A('Back', _class='ghost_button', _href=URL('default', 'show_boards', args=[]))}}
+        {{=A('Create Post', _class='ghost_button', _href=URL('default', 'add_posts', args=[post_category]))}}
 
     </div>
   {{pass}}
@@ -91,8 +97,8 @@
             <br>
             <br>
             {% #if user_id == {{=auth.user_id}} %}
-                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" class="btn btn-info" >Edit</a>
-                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" class="btn btn-danger" >Delete</a>
+                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" class="fa fa-pencil fa-2x" ></a>
+                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" class="fa fa-trash fa-2x" ></a>
             {% /if %}
         </div>
     </div>
