@@ -193,15 +193,14 @@ div.maincontent {
 }
 
 .header-bar{
-    height: 170px;
-    background-image: url("https://abs.twimg.com/a/1449191867/img/t1/lohp_streams_header_bg_v4.png");
-    background-size: 100%;
-    position: absolute;
-    resize: both;
-    width: 110%;
-    z-index: -1;
-    top: -100px;
-
+    /*height: 170px;*/
+    /*background-image: url("https://abs.twimg.com/a/1449191867/img/t1/lohp_streams_header_bg_v4.png");*/
+    /*background-size: 100%;*/
+    /*position: absolute;*/
+    /*resize: both;*/
+    /*width: 110%;*/
+    /*z-index: -1;*/
+    /*top: -100px;*/
 }
 
 .go_back{

@@ -68,6 +68,7 @@
             margin-left: 35px;
             color: #f7f7f7;
         }
+        
     </style>
     <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <div class="flash alert alert-dismissable">{{=response.flash or ''}}</div>
@@ -90,6 +91,20 @@
                 <i id="showLeft" class="fa fa-bars"></i>
                 <!--<button id="showLeft">Show/Hide Left Slide Menu</button>-->
         </div>
+        <span>
+        {{if auth.user_id is None:}}
+              <!--shows the sign in sign out buttons-->
+              <p style="float:right; margin-top: 1px">
+                {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
+                {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
+              </p>
+        {{else:}}
+            <p style="float:right; margin-top: 1px;">
+                      {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
+                       {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
+            </p>
+        {{pass}}
+        </span>
     </div>
     <!-- Masthead ===================================== -->
     {{block header}}
