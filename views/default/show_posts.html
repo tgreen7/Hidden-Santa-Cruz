@@ -3,13 +3,14 @@
 
 <div id="target"></div>
 
-<body class="cbp-spmenu-push">
-
 <style>
     body {
         background-color: #f2f2f2
     }
 </style>
+        
+<body class="cbp-spmenu-push">
+
 
 <script id="template" type="text/ractive">
 
@@ -112,8 +113,8 @@
             <br>
             <br>
             {% #if user_id == {{=auth.user_id}} %}
-                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" class="fa fa-pencil fa-2x" ></a>
-                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" class="fa fa-trash fa-2x" ></a>
+                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" ><i class="fa fa-pencil fa-2x"></i></a>
+                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" ><i class="fa fa-trash fa-2x"></i></a>
             {% /if %}
         </div>
     </div>

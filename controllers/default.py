@@ -149,8 +149,8 @@ def delete_post():
     if (auth.user_id != post.user_id):
         redirect(URL('default', 'show_posts', args=request.args(1)))
         session.flash = T('Not permitted for this user')
-
     else:
+        db(db.uploads.post == post).delete()
         db(db.posts.id == post).delete()
         redirect(URL('default','show_posts', args=request.args(1)))
 

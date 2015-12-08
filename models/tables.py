@@ -58,7 +58,7 @@ db.define_table('uploads',
                 Field('username', 'string'),
                 Field('post', db.posts),
                 Field('filename', represent = lambda x, row: "None" if x == None else x[:45]),
-                Field('up_file', 'upload', uploadseparate=True, requires=IS_NOT_EMPTY()),
+                Field('up_file', 'upload', autodelete=True, uploadseparate=True, requires=IS_NOT_EMPTY()),
                 Field('up_date', 'datetime'),
                 Field('notes', 'text')
                 )
