@@ -99,7 +99,7 @@ def post_selector():
     selected = [m for m in post_title if (post_start) in m.lower()]
     return DIV(*[DIV(k,
                      _onclick="jQuery('#keyword').val('%s')" % k,
-                     _onmouseover="this.style.backgroundColor='#c2c2d6',"
+                     _onmouseover="this.style.backgroundColor='rgba(221, 221, 244, 0.71)',"
                                   "this.style.cursor='pointer'",
                      _onmouseout="this.style.backgroundColor='white'",
                      ) for k in selected],

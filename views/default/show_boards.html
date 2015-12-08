@@ -1,20 +1,6 @@
 {{extend 'layout.html'}}
-        <!--comment-->
-{{from datetime import datetime}}
 
 {{if auth.user_id is None:}}
-<body class="cbp-spmenu-push">
-
-<div class="header-bar">
-    <br><br>
-
-    <h3 class="main_title">Welcome to Hidden Santa Cruz</h3>
-
-</div>
-
-<style>
-body {background-color:#f2f2f2}
-</style>
 
 
   <!--shows the sign in sign out buttons-->
@@ -23,117 +9,15 @@ body {background-color:#f2f2f2}
     {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
   </p>
 
-<br><br><br><br>
-
-
-    <!-- Search Bar -->
-    <style>
-        #suggestions { position: relative; }
-        .suggestions { background: white; }
-        .search_list {
-            padding: 4px 6px 4px 6px;
-        }
-    </style>
-    <form action="{{=URL('default', 'search_results')}}" method="post">
-      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
-         <div style="position: absolute;" id="suggestions"
-              class="suggestions">
-         </div>
-
-        <input class="btn btn-primary" type="submit" value="Search">
-          <!--<a class="btn btn-primary">
-              <i id="search_icon" class="fa fa-search"></i>
-          </a>-->
-      <!--
-     <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
-
-
-      <a class="btn btn-primary" id="searcher">
-          <span id="search_text"></span>
-        <i id="search_icon" class="fa fa-search"></i>
-      </a>
-      -->
-
-    </form>
-    <script>
-        $(document).ready(function() {
-            $("#keyword").keyup(function () {
-                ajax('{{=URL('default', 'post_selector')}}', ['keyword'], 'suggestions')
-            });
-//            $("#searcher").click(function(){
-//
-//
-//                if($('#search_text').text() == ""){
-//                    $('#search_text').text("Hide");
-//                    $('#search_icon').removeClass( "fa fa-search" );
-//                } else {
-//                    $('#search_text').text("");
-//                    $('#search_icon').addClass( "fa fa-search" );
-//                }
-//
-//                $("#keyword").animate(
-//                        {width:'toggle'},350
-//                );
-//                $(".search_list").toggle()
-//
-//            });
-        });
-    </script>
-
-
-  </body>
-
-<br><br><br>
-
-<body>
-
-<br><br><br>
-
-<body>
-
-  <div class = "all_boards">
-
-        <a href="{{=URL('default', 'show_posts', args=['art'])}}">
-            <div class="main_boards">
-                  <img class="circle_frame" src="{{=URL('static', 'images/art.jpg')}}"/>
-            </div>
-        </a>
-
-        <a href="{{=URL('default', 'show_posts', args=['hiking'])}}">
-            <div class="main_boards">
-                  <img class="circle_frame" src="{{=URL('static', 'images/hiking.jpg')}}"/>
-            </div>
-        </a>
-
-        <a href="{{=URL('default', 'show_posts', args=['local_events'])}}">
-            <div class="main_boards">
-                  <img class="circle_frame" src="{{=URL('static', 'images/local_events.jpg')}}"/>
-            </div>
-        </a>
-
-        <a href="{{=URL('default', 'show_posts', args=['night_life'])}}">
-            <div class="main_boards">
-                  <img class="circle_frame" src="{{=URL('static', 'images/night_life.jpg')}}"/>
-            </div>
-        </a>
-
-         <a href="{{=URL('default', 'show_posts', args=['restaurants'])}}">
-            <div class="main_boards">
-                  <img class="circle_frame" src="{{=URL('static', 'images/restaurants.jpg')}}"/>
-            </div>
-         </a>
-
-
-        <a href="{{=URL('default', 'show_posts', args=['scenic'])}}">
-            <div class="main_boards" >
-                  <img class="circle_frame" src="{{=URL('static', 'images/scenic.jpg')}}"/>
-            </div>
-        </a>
-
-  </div>
-</body>
 
   {{else:}}
+
+<p style="float:right; margin-top: -80px">
+
+          {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
+           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
+</p>
+        {{pass}}
 
 <body class="cbp-spmenu-push">
 
@@ -145,18 +29,30 @@ body {background-color:#f2f2f2}
 </div>
 
 <style>
-body {background-color:#f2f2f2}
+body {background-color: rgba(172, 208, 192, 0.54)
+}
 </style>
 
-<p style="float:right; margin-top: -80px">
 
-          {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
-           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
-</p>
 
 <br><br><br><br>
 
 <!-- Search Bar -->
+    <style>
+        #suggestions {
+            position: relative;
+            /*padding: 20px;*/
+        }
+        .suggestions {
+            margin-top: 5px;
+            background: white;
+            width: 250px;
+        }
+        .search_list {
+            padding: 4px 6px 4px 6px;
+            word-wrap: break-word;
+        }
+    </style>
    <form action="{{=URL('default', 'search_results')}}" method="post">
       <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
          <div style="position: absolute;" id="suggestions"
@@ -250,4 +146,3 @@ body {background-color:#f2f2f2}
 
   </div>
 </body>
-{{pass}}
