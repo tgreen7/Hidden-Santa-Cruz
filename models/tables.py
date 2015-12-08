@@ -48,7 +48,7 @@ db.posts.id.readable = db.posts.id.writable = False
 db.define_table('reviews',
                 Field('body','text', label="Review"),
                 Field('user_id',db.auth_user,default=auth.user_id, writable=False, readable=False),
-                Field('num_stars', 'integer', label="Rating (0-5)", requires=IS_INT_IN_RANGE(0,6)),
+                Field('num_stars', requires=IS_IN_SET([1, 2, 3, 4, 5]), label="Rating"),
                 Field('post',db.posts, writable=False, readable=False)
                 )
 
