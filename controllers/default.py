@@ -45,7 +45,7 @@ def post_selector():
                                   "this.style.cursor='pointer'",
                      _onmouseout="this.style.backgroundColor='white'",
                      ) for k in selected],
-                    _class="search_list",
+               _class="search_list"
                )
 
 
