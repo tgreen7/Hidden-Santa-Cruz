@@ -34,42 +34,58 @@ body {background-color:#f2f2f2}
             padding: 4px 6px 4px 6px;
         }
     </style>
-
-  <form>
-      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px; display: none;" />
+    <form action="{{=URL('default', 'search_results')}}" method="post">
+      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
          <div style="position: absolute;" id="suggestions"
               class="suggestions">
          </div>
-      <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
-    </form>
 
+        <input class="btn btn-primary" type="submit" value="Search">
+          <!--<a class="btn btn-primary">
+              <i id="search_icon" class="fa fa-search"></i>
+          </a>-->
+      <!--
+     <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
+
+
+      <a class="btn btn-primary" id="searcher">
+          <span id="search_text"></span>
+        <i id="search_icon" class="fa fa-search"></i>
+      </a>
+      -->
+
+    </form>
     <script>
         $(document).ready(function() {
             $("#keyword").keyup(function () {
                 ajax('{{=URL('default', 'post_selector')}}', ['keyword'], 'suggestions')
             });
-            $("#searcher").click(function(){
-
-
-                if($('#search_text').text() == ""){
-                    $('#search_text').text("Hide");
-                    $('#search_icon').removeClass( "fa fa-search" );
-                } else {
-                    $('#search_text').text("");
-                    $('#search_icon').addClass( "fa fa-search" );
-                }
-
-                $("#keyword").animate(
-                        {width:'toggle'},350
-                );
-                $(".search_list").toggle()
-
-            });
+//            $("#searcher").click(function(){
+//
+//
+//                if($('#search_text').text() == ""){
+//                    $('#search_text').text("Hide");
+//                    $('#search_icon').removeClass( "fa fa-search" );
+//                } else {
+//                    $('#search_text').text("");
+//                    $('#search_icon').addClass( "fa fa-search" );
+//                }
+//
+//                $("#keyword").animate(
+//                        {width:'toggle'},350
+//                );
+//                $(".search_list").toggle()
+//
+//            });
         });
     </script>
 
 
   </body>
+
+<br><br><br>
+
+<body>
 
 <br><br><br>
 
@@ -141,50 +157,54 @@ body {background-color:#f2f2f2}
 <br><br><br><br>
 
 <!-- Search Bar -->
-    <style>
-        #suggestions { position: relative; }
-        .suggestions { background: white; }
-        .search_list {
-            padding: 4px 6px 4px 6px;
-        }
-    </style>
-
-  <form>
-      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px; display: none;" />
+   <form action="{{=URL('default', 'search_results')}}" method="post">
+      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
          <div style="position: absolute;" id="suggestions"
               class="suggestions">
          </div>
-      <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
-    </form>
 
+        <input class="btn btn-primary" type="submit" value="Search">
+          <!--<a class="btn btn-primary">
+              <i id="search_icon" class="fa fa-search"></i>
+          </a>-->
+      <!--
+     <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
+
+
+      <a class="btn btn-primary" id="searcher">
+          <span id="search_text"></span>
+        <i id="search_icon" class="fa fa-search"></i>
+      </a>
+      -->
+
+    </form>
     <script>
         $(document).ready(function() {
             $("#keyword").keyup(function () {
                 ajax('{{=URL('default', 'post_selector')}}', ['keyword'], 'suggestions')
             });
-            $("#searcher").click(function(){
-
-
-                if($('#search_text').text() == ""){
-                    $('#search_text').text("Hide");
-                    $('#search_icon').removeClass( "fa fa-search" );
-                } else {
-                    $('#search_text').text("");
-                    $('#search_icon').addClass( "fa fa-search" );
-                }
-
-                $("#keyword").animate(
-                        {width:'toggle'},350
-                );
-                $(".search_list").toggle()
-
-            });
+//            $("#searcher").click(function(){
+//
+//
+//                if($('#search_text').text() == ""){
+//                    $('#search_text').text("Hide");
+//                    $('#search_icon').removeClass( "fa fa-search" );
+//                } else {
+//                    $('#search_text').text("");
+//                    $('#search_icon').addClass( "fa fa-search" );
+//                }
+//
+//                $("#keyword").animate(
+//                        {width:'toggle'},350
+//                );
+//                $(".search_list").toggle()
+//
+//            });
         });
     </script>
 
 
   </body>
-
 
 <br><br><br>
 
