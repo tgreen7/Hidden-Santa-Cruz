@@ -15,29 +15,44 @@
 
   <!--shows the sign in sign out buttons-->
   {{if auth.user_id is None:}}
-            <h1>
-            <div style = "float:left">
-            {{=A('Back', _class='ghost_button', _href=URL('default', 'show_boards', args=[]))}}
+<div class="header-bar">
+    <br><br><br>
+    <h3>Posts<h3>
+</div>
+    <div style="float:right; margin-top: -50px">
+           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
             </div>
-            <div style = "float:right" id="main_login">
-            {{=A('Sign Up', _class='ghost_button', _href=URL('default', 'user', args=['register']))}}
-            {{=A('Sign In', _class='ghost_button', _href=URL('default', 'user', args=['login']))}}
-             <br><br>
-            </div>
-                <div style="clear: both;"></div>
-            </h1>
+
+       <div style = "float:left">
+         {{=A('Back', _class='ghost-button', _href=URL('default', 'show_boards', args=[]))}}
+       </div>
+       <p style="float:right; margin-top: -100px">
+         {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
+         {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
+       </p>
+
   {{else:}}
-    <div class = "buttons">
 
-        <div style="display: inline-block; float:right;">
-            {{=A('Logout', _class='ghost_button', _href=URL('default', 'user', args=['logout']))}}
-        </div>
-
-        {{=A('Back', _class='ghost_button', _href=URL('default', 'show_boards', args=[]))}}
-        {{=A('Create Post', _class='ghost_button', _href=URL('default', 'add_posts', args=[post_category]))}}
-
+    <div class="header-bar">
+        <br><br><br>
+        <h3>Posts</h3>
     </div>
+    <style>
+        body {background-color: #f2f2f2}
+    </style>
+
+        <p style="float:right; margin-top: -50px">
+            {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
+        </p>
+        <div class="go_back">
+        {{=A('Go Back', _class='ghost-button', _href=URL('default', 'show_boards', args=[]))}}
+        {{=A('Create Post', _class='ghost-button', _href=URL('default', 'add_posts', args=[post_category]))}}
+        <br>
+        <br>
+        </p>
   {{pass}}
+  <br>
+  <br>
     <div class="dropdown">
         Sort By: <br>
       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
@@ -106,9 +121,6 @@
 
 
   </script>
-
-
-
 
 <script>
 $(function() {
