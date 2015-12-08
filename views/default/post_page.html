@@ -337,6 +337,7 @@ $(function() {
     }
 
     MAIN.on("Del", function(e, rev_id, post){
+        MAIN.set('reviewed', false);
         $.ajax("{{=URL('default', 'delete_review', user_signature=True)}}",
               {
                 data: {
@@ -351,6 +352,7 @@ $(function() {
                 }
               }
         );
+        load_reviews();
     });
 //
 //    MAIN.on("Edit", function(e, rev_id, post, user_id){

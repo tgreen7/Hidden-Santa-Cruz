@@ -1,0 +1,154 @@
+{{extend 'layout.html'}}
+
+
+<div id="target"></div>
+
+<body class="cbp-spmenu-push">
+
+<script id="template" type="text/ractive">
+
+  <!--shows the sign in sign out buttons-->
+  {{if auth.user_id is None:}}
+            <h1>
+            <div style = "float:left">
+            {{=A('Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+            </div>
+            <div style = "float:right" id="main_login">
+            {{=A('Sign Up', _class='btn btn-warning', _href=URL('default', 'user', args=['register']))}}
+            {{=A('Sign In', _class='btn btn-primary', _href=URL('default', 'user', args=['login']))}}
+             <br><br>
+            </div>
+                <div style="clear: both;"></div>
+            </h1>
+  {{else:}}
+    <div class = "buttons">
+
+        <div style="display: inline-block; float:right;">
+            {{=A('Logout', _class='btn btn-danger', _href=URL('default', 'user', args=['logout']))}}
+        </div>
+
+        {{=A('Back', _class='btn btn-success', _href=URL('default', 'show_boards', args=[]))}}
+
+    </div>
+  {{pass}}
+
+
+  {% #post_list %}
+    <div class = "myboard" >
+        <div class="boardtitle hover_hand" on-click="go_to_post:{%id%},{%category%}">
+            {% title %}
+        </div>
+        <div class="boardbody">
+            Average Rating:
+            {% #star_dict[id]%}
+                <i style = "color: #ffad33" class = "fa fa-star"></i>
+            {% /star_dict %}
+
+
+            {% #if half_star_dict[id] %}
+                <span style=" margin-left: -4px;">
+                <i style = "color: #ffad33" class = "fa fa-star-half-o"></i>
+                </span>
+            {% /if %}
+
+
+            <span style=" margin-left: -4px;">
+            {% #anti_star_dict[id]%}
+                <i style = "color: #ffad33;" class = "fa fa-star-o"></i>
+            {% /star_dict %}
+
+            </span>
+            ({% avg_rate %})
+            <br>
+            <br>
+            Posted On: {% created_on %}
+        </div>
+    </div>
+  {% /post_list %}
+
+
+  </script>
+
+
+
+
+<script>
+$(function() {
+
+  // Ractive object
+  var MAIN = new Ractive({
+    el: '#target',
+    template: '#template',
+    delimiters: ['{%', '%}'],
+    tripleDelimiters: ['{%%', '%%}'],
+    data: {
+        post_list: [],
+        star_dict: {},
+        anti_star_dict: {},
+        half_star_dict: {},
+        sort_rated: false,
+        sort_recent: false,
+        loading: false
+    }
+  });
+
+  // Loads the initial list of posts.
+  $.ajax("{{=URL('default', 'load_search_results', user_signature=True, args=search_text)}}",
+          {
+            method: 'POST',
+            success: function (data) {
+                MAIN.set('post_list', data['post_list']);
+                MAIN.set('star_dict', data['star_dict']);
+                MAIN.set('anti_star_dict', data['anti_star_dict']);
+
+                MAIN.set('half_star_dict', data['half_star_dict']);
+
+
+                MAIN.set('sort_recent', true);
+                MAIN.set('sort_rated', false);
+            }
+          }
+  );
+
+    //loads the posts by rating or most recent depending on args
+    MAIN.on("loadposts", function(e){
+
+            $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=search_text)}}",
+                    {
+                        method: 'POST',
+                        success: function (data) {
+                            MAIN.set('post_list', data['post_list']);
+                            MAIN.set('star_dict', data['star_dict']);
+                            MAIN.set('anti_star_dict', data['anti_star_dict']);
+                            MAIN.set('half_star_dict', data['half_star_dict']);
+                            MAIN.set('loading', false);
+
+                            MAIN.set('sort_recent', false);
+                            MAIN.set('sort_rated', true);
+                        }
+                    }
+            );
+    });
+
+    //goes to the page for that post
+    MAIN.on("go_to_post", function(e, post_id, category){
+        window.location.href = '{{=URL('default', 'post_page')}}' + '/' + post_id + '/' + category;
+    });
+
+  // Called every 10s, checks for changes in posts and loads them
+  function periodic_load() {
+
+  }
+
+  setInterval(periodic_load, 10000);
+
+});
+</script>
+
+</body>
+
+
+
+
+
+
