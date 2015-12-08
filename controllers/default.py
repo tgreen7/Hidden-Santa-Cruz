@@ -22,20 +22,32 @@ def index():
     return dict(board_list = [])
 
 def show_boards():
+    return dict()
 
-    # Code for search bar
-    search_form = FORM(INPUT(_id='keyword', _name='keyword', _onkeyup="ajax('callback', ['keyword'], 'target');"))
-    target_div = DIV(_id='target', _class='searchlist')
+# search posts
+def post_selector():
+    if not request.vars.keyword: return ''
 
-    return dict(search_form=search_form, target_div=target_div)
+    post_title = []
+    rows = db(db.posts).select()
+    for row in rows:
+       post_title.append(str(row.title))
 
-def callback():
-     "an ajax callback that returns a <ul> of links to post pages"
-     query = db.posts.title.contains(request.vars.keyword)
-     posts = db(query).select(orderby=db.posts.title)
-     links = [(A(p.title, _href=URL('post_page',args=[p.id, p.category])))
-              for p in posts]
-     return UL(*links)
+    print post_title
+
+    #query = db.posts.title.contains(request.vars.keyword)
+    #posts = db(query).select(orderby=db.posts.title)
+    post_start = request.vars.keyword.lower()
+    selected = [m for m in post_title if (post_start) in m.lower()]
+    return DIV(*[DIV(k,
+                     _onclick="jQuery('#keyword').val('%s')" % k,
+                     _onmouseover="this.style.backgroundColor='#c2c2d6',"
+                                  "this.style.cursor='pointer'",
+                     _onmouseout="this.style.backgroundColor='white'",
+                     ) for k in selected],
+                    _class="search_list",
+               )
+
 
 def load_posts_rating():
     post_category = request.args(0)
@@ -270,5 +282,6 @@ def call():
     supports xml, json, xmlrpc, jsonrpc, amfrpc, rss, csv
     """
     return service()
+
 
 

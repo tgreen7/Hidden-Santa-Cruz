@@ -5,18 +5,7 @@
 
 <body class="cbp-spmenu-push">
 
-    <style>
-        .search_list {
-            list-style-type: square;
-            background: #3399ff;
-            padding: 20px;
-            background-size: contain;
-        }
-        .search_list li {
-            /*background: #cce5ff;*/
-            margin: 5px;
-        }
-    </style>
+
 
     {{if auth.user_id is None:}}
 
@@ -68,11 +57,48 @@
 
 </div>
 
-  <div style="margin-left: 50px;">
-      <p style="font-size: 1.5em">Search for Posts:</p>
-        {{=search_form}}
-        {{=target_div}}
-  </div>
+    <!-- Search Bar -->
+    <style>
+        #suggestions { position: relative; }
+        .suggestions { background: white; }
+        .search_list {
+            padding: 4px 6px 4px 6px;
+        }
+    </style>
+
+  <form>
+      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px; display: none;" />
+         <div style="position: absolute;" id="suggestions"
+              class="suggestions">
+         </div>
+      <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
+
+
+    </form>
+    <script>
+        $(document).ready(function() {
+            $("#keyword").keyup(function () {
+                ajax('{{=URL('default', 'post_selector')}}', ['keyword'], 'suggestions')
+            });
+            $("#searcher").click(function(){
+
+
+                if($('#search_text').text() == ""){
+                    $('#search_text').text("Hide");
+                    $('#search_icon').removeClass( "fa fa-search" );
+                } else {
+                    $('#search_text').text("");
+                    $('#search_icon').addClass( "fa fa-search" );
+                }
+
+                $("#keyword").animate(
+                        {width:'toggle'},350
+                );
+                $(".search_list").toggle()
+
+            });
+        });
+    </script>
 
 
   </body>
