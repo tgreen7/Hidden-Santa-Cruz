@@ -61,6 +61,20 @@ div.maincontent {
     filter: alpha(opacity=40);
 }
 
+#suggestions {
+    position: relative;
+    /*padding: 20px;*/
+}
+.suggestions {
+    margin-top: 5px;
+    background: white;
+    width: 250px;
+}
+.search_list {
+    padding: 4px 6px 4px 6px;
+    word-wrap: break-word;
+}
+
 .circle_frame {
     width: 350px;
     height: 300px;
@@ -181,32 +195,16 @@ div.maincontent {
     color: red;
 }
 
-.search_list {
-    list-style-type: square;
-    /*background: #3399ff;*/
-    padding: 20px;
-    background-size: contain;
-}
 
-.search_list li {
-    /*background: #cce5ff;*/
-    margin: 5px;
-}
-
-.header-bar{
-    /*height: 170px;*/
-    /*background-image: url("https://abs.twimg.com/a/1449191867/img/t1/lohp_streams_header_bg_v4.png");*/
-    /*background-size: 100%;*/
-    /*position: absolute;*/
-    /*resize: both;*/
-    /*width: 110%;*/
-    /*z-index: -1;*/
-    /*top: -100px;*/
+.main_header{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .go_back{
-margin-top: -55px;
-  margin-left: 100px;
+    margin-top: -55px;
+    margin-left: 100px;
 
 }
 
@@ -252,5 +250,10 @@ h3{
 }
 
 .all_boards{
- margin-left: 100px;
+    /*position: absolute;*/
+    /*height: 200px;*/
+    /*width: 400px;*/
+    /*margin: 70px 0 0 -200px;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
 }

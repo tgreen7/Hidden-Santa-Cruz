@@ -8,10 +8,9 @@
 
 <body class="cbp-spmenu-push">
 
-<div class="header-bar">
-    <br><br><br>
+<div class="main_header">
 
-    <h3><center>Welcome to Hidden Santa Cruz</center></h3>
+    <h3>Welcome to Hidden Santa Cruz</h3>
 
 </div>
 
@@ -21,25 +20,8 @@ body {background-color: rgba(172, 208, 192, 0.54)
 </style>
 
 
-
-<br><br><br><br>
-
 <!-- Search Bar -->
-    <style>
-        #suggestions {
-            position: relative;
-            /*padding: 20px;*/
-        }
-        .suggestions {
-            margin-top: 5px;
-            background: white;
-            width: 250px;
-        }
-        .search_list {
-            padding: 4px 6px 4px 6px;
-            word-wrap: break-word;
-        }
-    </style>
+
    <form action="{{=URL('default', 'search_results')}}" method="post">
       <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
          <div style="position: absolute;" id="suggestions"
@@ -47,19 +29,6 @@ body {background-color: rgba(172, 208, 192, 0.54)
          </div>
 
         <input class="btn btn-primary" type="submit" value="Search">
-          <!--<a class="btn btn-primary">
-              <i id="search_icon" class="fa fa-search"></i>
-          </a>-->
-      <!--
-     <a class="btn btn-primary" id="searcher"><span id="search_text"></span><i id="search_icon" class="fa fa-search"></i></a>
-
-
-      <a class="btn btn-primary" id="searcher">
-          <span id="search_text"></span>
-        <i id="search_icon" class="fa fa-search"></i>
-      </a>
-      -->
-
     </form>
     <script>
         $(document).ready(function() {
@@ -86,12 +55,6 @@ body {background-color: rgba(172, 208, 192, 0.54)
         });
     </script>
 
-
-  </body>
-
-<br><br><br>
-
-<body>
 
   <div class = "all_boards">
 

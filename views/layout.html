@@ -107,13 +107,13 @@
         {{if auth.user_id is None:}}
               <!--shows the sign in sign out buttons-->
               <span>
-                {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
-                {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
+                    {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
+                    {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
               </span>
         {{else:}}
             <span>
-                      {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
-                       {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
+                  {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
+                   {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
             </span>
         {{pass}}
         </span>
