@@ -2,7 +2,7 @@
 .index_heading{
   font-size: 450%;
   color: white;
-  text-shadow: black 0.04em 0.04em 0.04em
+  text-shadow: black 0.04em 0.04em 0.04em;
 }
 
 #index_body {
@@ -85,11 +85,6 @@
     display: inline-block;
 }
 
-.show_posts_body {
-    background-color: #f2f2f2;
-}
-
-
 .box {
     width: 100px;
     height: 100px;
@@ -101,6 +96,14 @@
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     float: left;
     margin: 50px;
+}
+
+.show_posts_body {
+    background-color: rgba(84, 84, 84, 0.36);
+}
+
+.postslist {
+    margin-top: 40px;
 }
 
 /* line 14, ../sass/_main.scss */
@@ -147,6 +150,10 @@
   -mos-border-radius: 0 0 10px 10px;
 }
 
+.myboard .foot {
+  background-color: #889396;
+}
+
 .hover_hand:hover {
   cursor: pointer;
 }
@@ -179,7 +186,9 @@
 .main_header{
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-shadow: black 0.06em 0.06em 0.06em;
 }
 
 .go_back{
@@ -229,44 +238,6 @@ h3{
  margin-left: -130px;
 }
 
-.all_boards{
-    /*position: absolute;*/
-    /*height: 200px;*/
-    /*width: 400px;*/
-    /*margin: 70px 0 0 -200px;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-}
-
-/* PINTEREST --------------------------------------------------------------
-Ref:
-Thanks to:
-http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html
-
-
-body {
- background-color:#eee;
-}
-
-#pinBoot {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-}
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.white-panel {
-  position: absolute;
-  background: white;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-  padding: 10px;
-}
-/*
-stylize any heading tags withing white-panel below
-*/
 
 .white-panel h1 {
   font-size: 1em;

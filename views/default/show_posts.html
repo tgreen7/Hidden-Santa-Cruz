@@ -56,13 +56,22 @@
         </a></li>
       </ul>
     </div>
-
+    <div class="postslist">
   {% #post_list %}
-    <div class = "myboard" >
-        <div class="boardtitle hover_hand" on-click="go_to_post:{%id%},{%category%}">
+    <div class = "myboard hover_hand" on-click="go_to_post:{%id%},{%category%}" >
+        <div class="boardtitle" >
             {% title %}
         </div>
         <div class="boardbody">
+
+            {% #if user_id == {{=auth.user_id}} %}
+                <p style="float: left">
+                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" ><i class="fa fa-pencil fa-2x"></i></a>
+                </p>
+                <p style="float: right">
+                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" ><i class="fa fa-trash fa-2x"></i></a>
+                </p>
+            {% /if %}
             <p>
             {% #star_dict[id]%}
                 <i style = "color: #ffad33" class = "fa fa-star"></i>
@@ -86,16 +95,16 @@
             ({% avg_rate %})
             </p>
 
+            <div style="clear: both;"></div>
+
             <p>
             Posted On: {% created_on %}
             </p>
-            {% #if user_id == {{=auth.user_id}} %}
-                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" ><i class="fa fa-pencil fa-2x"></i></a>
-                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" ><i class="fa fa-trash fa-2x"></i></a>
-            {% /if %}
+
         </div>
     </div>
   {% /post_list %}
+  </div>
 
 
   </script>

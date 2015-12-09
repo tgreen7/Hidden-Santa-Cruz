@@ -20,21 +20,21 @@
     </style>
 
 
-<body class="cbp-spmenu-push">
+<body class="cbp-spmenu-push show_posts_body">
 
 <script id="template" type="text/ractive">
 
 <!--shows the sign in sign out buttons-->
-  <div class="header-bar">
-        <h3>Posts</h3>
-    </div>
+        <h1 style="color: black">Posts</h1>
 
 
        <div>
          {{=A('Back', _class='btn btn-primary', _href=URL('default', 'show_boards', args=[]))}}
 
 
-  <form style="float:right" action="{{=URL('default', 'search_results_search')}}" method="post">
+
+
+  <form style="float:right" action="{{=URL('default', 'search_results')}}" method="post">
       <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
          <div style="position: absolute;" id="suggestions"
               class="suggestions">
@@ -44,7 +44,10 @@
 
     </form>
  </div>
-
+ <span class="float: right">
+          {% count %} results returned.
+          </span>
+    <div class="postslist">
   {% #post_list %}
     <div class = "myboard" >
         <div class="boardtitle hover_hand" on-click="go_to_post:{%id%}">
@@ -84,7 +87,7 @@
         </div>
     </div>
   {% /post_list %}
-
+    </div>
 
   </script>
 
@@ -107,9 +110,8 @@ $(function() {
         star_dict: {},
         anti_star_dict: {},
         half_star_dict: {},
-        sort_rated: false,
-        sort_recent: false,
-        loading: false
+        loading: false,
+        count: 0
     }
   });
 
@@ -129,32 +131,11 @@ $(function() {
 
                 MAIN.set('half_star_dict', data['half_star_dict']);
 
-
-                MAIN.set('sort_recent', true);
-                MAIN.set('sort_rated', false);
+                MAIN.set('count', data['count']);
             }
           }
   );
 
-    //loads the posts by rating or most recent depending on args
-    MAIN.on("loadposts", function(e){
-
-            $.ajax("{{=URL('default', 'load_posts_rating', user_signature=True, args=search_text)}}",
-                    {
-                        method: 'POST',
-                        success: function (data) {
-                            MAIN.set('post_list', data['post_list']);
-                            MAIN.set('star_dict', data['star_dict']);
-                            MAIN.set('anti_star_dict', data['anti_star_dict']);
-                            MAIN.set('half_star_dict', data['half_star_dict']);
-                            MAIN.set('loading', false);
-
-                            MAIN.set('sort_recent', false);
-                            MAIN.set('sort_rated', true);
-                        }
-                    }
-            );
-    });
 
     //goes to the page for that post
     MAIN.on("go_to_post", function(e, post_id, category){
