@@ -57,7 +57,6 @@
     <style>
         #showLeft {
             font-size: 2.5em;
-            margin-top: -50px;
             margin-left: 40px;
             cursor: pointer;
             color: white;
@@ -68,7 +67,23 @@
             margin-left: 35px;
             color: #f7f7f7;
         }
-        
+        #menu_bar {
+            background-image: url("https://abs.twimg.com/a/1449191867/img/t1/lohp_streams_header_bg_v4.png");
+            /*background-size: cover;*/
+            padding: 20px 4px 55px 4px;
+            background-size: cover;
+            /*fix at top*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 23px;
+        }
+        #login_buttons {
+            float: right;
+            margin-right: 20px;
+        }
     </style>
     <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <div class="flash alert alert-dismissable">{{=response.flash or ''}}</div>
@@ -85,24 +100,22 @@
         <a style="text-decoration: none;" href="#">Scenic</a>
         <a style="text-decoration: none;" href="{{=URL('default','show_boards.html')}}">Logout</a>
     </nav>
-    <div>
-        <div class="menu_show">
-                <!-- Class "cbp-spmenu-open" gets applied to menu -->
-                <i id="showLeft" class="fa fa-bars"></i>
-                <!--<button id="showLeft">Show/Hide Left Slide Menu</button>-->
-        </div>
+    <div id="menu_bar">
         <span>
+                <i id="showLeft" class="fa fa-bars"></i>
+        </span>
+        <span id="login_buttons">
         {{if auth.user_id is None:}}
               <!--shows the sign in sign out buttons-->
-              <p style="float:right; margin-top: 1px">
+              <span>
                 {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
                 {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
-              </p>
+              </span>
         {{else:}}
-            <p style="float:right; margin-top: 1px;">
+            <span>
                       {{=A('Edit Profile', _class='ghost-button', _href=URL('default', 'user', args=['profile']))}}
                        {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
-            </p>
+            </span>
         {{pass}}
         </span>
     </div>

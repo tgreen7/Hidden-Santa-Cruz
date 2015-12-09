@@ -38,6 +38,7 @@ div.maincontent {
     color: #4747d1;
     background: white;
     opacity: 0.75;
+    text-decoration: none;
     filter: alpha(opacity=40);
 }
 
