@@ -15,6 +15,10 @@ div.maincontent {
   text-shadow: black 0.04em 0.04em 0.04em
 }
 
+#index_body {
+    background-color: rgba(172, 208, 192, 0.54)
+}
+
 .intro-statement{
   margin-top: -30px;
   text-align: center;
