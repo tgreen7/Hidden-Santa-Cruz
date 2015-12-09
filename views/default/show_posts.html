@@ -7,6 +7,7 @@
     body {
         background-color: #f2f2f2
     }
+
 </style>
         
 <body class="cbp-spmenu-push">
@@ -15,47 +16,22 @@
 <script id="template" type="text/ractive">
 
   <!--shows the sign in sign out buttons-->
-  {{if auth.user_id is None:}}
-<div class="header-bar">
-    <br><br><br>
-    <h3>Posts<h3>
-</div>
-    <div style="float:right; margin-top: -50px">
-           {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
-            </div>
-
-       <div style = "float:left">
-         {{=A('Back', _class='ghost-button', _href=URL('default', 'show_boards', args=[]))}}
-       </div>
-       <p style="float:right; margin-top: -100px">
-         {{=A('Login', _class='ghost-button', _href=URL('default', 'user', args=['login']))}}
-         {{=A('Sign Up', _class='ghost-button', _href=URL('default', 'user', args=['register']))}}
-       </p>
-
-  {{else:}}
-
-    <div class="header-bar">
-        <br><br><br>
+  <div class="header-bar">
         <h3>Posts</h3>
     </div>
-    <style>
-        body {background-color: #f2f2f2}
-    </style>
 
-        <p style="float:right; margin-top: -50px">
-            {{=A('Logout', _class='ghost-button', _href=URL('default', 'user', args=['logout']))}}
-        </p>
-        <div class="go_back">
-        {{=A('Go Back', _class='ghost-button', _href=URL('default', 'show_boards', args=[]))}}
-        {{=A('Create Post', _class='ghost-button', _href=URL('default', 'add_posts', args=[post_category]))}}
-        <br>
-        <br>
-        </p>
+       <span>
+         {{=A('Back', _class='btn btn-primary', _href=URL('default', 'show_boards', args=[]))}}
+        </span>
+  {{if auth.user_id is not None:}}
+        <span style = "float:right">
+        {{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_category]))}}
+        </div>
   {{pass}}
-  <br>
-  <br>
+  
+  
     <div class="dropdown">
-        Sort By: <br>
+        Sort By: 
       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
         {% #if sort_rated %}
             Highest Rating
@@ -107,11 +83,11 @@
 
             </span>
             ({% avg_rate %})
-            <br>
-            <br>
+            
+            
             Posted On: {% created_on %}
-            <br>
-            <br>
+            
+            
             {% #if user_id == {{=auth.user_id}} %}
                 <a href="{{=URL('default', 'posts_edit')}}/{%id%}" ><i class="fa fa-pencil fa-2x"></i></a>
                 <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" ><i class="fa fa-trash fa-2x"></i></a>
