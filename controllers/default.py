@@ -8,6 +8,9 @@
 ## - download is for downloading files uploaded in the db (does streaming)
 #########################################################################
 
+def pinterest_test():
+    return dict()
+
 def deleteposts():
     db(db.posts.id > 0).delete()
     db(db.uploads.id > 0).delete()
@@ -28,7 +31,7 @@ def search_results():
     search_text = request.body.read()
     if(search_text == "keyword="):
         session.flash = T('Please enter a post title.')
-        redirect(URL('show_boards'))
+        redirect('show_boards')
 
     def cutit(string, n):
         return string[n:]
@@ -57,8 +60,49 @@ def search_results():
     post_list = db(db.posts.title.contains(search_text)).select()
     return dict(post_list=post_list, search_text=search_text)
 
+
+def search_results_search():
+    search_text = request.body.read()
+    if(search_text == "keyword="):
+        session.flash = T('Please enter a post title.')
+        redirect('search_results_search')
+
+    def cutit(string, n):
+        return string[n:]
+
+    search_text = cutit(search_text, 8)
+
+    if (search_text != ""):
+        search_text = search_text.replace("+", " ")
+
+    post_list = db(db.posts.title.contains(search_text)).select()
+
+    for post in post_list:
+        # update the average review
+        count = db(db.reviews.post == post.id).count()
+        if count == 0:
+            break
+
+        reviews = db(db.reviews.post == post.id).select()
+        total = 0
+
+        for i in reviews:
+            total += i.num_stars
+        dub = float('%.2f' % (total / float(count)))
+        db.posts(post.id).update_record(avg_rate=dub)
+
+    post_list = db(db.posts.title.contains(search_text)).select()
+    return dict(post_list=post_list, search_text=search_text)
+
+
+
 def load_search_results():
     search_text = request.args(0)
+    if search_text is None:
+        return response.json(dict(post_list=[], star_dict={}, anti_star_dict={},
+                                  half_star_dict={}))
+
+
 
     search_text = search_text.replace("_", " ")
     print search_text
