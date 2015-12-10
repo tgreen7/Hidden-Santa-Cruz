@@ -65,6 +65,9 @@
         <div class="boardtitle hover_hand" on-click="go_to_post:{%id%}">
             {% title %}
         </div>
+        {% #if image%}
+         <img src="{{=URL('default', 'download')}}/{%image%}">
+        {%/if%}
         <div class="boardbody">
             Average Rating:
             {% #star_dict[id]%}

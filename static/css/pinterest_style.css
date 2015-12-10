@@ -8,18 +8,17 @@
 }
 
 #pin_columns {
-	-webkit-column-count: 2;
+	-webkit-column-count: 3;
 	-webkit-column-gap: 15px;
-	-moz-column-count: 2;
+	-moz-column-count: 3;
 	-moz-column-gap: 15px;
-	column-count: 2;
+	column-count: 3;
 	column-gap: 15px;
 }
 
 
-
-
 .pin {
+	width: 30%;
 	display: inline-block;
 	background: #FEFEFE;
 	border: 2px solid #FAFAFA;
@@ -35,6 +34,7 @@
 	padding-bottom: 10px;
 	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
 	opacity: 1;
+	vertical-align: top;
 
 	-webkit-transition: all .2s ease;
 	-moz-transition: all .2s ease;
@@ -42,7 +42,7 @@
 	transition: all .2s ease;
 }
 
-.pin .img {
+.pin img {
 	width: 100%;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 15px;
@@ -50,17 +50,18 @@
 }
 
 .pin .boardtitle {
-    width: 13em;
+    width: 100%;
   /**
    * Required properties to achieve text-overflow
    */
     font-family: Impact, Charcoal, sans-serif;
     padding: 5px 20px;
-    color: #2a3132;
+    color: rgb(42, 49, 50);
   	font-size: 1.5em;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+	background-color: rgba(136, 147, 150, 0.12);;
 }
 
 .pin .icons {
@@ -72,9 +73,9 @@
 .pin .boardbody {
   text-align: center;
   font-size: .9em;
-  /*background: #acd0c0;
+  background: rgba(172, 208, 192, 0.51);
   padding: 20px 40px;
-  border-radius: 0 0 10px 10px;
+  /*border-radius: 0 0 10px 10px;
   -webkit-border-radius: 0 0 10px 10px;
   -mos-border-radius: 0 0 10px 10px;*/
 }

@@ -54,11 +54,12 @@
   {% #post_list %}
 
     <div class = "pin hover_hand" on-click="go_to_post:{%id%},{%category%}" >
-        <p>
         <p class="boardtitle">
             {% title %}
         </p>
-
+        {% #if image%}
+         <img src="{{=URL('default', 'download')}}/{%image%}">
+        {%/if%}
         <div class="boardbody">
             {% #if user_id == {{=auth.user_id}} %}
                 <p style="float: left">
