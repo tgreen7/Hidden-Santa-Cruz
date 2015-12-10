@@ -22,7 +22,7 @@ def map():
     return dict(postlist = [])
 
 def index():
-    return dict(board_list = [])
+    return dict()
 
 def show_boards():
     return dict()
@@ -67,13 +67,13 @@ def load_search_results():
     search_text = request.args(0)
     if search_text is None:
         return response.json(dict(post_list=[], star_dict={}, anti_star_dict={},
-                                  half_star_dict={}))
+                                  half_star_dict={}, count=0))
 
     search_text = search_text.replace("_", " ")
-    print search_text
 
     posts = db(db.posts.title.contains(search_text)).select()
     count = db(db.posts.title.contains(search_text)).count()
+
 
     star_dict = {}
     anti_star_dict = {}
@@ -180,6 +180,7 @@ def show_posts():
         db.posts(post.id).update_record(avg_rate=dub)
 
     post_list = db(db.posts.category == post_category).select(orderby=~db.posts.avg_rate)
+
     return dict(post_list=post_list, post_category=post_category)
 
 @auth.requires_login()

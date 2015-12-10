@@ -16,6 +16,18 @@
 	column-gap: 15px;
 }
 
+
+.overflow {
+    width: 10em;
+  outline: 1px solid #000;
+  margin: 0 0 2em 0;
+  /**
+   * Required properties to achieve text-overflow
+   */
+      white-space: nowrap;
+    overflow: hidden;
+}
+
 .pin {
 	display: inline-block;
 	background: #FEFEFE;
@@ -48,6 +60,15 @@
 
 
 .pin .boardtitle {
+
+
+
+    text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+
+
     text-align: center;
     font-family: Impact, Charcoal, sans-serif;
     padding: 5px 20px;

@@ -3,6 +3,7 @@
   font-size: 450%;
   color: white;
   text-shadow: black 0.04em 0.04em 0.04em;
+    margin-top: 100px;
 }
 
 #index_body {
@@ -43,7 +44,7 @@
 .suggestions {
     margin-top: 5px;
     background: white;
-    width: 250px;
+    width: 200px;
 }
 .search_list {
     padding: 4px 6px 4px 6px;
@@ -108,6 +109,7 @@
 
 /* line 14, ../sass/_main.scss */
 .myboard {
+
   display: inline-block;
   margin-left: 70px;
   margin-top: 20px;
@@ -121,6 +123,9 @@
 /* line 24, ../sass/_main.scss */
 .myboard .boardtitle {
     text-align: center;
+
+
+
     font-family: Impact, Charcoal, sans-serif;
     padding: 15px 40px;
     color: #2a3132;
@@ -183,40 +188,55 @@
 }
 
 
-.main_header{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 3em;
-    margin-bottom: 40px;
-    text-shadow: black 0.06em 0.06em 0.06em;
-}
-
-.go_back{
-    margin-top: -55px;
-    margin-left: 100px;
-
-}
-
-h3{
-    color: white;
+#main_header{
+    color: #003366;
     font-weight: lighter;
-    font-size: 250%;
     margin-top: 35px;
+    font-size: 350%;
+}
+
+#under_main_header {
+    color: #003f80 ;
+    font-weight: lighter;
+    font-size: 220%;
+    margin-bottom: 20px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.search_button {
+  background: #5e8fff;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+}
+
+.search_button:hover {
+    color: white;
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+
+
+#index_button {
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 .buttons{
-  display: inline-block;
-  width: 300px;
-  padding: 20px;
-  color: #fff;
-  border: 2px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  margin-top: 70px;
-  margin-right: 530px;
-  font-size: 250%;
-
+    margin-top: 200px;
+    width: 300px;
+    padding: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    text-decoration: none;
+    font-size: 250%;
 }
 
 .buttons:hover{
@@ -226,30 +246,10 @@ h3{
     filter: alpha(opacity=40);
 }
 
-h2{
-color: white;
-font-weight: lighter;
-margin-top: 50px;
- margin-left: -130px;
-
-}
-
-h3{
- margin-left: -130px;
-}
-
-
-.white-panel h1 {
-  font-size: 1em;
-}
-.white-panel h1 a {
-  color: #A92733;
-}
-.white-panel:hover {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  margin-top: -5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.post_header{
+    text-align: center;
+    font-size: 5em;
+    color: #76d0ff;
+    text-shadow: black 0.03em 0.03em 0.03em;
+    margin-bottom: 40px;
 }
