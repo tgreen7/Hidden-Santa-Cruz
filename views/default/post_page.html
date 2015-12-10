@@ -1,4 +1,4 @@
-{{extend 'layout.html'}}
+{{include 'layout.html'}}
 
 
 
@@ -16,6 +16,10 @@
 
     <!--style for reviews-->
      <style>
+         #map {
+            width: 500px;
+            height: 400px;
+        }
          .hover_hand {
              cursor:pointer;
          }
@@ -175,6 +179,8 @@ jssor_1_slider_init();
 
 </span>
 
+<div id="map"></div>
+
 
     {% #review_dict:id%}
         {%#if user_id == {{=auth.user_id}}%}
@@ -278,6 +284,7 @@ $(function() {
       review_dict: {},
       active_draft: "",
       loading: false,
+      maploaded: false,
       editing: true,
       newboard: false,
       message_content: "default",
@@ -285,6 +292,10 @@ $(function() {
       average : 0,
       total: 0,
       numRev: 0,
+      lat: 0,
+      long: 0,
+      user_id:"",
+      auth_user:"",
 
       setRev: function(){
           MAIN.set('reviewed',true);
@@ -298,6 +309,9 @@ $(function() {
 //          truncate
           var shorten = Math.floor(total/num * 100) / 100;
           MAIN.set('average', shorten);
+      },
+      setMar: function(){
+        marker.draggable(true);
       },
       range: function ( low, high ) {
           var half = high - (high | 0);
@@ -321,6 +335,7 @@ $(function() {
 
     function load_reviews () {
        $.ajax("{{=URL('default', 'load_reviews', args= [post.id])}}",
+
           {
             method: 'POST',
             success: function (data) {
@@ -331,12 +346,8 @@ $(function() {
         );
     }
 
-    function alerter(rev_id, post, u) {
-        alert(rev_id);
-        alert(post);
-        alert(u);
-        alert("test");
-    }
+
+
 
     MAIN.on("Del", function(e, rev_id, post){
         MAIN.set('reviewed', false);
@@ -361,7 +372,28 @@ $(function() {
 //        alerter(rev_id, post,user_id);
 //    });
 
+    function load_Position(){
+          $.ajax("{{=URL('default', 'load_Position', args= [post.id])}}",
 
+          {
+            method: 'POST',
+            success: function (data) {
+              MAIN.set('lat', data['lat']);
+              MAIN.set('long',data['longi']);
+              MAIN.set('maploaded',true);
+              MAIN.set('auth_user',data['auth_user']);
+              MAIN.set('user_id', data['user_id']);
+              initMap();
+
+            }
+
+          }
+
+        );
+
+
+    }
+    load_Position();
 
 
    // Loads the initial list of messages.
@@ -372,11 +404,113 @@ $(function() {
             success: function (data) {
               MAIN.set('review_dict', data['review_dict']);
               MAIN.set('loading', false);
+
             }
           }
   );
 
     setInterval(load_reviews, 5000);
 
+    function send_message(lat,lng) {
+
+    $.ajax("{{=URL('default', 'setPos')}}",
+            {
+              data: {
+                lat: lat,
+                lng: lng,
+                post_id: "{{=post.id}}"
+              },
+              method: 'POST'
+
+            }
+    );
+  }
+var marker;
+var map;
+function CenterControl(controlDiv, map) {
+
+  // Set CSS for the control border.
+  var controlUI = document.createElement('div');
+
+  controlUI.style.marginTop = '10px';
+  controlUI.style.marginRight = '10px';
+  controlUI.style.backgroundColor = '#fff';
+  controlUI.style.border = '2px solid #fff';
+  controlUI.style.borderRadius = '3px';
+  controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+  controlUI.style.cursor = 'pointer';
+  controlUI.style.marginBottom = '22px';
+  controlUI.style.textAlign = 'center';
+  controlUI.title = 'Click to get directions to location';
+  controlDiv.appendChild(controlUI);
+
+  // Set CSS for the control interior.
+  var controlText = document.createElement('div');
+  controlText.style.color = 'rgb(25,25,25)';
+  controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+  controlText.style.fontSize = '12px';
+  controlText.style.lineHeight = '30px';
+  controlText.style.paddingLeft = '5px';
+  controlText.style.paddingRight = '5px';
+  controlText.innerHTML = 'Get Directions';
+  controlUI.appendChild(controlText);
+
+  // Setup the click event listeners: simply set the map to Chicago.
+  controlUI.addEventListener('click', function() {
+
+    window.open(
+    'http://maps.google.com/?saddr=36.974117,-122.030796&daddr=' + MAIN.get('lat') + "/" + MAIN.get('long'),
+    '_blank' // <- This is what makes it open in a new window.
+    );
+  });
+
+}
+
+function initMap() {
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: MAIN.get('lat'), lng: MAIN.get('long')}
+  });
+if(MAIN.get('auth_user')==MAIN.get('user_id')){
+    marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    position: {lat: MAIN.get('lat'), lng: MAIN.get('long')}
+
+
+  });
+}else
+    marker = new google.maps.Marker({
+    map: map,
+    draggable: false,
+    animation: google.maps.Animation.DROP,
+    position: {lat: MAIN.get('lat'), lng: MAIN.get('long')}
+
+  });
+
+
+  google.maps.event.addListener(marker, 'dragend', function()
+{
+    MAIN.set('lat', marker.getPosition().lat());
+    MAIN.set('long',marker.getPosition().lng());
+    send_message(MAIN.get('lat'),MAIN.get('long'));
+    geocodePosition(marker.getPosition());
+
+});
+
+
+var centerControlDiv = document.createElement('div');
+  var centerControl = new CenterControl(centerControlDiv, map);
+
+  centerControlDiv.index = 1;
+  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
+
+}
+
+
 });
 </script>
+
+

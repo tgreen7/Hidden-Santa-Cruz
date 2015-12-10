@@ -34,6 +34,8 @@ db.people.description.represent = lambda v, r: DIV(v, _class="msg_content")
 #all these tables have id already defined
 db.define_table('posts',
                 Field('title', 'text'),
+                Field('latitude', 'float',default = 36.974117,readable=False, writable=False),
+                Field('longitude', 'float',default=-122.030796,readable=False, writable=False),
                 Field('body', 'text'),
                 Field('category', 'text', readable=False, writable=False),
                 Field('user_id', db.auth_user, default=auth.user_id, readable=False, writable=False),

@@ -286,6 +286,33 @@ def load_reviews():
          for r in rows}
     return response.json(dict(review_dict=d))
 
+
+def load_Position():
+    post_board_id = request.args(0)
+    post = db.posts[post_board_id]
+    auth_user = auth.user_id
+    user_id = post.user_id
+    print auth_user
+    print user_id
+    print post
+    longi = post.longitude
+    lat = post.latitude
+    print "longi"
+    print longi
+    print lat
+    return response.json(dict(longi=longi,lat=lat,auth_user = auth_user,user_id=user_id))
+
+def setPos():
+    print "set"
+    lat = request.vars.lat
+    lng = request.vars.lng
+    id = request.vars.post_id
+    print lat
+    print lng
+    print id
+    db(db.posts.id == id).update(latitude=lat,longitude=lng)
+    return "ok"
+
 @auth.requires_login()
 def delete_review():
     rev_id = request.vars.get("rev_id")
