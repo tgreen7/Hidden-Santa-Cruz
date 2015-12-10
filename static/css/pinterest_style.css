@@ -17,24 +17,15 @@
 }
 
 
-.overflow {
-    width: 10em;
-  outline: 1px solid #000;
-  margin: 0 0 2em 0;
-  /**
-   * Required properties to achieve text-overflow
-   */
-      white-space: nowrap;
-    overflow: hidden;
-}
+
 
 .pin {
 	display: inline-block;
 	background: #FEFEFE;
 	border: 2px solid #FAFAFA;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	/*-webkit-border-radius: 10px;*/
+	/*-moz-border-radius: 10px;*/
+	/*border-radius: 10px;*/
 	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
 	margin: 0 10px 15px;
 	-webkit-column-break-inside: avoid;
@@ -58,27 +49,18 @@
 	margin-bottom: 5px;
 }
 
-
 .pin .boardtitle {
-
-
-
-    text-overflow: ellipsis;
-  /* Required for text-overflow to do anything */
-  white-space: nowrap;
-  overflow: hidden;
-
-
-    text-align: center;
+    width: 13em;
+  /**
+   * Required properties to achieve text-overflow
+   */
     font-family: Impact, Charcoal, sans-serif;
     padding: 5px 20px;
     color: #2a3132;
   	font-size: 1.5em;
-    /*border-radius: 10px 10px 10px 10px;
-  	-webkit-border-radius: 10px 10px 10px 10px;
-  	-mos-border-radius: 10px 10px 10px 10px;
-    background-color: #8269cc;
-    background-size: contain;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .pin .icons {

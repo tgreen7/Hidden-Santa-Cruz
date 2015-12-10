@@ -53,14 +53,12 @@
 
   {% #post_list %}
 
-    <style>.ellipsis { text-overflow: ellipsis; }</style>
-<p class="overflow ellipsis">This is an example text showing nothing interesting but the truncated content via text-overflow shorthand property.</p>
-
     <div class = "pin hover_hand" on-click="go_to_post:{%id%},{%category%}" >
         <p>
-        <div class="boardtitle">
+        <p class="boardtitle">
             {% title %}
-        </div>
+        </p>
+
         <div class="boardbody">
             {% #if user_id == {{=auth.user_id}} %}
                 <p style="float: left">

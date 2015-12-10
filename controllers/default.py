@@ -8,9 +8,6 @@
 ## - download is for downloading files uploaded in the db (does streaming)
 #########################################################################
 
-def pinterest_test():
-    return dict()
-
 def deleteposts():
     db(db.posts.id > 0).delete()
     db(db.uploads.id > 0).delete()
@@ -143,6 +140,7 @@ def load_posts_recent():
     # print post_board_id
     posts = db(db.posts.category == category).select(orderby=~db.posts.created_on)
 
+
     star_dict = {}
     anti_star_dict = {}
     half_star_dict = {}
@@ -162,8 +160,10 @@ def load_posts_recent():
 
 def show_posts():
     post_category = request.args(0)
-
     post_list = db(db.posts.category == post_category).select()
+
+    # images_dict[post.id] = db(db.uploads.post == post.id).select().first()
+
 
     for post in post_list:
         # update the average review
@@ -178,8 +178,6 @@ def show_posts():
             total += i.num_stars
         dub = float('%.2f' % (total / float(count)))
         db.posts(post.id).update_record(avg_rate=dub)
-
-    post_list = db(db.posts.category == post_category).select(orderby=~db.posts.avg_rate)
 
     return dict(post_list=post_list, post_category=post_category)
 
@@ -233,7 +231,6 @@ def post_page():
     reviews = db(db.reviews.post == post_id).select()
     num_rev = db(db.reviews.post == post_id).count()
     # print "numrev" + str(num_rev)
-
     images = db(db.uploads.post == post_id).select()
     return dict(post = post, reviews=reviews, num_rev=num_rev, title=title, body= body, images = images, board=board)
 
