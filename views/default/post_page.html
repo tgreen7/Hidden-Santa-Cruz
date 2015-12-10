@@ -1,4 +1,4 @@
-{{include 'layout.html'}}
+{{extend 'layout.html'}}
 
 
 
@@ -19,6 +19,7 @@
          #map {
             width: 500px;
             height: 400px;
+
         }
          .hover_hand {
              cursor:pointer;
@@ -165,7 +166,7 @@ jssor_1_slider_init();
 
 {{=A('Add Images', _class='btn btn-success', _href=URL('default', 'upload_images', args=[post.id]))}}
 
-     <div>
+     <div style="white-space: pre-line;">
      {{=body}}
          </div>
 
