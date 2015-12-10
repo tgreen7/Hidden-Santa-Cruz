@@ -7,11 +7,16 @@
 
 
 <script id="template" type="text/ractive">
+
     {{=A('Back', _class='back_button', _href=URL('default', 'show_boards', args=[]))}}
+    <h1 class = "post_header">
+    {{=post_category}}
+    </h1>
+
+
   <!--shows the sign in sign out buttons-->
-        <h1 class="post_header">
-        {{=post_category}}
-        </h1>
+
+
 
   {{if auth.user_id is not None:}}
         <span style = "float:right">

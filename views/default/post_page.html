@@ -5,6 +5,14 @@
 <body  class="cbp-spmenu-push">
 
 {{=A('Back', _class='back_button', _href=URL('default', 'show_posts', args=[board]))}}
+<span style="float: right">
+
+    {{if post.user_id == auth.user_id:}}
+        {{=A('Edit', _class='btn btn-info', _href=URL('default', 'posts_edit', args=[post.id]))}}
+        {{=A('Delete', _class='btn btn-danger', _href=URL('default', 'delete_post', args=[post.id, post.category]))}}
+    {{pass}}
+
+</span>
 
  <div class="container-fluid">
      <!-- #region Jssor Slider Begin -->

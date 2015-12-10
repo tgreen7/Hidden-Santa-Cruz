@@ -208,6 +208,19 @@ def posts_edit():
             redirect(URL('default', 'show_posts', args=[posts.category]))
         return dict(form=form)
 
+@auth.requires_login()
+def posts_edit():
+    post = db.posts(request.args(0))
+    if (auth.user_id != post.user_id):
+        redirect(URL('default', 'post_page', args=[post.id, post.category]))
+        session.flash = T('Not permitted for this user')
+    else:
+        form = SQLFORM(db.posts, record=post, upload=URL('download'))
+        if form.process().accepted:
+            session.flash = T('The data was edited')
+            redirect(URL('default', 'post_page', args=[post.id, post.category]))
+        return dict(form=form)
+
 #delete post
 @auth.requires_login()
 def delete_post():

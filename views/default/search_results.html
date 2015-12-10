@@ -95,14 +95,6 @@
             <br>
             <br>
 
-            {% #if user_id == {{=auth.user_id}} %}
-                <p style="float: left">
-                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" ><i class="fa fa-pencil fa-2x"></i></a>
-                </p>
-                <p style="float: right">
-                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" ><i class="fa fa-trash fa-2x"></i></a>
-                </p>
-            {% /if %}
         </div>
     </div>
   {% /post_list %}

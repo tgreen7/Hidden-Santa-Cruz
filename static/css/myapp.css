@@ -267,7 +267,7 @@
     width: 50%;
     height:auto;
     border:2px solid black;
-    padding: 10px 80px 50px 80px;
+    padding: 10px 20px 50px 20px;
 }
 
 #description_title {
@@ -294,5 +294,4 @@
 .back_button:hover {
     text-decoration: none;
 }
-
 
