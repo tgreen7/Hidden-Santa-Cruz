@@ -23,7 +23,6 @@ def index():
 def show_boards():
     return dict()
 
-
 def search_results():
     search_text = request.body.read()
     if(search_text == "keyword="):

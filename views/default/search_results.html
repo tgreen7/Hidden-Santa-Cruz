@@ -34,21 +34,15 @@
        <div>
 
 
-
-
-
   <form style="float:right" action="{{=URL('default', 'search_results')}}" method="post">
       <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
          <div style="position: absolute;" id="suggestions"
               class="suggestions">
       </div>
 
-        <input class="btn btn-primary" type="submit" value="Search">
-
-    </form>
- </div>
- <span class="float: right">
-          {% count %}
+        <input class="search_button" type="submit" value="Search">
+        <br>
+    {% count %}
           {% #if count != 1%}
           results
           {% else %}
@@ -56,9 +50,10 @@
           {%/if%}
 
           returned.
-      </span>
+    </form>
+ </div>
 
-    <div class="pin_wrapper" style="margin-top: 50px;">
+    <div class="pin_wrapper" style="margin-top: 100px;">
     <div class="pin_columns">
   {% #post_list %}
     <div class = "pin" >

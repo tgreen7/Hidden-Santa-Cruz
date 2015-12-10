@@ -10,7 +10,19 @@
 
     {{=A('Back', _class='back_button', _href=URL('default', 'show_boards', args=[]))}}
     <h1 class = "post_header">
-    {{=post_category}}
+    {{if post_category == 'art':}}
+    Art
+    {{elif post_category == 'local_events':}}
+    Local Events
+    {{elif post_category == 'hiking':}}
+    Hiking
+    {{elif post_category == 'restaurants':}}
+    Restaurants
+    {{elif post_category == 'scenic':}}
+    Scenic
+    {{elif post_category == 'night_life':}}
+   Night Life
+    {{pass}}
     </h1>
 
 
