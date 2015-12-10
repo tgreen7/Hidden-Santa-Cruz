@@ -11,9 +11,8 @@
 def deleteposts():
     db(db.posts.id > 0).delete()
     db(db.uploads.id > 0).delete()
+    db(db.reviews.id > 0).delete()
 
-def deletereviews():
-    db(db.reviews.id>0).delete()
 
 def map():
     return dict(postlist = [])

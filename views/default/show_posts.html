@@ -3,17 +3,17 @@
 
 <div id="target"></div>
 
-<body class="cbp-spmenu-push">
+<body class="cbp-spmenu-push my_body">
 
 
 <script id="template" type="text/ractive">
-
+    {{=A('Back', _class='back_button', _href=URL('default', 'show_boards', args=[]))}}
   <!--shows the sign in sign out buttons-->
-        <h1 class="post_header">Posts</h1>
+        <h1 class="post_header">
+        {{=post_category}}
 
-       <span>
-         {{=A('Back', _class='btn btn-primary', _href=URL('default', 'show_boards', args=[]))}}
-        </span>
+        </h1>
+
   {{if auth.user_id is not None:}}
         <span style = "float:right">
         {{=A('Create Post', _class='btn btn-success', _href=URL('default', 'add_posts', args=[post_category]))}}

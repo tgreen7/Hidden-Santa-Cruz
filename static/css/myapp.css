@@ -6,7 +6,7 @@
     margin-top: 100px;
 }
 
-#index_body {
+.my_body {
     background-color: rgba(172, 208, 192, 0.54)
 }
 
@@ -247,9 +247,52 @@
 }
 
 .post_header{
+     color: #003f80 ;
+    font-weight: lighter;
+    font-size: 350%;
     text-align: center;
-    font-size: 5em;
-    color: #76d0ff;
-    text-shadow: black 0.03em 0.03em 0.03em;
-    margin-bottom: 40px;
+    opacity: 0.6;
 }
+.post_page_header{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    color: #003f80 ;
+    font-weight: lighter;
+    font-size: 350%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.description_box {
+    width: 50%;
+    height:auto;
+    border:2px solid black;
+    padding: 10px 80px 50px 80px;
+}
+
+#description_title {
+    text-align: center;
+    font-size: 230%;
+}
+
+
+.back_button{
+    display: inline-block;
+    width: 150px;
+    padding: 6px;
+    color: white;
+    border: 1px solid #fff;
+    background-color: #ffc34d;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.back_button:hover {
+    text-decoration: none;
+}
+
+

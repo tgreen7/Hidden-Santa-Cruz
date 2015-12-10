@@ -20,16 +20,19 @@
     </style>
 
 
-<body class="cbp-spmenu-push show_posts_body">
+<body class="cbp-spmenu-push my_body">
+
+
 
 <script id="template" type="text/ractive">
+{{=A('Back', _class='back_button', _href=URL('default', 'show_boards', args=[]))}}
 
 <!--shows the sign in sign out buttons-->
         <h1 class="post_header">Search Posts</h1>
 
 
        <div>
-         {{=A('Back', _class='btn btn-primary', _href=URL('default', 'show_boards', args=[]))}}
+
 
 
 
@@ -53,10 +56,12 @@
           {%/if%}
 
           returned.
-          </span>
-    <div class="postslist">
+      </span>
+
+    <div class="pin_wrapper" style="margin-top: 50px;">
+    <div class="pin_columns">
   {% #post_list %}
-    <div class = "myboard" >
+    <div class = "pin" >
         <div class="boardtitle hover_hand" on-click="go_to_post:{%id%}">
             {% title %}
         </div>
@@ -88,14 +93,19 @@
             <br>
 
             {% #if user_id == {{=auth.user_id}} %}
-                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" class="btn btn-info" >Edit</a>
-                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" class="btn btn-danger" >Delete</a>
+                <p style="float: left">
+                <a href="{{=URL('default', 'posts_edit')}}/{%id%}" ><i class="fa fa-pencil fa-2x"></i></a>
+                </p>
+                <p style="float: right">
+                <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" ><i class="fa fa-trash fa-2x"></i></a>
+                </p>
             {% /if %}
         </div>
     </div>
   {% /post_list %}
     </div>
-
+</div>
+</div>
   </script>
 
 

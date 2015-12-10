@@ -4,7 +4,7 @@
 
 <body  class="cbp-spmenu-push">
 
-{{=A('Back', _class='btn btn-primary', _href=URL('default', 'show_posts', args=[board]))}}
+{{=A('Back', _class='back_button', _href=URL('default', 'show_posts', args=[board]))}}
 
  <div class="container-fluid">
      <!-- #region Jssor Slider Begin -->
@@ -17,8 +17,8 @@
     <!--style for reviews-->
      <style>
          #map {
-            width: 500px;
-            height: 400px;
+            width: 450px;
+            height: 350px;
 
         }
          .hover_hand {
@@ -127,7 +127,9 @@
 
      </style>
 
-<h1>{{=title}}</h1>
+<h1 class="post_page_header">{{=title}}</h1>
+
+
 <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
 <!-- Loading Screen -->
 <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -163,13 +165,22 @@
 <script>
 jssor_1_slider_init();
 </script>
+<div style="margin-top: 30px;">
 
-{{=A('Add Images', _class='btn btn-success', _href=URL('default', 'upload_images', args=[post.id]))}}
+    {{=A('Add Images', _class='btn btn-success', _href=URL('default', 'upload_images', args=[post.id]))}}
 
-     <div style="white-space: pre-line;">
-     {{=body}}
-         </div>
 
+
+    <div style="margin-left: 40px; margin-right: 40px; margin-top: 40px;" >
+         <span style="white-space: pre-line; float: left;" class="description_box">
+             <h2 id="description_title"> Description</h2>
+        {{=body}}
+        </span>
+        <span style="float: right" id="map"></span>
+
+         <div style="clear: both"></div>
+     </div>
+</div>
 <div id="target"></div>
 
 
@@ -180,7 +191,6 @@ jssor_1_slider_init();
 
 </span>
 
-<div id="map"></div>
 
 
     {% #review_dict:id%}
@@ -198,7 +208,7 @@ jssor_1_slider_init();
 <div id="reviews">
 <h2> Reviews </h2>
 
-<div style="float: left; margin-bottom: 15px">
+<div style=" margin-bottom: 15px">
 Average Rating:
 
 {%#each range(1,average)%}
