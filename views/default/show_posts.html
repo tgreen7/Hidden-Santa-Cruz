@@ -56,14 +56,18 @@
         </a></li>
       </ul>
     </div>
-    <div class="postslist">
+
+<div class="pin_wrapper">
+<div class="pin_columns">
+
   {% #post_list %}
-    <div class = "myboard hover_hand" on-click="go_to_post:{%id%},{%category%}" >
-        <div class="boardtitle" >
+
+    <div class = "pin hover_hand" on-click="go_to_post:{%id%},{%category%}" >
+        <p>
+        <div class="boardtitle">
             {% title %}
         </div>
         <div class="boardbody">
-
             {% #if user_id == {{=auth.user_id}} %}
                 <p style="float: left">
                 <a href="{{=URL('default', 'posts_edit')}}/{%id%}" ><i class="fa fa-pencil fa-2x"></i></a>
@@ -72,11 +76,10 @@
                 <a href="{{=URL('default', 'delete_post')}}/{%id%}/{%category%}" ><i class="fa fa-trash fa-2x"></i></a>
                 </p>
             {% /if %}
-            <p>
+
             {% #star_dict[id]%}
                 <i style = "color: #ffad33" class = "fa fa-star"></i>
             {% /star_dict %}
-
 
             {% #if half_star_dict[id] %}
                 <span style=" margin-left: -4px;">
@@ -84,28 +87,21 @@
                 </span>
             {% /if %}
 
-
             <span style=" margin-left: -4px;">
             {% #anti_star_dict[id]%}
                 <i style = "color: #ffad33;" class = "fa fa-star-o"></i>
             {% /star_dict %}
-
             </span>
-
             ({% avg_rate %})
-            </p>
-
             <div style="clear: both;"></div>
-
             <p>
             Posted On: {% created_on %}
             </p>
-
         </div>
     </div>
   {% /post_list %}
-  </div>
-
+ </div>
+</div>
 
   </script>
 
