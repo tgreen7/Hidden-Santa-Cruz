@@ -5,51 +5,37 @@
         position: absolute;
         margin-top: -50px;
     }
+    #keyword {
+        width: 200px;
+    }
 </style>
 
 
 
 <body class="cbp-spmenu-push" id="index_body">
-
-        <h3 class="main_header">Welcome to Hidden Santa Cruz</h3>
-
-
-
-
 <!-- Search Bar -->
 
-   <form action="{{=URL('default', 'search_results')}}" method="post">
-      <input type="text" id="keyword" name="keyword" autocomplete="off" style="width: 250px;" />
+    <div style="">
+    <form action="{{=URL('default', 'search_results')}}" method="post">
+      <input type="text" id="keyword" name="keyword" autocomplete="off" />
          <div style="position: absolute;" id="suggestions"
               class="suggestions">
          </div>
-
-        <input class="btn btn-primary" type="submit" value="Search">
+        <input class="search_button" type="submit" value="Search">
     </form>
+    </div>
     <script>
         $(document).ready(function() {
             $("#keyword").keyup(function () {
                 ajax('{{=URL('default', 'post_selector')}}', ['keyword'], 'suggestions')
             });
-//            $("#searcher").click(function(){
-//
-//
-//                if($('#search_text').text() == ""){
-//                    $('#search_text').text("Hide");
-//                    $('#search_icon').removeClass( "fa fa-search" );
-//                } else {
-//                    $('#search_text').text("");
-//                    $('#search_icon').addClass( "fa fa-search" );
-//                }
-//
-//                $("#keyword").animate(
-//                        {width:'toggle'},350
-//                );
-//                $(".search_list").toggle()
-//
-//            });
         });
     </script>
+
+        <h3 align="center" id="main_header">Welcome to Hidden Santa Cruz</h3>
+        <p id="under_main_header"> Explore New Places</p>
+
+
 
 
   <div class = "all_boards">

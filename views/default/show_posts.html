@@ -3,22 +3,13 @@
 
 <div id="target"></div>
 
-<style>
-    body {
-        background-color: #f2f2f2
-    }
-
-</style>
-
 <body class="cbp-spmenu-push">
 
 
 <script id="template" type="text/ractive">
 
   <!--shows the sign in sign out buttons-->
-  <div class="header-bar">
-        <h3>Posts</h3>
-    </div>
+        <h1 class="post_header">Posts</h1>
 
        <span>
          {{=A('Back', _class='btn btn-primary', _href=URL('default', 'show_boards', args=[]))}}
@@ -44,13 +35,13 @@
       <ul class="dropdown-menu">
         <li class="hover_hand"><a on-click="loadposts:1">
             {% #if sort_rated %}
-            âœ”
+            <i class="fa fa-check"></i>
             {% /if %}
             Highest Rating
         </a></li>
         <li class="hover_hand"><a on-click="loadposts:2">
             {% #if sort_recent %}
-            âœ”
+            <i class="fa fa-check"></i>
             {% /if %}
             Most Recent
         </a></li>
